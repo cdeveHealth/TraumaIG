@@ -21,5 +21,5 @@ Below is a list of interesting documentation specified in the Implementation Gui
 ## GitHub Repo 
 You can have a closer look at the FHIR Shorthand (FSH) code on GitHub for those who want to **FiSH** out the details. 🎣 
 
-- [Profile: TR_AW_Breathing_Sound_Observation FSH Code](example.com)
+- [Profile: TR_AW_Breathing_Sound_Observation FSH Code](https://github.com/cdeveHealth/TraumaIG)
 

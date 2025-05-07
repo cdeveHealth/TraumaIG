@@ -25,18 +25,18 @@ This guide contains custom code systems, value sets and extensions. For further 
   <tbody>
     <tr>
       <td>1.</td>
-      <td><a href="index.html">IG Home Page</a></td>
+      <td><a href="https://cdevehealth.github.io/TraumaIG/index.html">IG Home Page</a></td>
       <td>This section contains general and technical information about the IG.</td>
     </tr>
     <tr>
       <td>2.</td>
-      <td><a href="background.html">Background</a></td>
+      <td><a href="https://cdevehealth.github.io/TraumaIG/background.html">Background</a></td>
       <td>This section outlines the broader context in which the Implementation Guide (IG) could be applied. (Big Picture)</td>
     </tr>
      <tr>
       <td>3.</td>
       <td><a href="examples.html">Examples</a></td>
-      <td>This sections contains a few examples of the finished Emergency Documents and a few other links.</td>
+      <td>This section contains a few examples of the finished Emergency Documents and a few other links.</td>
     </tr>
     <tr>
       <td>4.</td>
