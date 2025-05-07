@@ -1,0 +1,105 @@
+{
+  "resourceType" : "Observation",
+  "id" : "uc1-TR-Br-Rise-Observation",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/tr-br-rise-observation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation uc1-TR-Br-Rise-Observation</b></p><a name=\"uc1-TR-Br-Rise-Observation\"> </a><a name=\"hcuc1-TR-Br-Rise-Observation\"> </a><a name=\"uc1-TR-Br-Rise-Observation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-br-rise-observation.html\">Respiratory chest wall movement</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 366128006}\">Symmetry of chest movement</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>effective</b>: 2025-01-01 12:29:00+0200</p><blockquote><p><b>component</b></p><p><b>com/PathologicSideExtension</b>: <span title=\"Codes:{http://snomed.info/sct 7771000}\">Left</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 12025005}\">Paradoxical respiration</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 52101004}\">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>com/PathologicSideExtension</b>: <span title=\"Codes:{http://snomed.info/sct 7771000}\">Left</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 45508002}\">Reduced chest expansion</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 52101004}\">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>com/PathologicSideExtension</b>: <span title=\"Codes:{http://snomed.info/sct 7771000}\">Left</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 66787007}\">Intercostal recession</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 52101004}\">Present</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "366128006",
+      "display" : "Symmetry of chest movement - finding"
+    }],
+    "text" : "Symmetry of chest movement"
+  },
+  "subject" : {
+    "reference" : "Patient/uc1-Nomen-Nescio"
+  },
+  "encounter" : {
+    "reference" : "Encounter/uc1-Motor-Vehicle-Collision"
+  },
+  "effectiveDateTime" : "2025-01-01T12:29:00+02:00",
+  "component" : [{
+    "extension" : [{
+      "url" : "http://example.com/PathologicSideExtension",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "12025005",
+        "display" : "Paradoxical respiration"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "52101004",
+        "display" : "Present"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.com/PathologicSideExtension",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "45508002",
+        "display" : "Reduced chest expansion"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "52101004",
+        "display" : "Present"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.com/PathologicSideExtension",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "66787007",
+        "display" : "Intercostal recession"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "52101004",
+        "display" : "Present"
+      }]
+    }
+  }]
+}

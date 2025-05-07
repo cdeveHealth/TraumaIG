@@ -1,0 +1,193 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/Anatomical-Terminology",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "VS Anatomical Terminology",
+      "description" : "Anatomical Terminology",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/Severity-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "VS  Severity",
+      "description" : "ValueSet expressing the severity or presence of something",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-AW-Status-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Status of Airway",
+      "description" : "Codes to define if theres not a A problem",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Adjuncts-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Airway Adjuncts Procedures",
+      "description" : "Includes SNOMED CT codes for procedures related to airway adjuncts, such as oropharyngeal and nasopharyngeal airway insertion.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Clearance-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Codes for clearing airway",
+      "description" : "Includes SNOMED CT codes related to airway clearance procedures and findings.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Breathing Sounds",
+      "description" : "Certain breathing sounds are an indication for aw obstruction.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Fluid-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Fluid in the airway codes",
+      "description" : "Describes different ways of suffocating due to fluids in the upper AW",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Foreign Body Obstruction of AW",
+      "description" : "Different foreign bodies that can cause an obstruction",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Structure-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Obstruction caused due to change in Neck Structure",
+      "description" : "Trauma to the neck or head can cause airway to close up.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Softtissue AW Obstruction",
+      "description" : "Obstruction of Airway due to Softtissue without head or neck trauma",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Airway-Opening-Maneuvers-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Opening Maneuvers",
+      "description" : "Different Ways of opening the patients mouth",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Cervical-Spine-Assessment-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Cervical Spine Assessment Codes",
+      "description" : "Includes SNOMED CT codes related to cervical spine injuries and assessments.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-AW-Cervical-Spine-Intervention-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Cervical Spine Intervention Codes",
+      "description" : "Includes SNOMED CT codes related to cervical spine immobilization and stabilization procedures.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-C-Skin-Assessment-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Skin Assessment Values",
+      "description" : "Includes LOINC codes related to the Skin assessment panel 72284-3.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-Conditions-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Conditons",
+      "description" : "This value set should have the most important arbeitsdiagnonsen",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-D-Fast-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "VS for FAST Assessment",
+      "description" : "ValueSet for  SNOMED CT concepts used for a FAST assessment.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-GI-AW-Patency-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "General Impresion AW Patency",
+      "description" : "Codes related to Blickdiagnose AW Patency",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-GI-Circulation-Impression-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "General Impression of Circulation",
+      "description" : "Used to judge if patient coulsd be in potential shock",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-GI-Decision-Making-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Decision Codes General Impression",
+      "description" : "Roughly defines what options after General Impression",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-GI-Impression-Procedure-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "General Impression of Circulation Procedures",
+      "description" : "Used to judge if patient coulsd be in potential shock",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TR-GI-Mental-Status-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "General Impression Mental Status",
+      "description" : "This value has some first impressions of the mental state of the patient.",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

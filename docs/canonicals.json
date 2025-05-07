@@ -1,0 +1,331 @@
+[
+  {
+    "id" : "tr-general-codes-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/tr-general-codes-cs",
+    "version" : "0.1.0",
+    "name" : "TR_General_Codes_CS"
+  },
+  {
+    "id" : "fhir.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/fhir.example",
+    "version" : "0.1.0",
+    "name" : "TraumaIG"
+  },
+  {
+    "id" : "pathologic-side",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/pathologic-side",
+    "version" : "0.1.0",
+    "name" : "PathologicSideExtension"
+  },
+  {
+    "id" : "tr-aw-airway-adjuncts-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-airway-adjuncts-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Airway_Adjuncts_Procedure"
+  },
+  {
+    "id" : "tr-aw-airway-clearance-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-airway-clearance-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Airway_Clearance_Procedure"
+  },
+  {
+    "id" : "tr-aw-breathing-sound-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-breathing-sound-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Breathing_Sound_Observation"
+  },
+  {
+    "id" : "tr-aw-cervical-spine-assessment-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-cervical-spine-assessment-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Cervical_Spine_Assessment_Observation"
+  },
+  {
+    "id" : "tr-aw-cervical-spine-intervention-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-cervical-spine-intervention-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Cervical_Spine_Intervention_Procedure"
+  },
+  {
+    "id" : "tr-aw-fluids-in-aw-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-fluids-in-aw-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Fluids_In_AW_Observation"
+  },
+  {
+    "id" : "tr-aw-foreign-body-aw-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-foreign-body-aw-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Foreign_Body_AW_Observation"
+  },
+  {
+    "id" : "tr-aw-opening-maneuver-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-opening-maneuver-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Opening_Manuver_Procedure"
+  },
+  {
+    "id" : "tr-aw-soft-tissue-collaps-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-soft-tissue-collaps-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Soft_Tissue_Collaps_Observation"
+  },
+  {
+    "id" : "tr-aw-status-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-status-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Status_Observation"
+  },
+  {
+    "id" : "tr-aw-structual-change-in-aw-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-aw-structual-change-in-aw-observation",
+    "version" : "0.1.0",
+    "name" : "TR_AW_Structual_Change_In_AW_Observation"
+  },
+  {
+    "id" : "tr-br-rise-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-rise-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Rise_Observation"
+  },
+  {
+    "id" : "tr-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-bundle",
+    "version" : "0.1.0",
+    "name" : "TR_Bundle"
+  },
+  {
+    "id" : "tr-c-skin-assessment-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-c-skin-assessment-observation",
+    "version" : "0.1.0",
+    "name" : "TR_C_Skin_Assessment_Observation"
+  },
+  {
+    "id" : "tr-composition",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-composition",
+    "version" : "0.1.0",
+    "name" : "TR_Composition"
+  },
+  {
+    "id" : "tr-d-neuro-fast-observations",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-d-neuro-fast-observations",
+    "version" : "0.1.0",
+    "name" : "TR_D_Neuro_Fast_Observation"
+  },
+  {
+    "id" : "tr-gi-airwaypatencyobservation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-gi-airwaypatencyobservation",
+    "version" : "0.1.0",
+    "name" : "TR_GI_Airway_Patency_Observation"
+  },
+  {
+    "id" : "tr-gi-circulatory-impression-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-gi-circulatory-impression-observation",
+    "version" : "0.1.0",
+    "name" : "TR_GI_Circulatory_Impression_Observation"
+  },
+  {
+    "id" : "tr-gi-circulatory-impression-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-gi-circulatory-impression-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_GI_Circulatory_Impression_Procedure"
+  },
+  {
+    "id" : "tr-gi-decision-making-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-gi-decision-making-observation",
+    "version" : "0.1.0",
+    "name" : "TR_GI_Decision_Making_Observation"
+  },
+  {
+    "id" : "tr-gi-decision-making-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-gi-decision-making-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_GI_Decision_Making_Procedure"
+  },
+  {
+    "id" : "tr-gi-mental-status-impression-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-gi-mental-status-impression-observation",
+    "version" : "0.1.0",
+    "name" : "TR_GI_Mental_Status_Impression_Observation"
+  },
+  {
+    "id" : "trauma-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/trauma-encounter",
+    "version" : "0.1.0",
+    "name" : "Trauma_Encounter"
+  },
+  {
+    "id" : "trauma-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/trauma-observation",
+    "version" : "0.1.0",
+    "name" : "Trauma_Observation"
+  },
+  {
+    "id" : "trauma-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/trauma-patient",
+    "version" : "0.1.0",
+    "name" : "Trauma_Patient"
+  },
+  {
+    "id" : "trauma-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/trauma-procedure",
+    "version" : "0.1.0",
+    "name" : "Trauma_Procedure"
+  },
+  {
+    "id" : "Anatomical-Terminology",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/Anatomical-Terminology",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "Severity-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/Severity-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-AW-Status-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-AW-Status-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Adjuncts-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Adjuncts-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Clearance-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Clearance-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Obstruction-Causes-Fluid-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Fluid-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Obstruction-Causes-Structure-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Structure-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Obstruction-Causes-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Airway-Opening-Maneuvers-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Airway-Opening-Maneuvers-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Cervical-Spine-Assessment-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Cervical-Spine-Assessment-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-AW-Cervical-Spine-Intervention-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-AW-Cervical-Spine-Intervention-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-C-Skin-Assessment-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-C-Skin-Assessment-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-Conditions-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-Conditions-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-D-Fast-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-D-Fast-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-GI-AW-Patency-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-GI-AW-Patency-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-GI-Circulation-Impression-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-GI-Circulation-Impression-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-GI-Decision-Making-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-GI-Decision-Making-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-GI-Impression-Procedure-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-GI-Impression-Procedure-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-GI-Mental-Status-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-GI-Mental-Status-VS",
+    "version" : "0.1.0"
+  }
+]

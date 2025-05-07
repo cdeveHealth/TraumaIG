@@ -1,0 +1,47 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-TR-C-Skin-Assessment-VS.html" : "Skin Assessment Values"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-TR-GI-Decision-Making-VS.html" : "Decision Codes General Impression",
+      "ValueSet-TR-AW-Airway-Obstruction-Causes-Structure-VS.html" : "Obstruction caused due to change in Neck Structure",
+      "ValueSet-TR-AW-AW-Status-VS.html" : "Status of Airway",
+      "ValueSet-TR-AW-Airway-Clearance-VS.html" : "Codes for clearing airway",
+      "ValueSet-TR-AW-Cervical-Spine-Assessment-VS.html" : "Cervical Spine Assessment Codes",
+      "ValueSet-TR-AW-Cervical-Spine-Intervention-VS.html" : "Cervical Spine Intervention Codes",
+      "ValueSet-TR-AW-Airway-Adjuncts-VS.html" : "Airway Adjuncts Procedures",
+      "ValueSet-TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.html" : "Breathing Sounds",
+      "ValueSet-TR-AW-Airway-Obstruction-Causes-Fluid-VS.html" : "Fluid in the airway codes",
+      "ValueSet-Anatomical-Terminology.html" : "VS Anatomical Terminology",
+      "ValueSet-TR-AW-Airway-Opening-Maneuvers-VS.html" : "Opening Maneuvers",
+      "ValueSet-TR-D-Fast-VS.html" : "VS for FAST Assessment",
+      "ValueSet-Severity-VS.html" : "VS  Severity",
+      "ValueSet-TR-GI-Impression-Procedure-VS.html" : "General Impression of Circulation Procedures",
+      "ValueSet-TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS.html" : "Foreign Body Obstruction of AW",
+      "ValueSet-TR-GI-AW-Patency-VS.html" : "General Impresion AW Patency",
+      "ValueSet-TR-GI-Mental-Status-VS.html" : "General Impression Mental Status",
+      "ValueSet-TR-AW-Airway-Obstruction-Causes-VS.html" : "Softtissue AW Obstruction",
+      "ValueSet-TR-Conditions-VS.html" : "Conditons",
+      "ValueSet-TR-GI-Circulation-Impression-VS.html" : "General Impression of Circulation"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS</b></p><a name="TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS"> </a><a name="hcTR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS"> </a><a name="TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (Österreich) (German (Austria), de)</b></td></tr><tr><td><a href="http://snomed.info/id/301282008">301282008</a></td><td>Finding of respiration</td><td>Beobachtung der Atmung</td></tr><tr><td><a href="http://snomed.info/id/56018004">56018004</a></td><td>Wheezing</td><td>Giemen</td></tr><tr><td><a href="http://snomed.info/id/301285005">301285005</a></td><td>Finding of sound of breathing</td><td>Feststellung von Atemgeräuschen</td></tr><tr><td><a href="http://snomed.info/id/248573009">248573009</a></td><td>Noisy respiration</td><td>Geräuschvolle Atmung</td></tr><tr><td><a href="http://snomed.info/id/248573009">248573009</a></td><td>Rattling breathing</td><td>Rasselnde Atmung</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS"/>
+  <version value="0.1.0"/>
+  <title value="Breathing Sounds"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Certain breathing sounds are an indication for aw obstruction."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="301282008"/>
+        <display value="Finding of respiration"/>
+        <designation>
+          <language value="de-AT"/>
+          <value value="Beobachtung der Atmung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="56018004"/>
+        <display value="Wheezing"/>
+        <designation>
+          <language value="de-AT"/>
+          <value value="Giemen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="301285005"/>
+        <display value="Finding of sound of breathing"/>
+        <designation>
+          <language value="de-AT"/>
+          <value value="Feststellung von Atemgeräuschen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="248573009"/>
+        <display value="Noisy respiration"/>
+        <designation>
+          <language value="de-AT"/>
+          <value value="Geräuschvolle Atmung"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="248573009"/>
+        <display value="Rattling breathing"/>
+        <designation>
+          <language value="de-AT"/>
+          <value value="Rasselnde Atmung"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

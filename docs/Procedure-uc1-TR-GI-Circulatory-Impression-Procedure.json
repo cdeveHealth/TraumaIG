@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "uc1-TR-GI-Circulatory-Impression-Procedure",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/tr-gi-circulatory-impression-procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure uc1-TR-GI-Circulatory-Impression-Procedure</b></p><a name=\"uc1-TR-GI-Circulatory-Impression-Procedure\"> </a><a name=\"hcuc1-TR-GI-Circulatory-Impression-Procedure\"> </a><a name=\"uc1-TR-GI-Circulatory-Impression-Procedure-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-gi-circulatory-impression-procedure.html\">Procedures to obtain a circulatory impression</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 408970004}\">Clinical procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 65653002}\">Pulse taking</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>performed</b>: 2025-01-01 12:14:00+0100</p></div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "408970004",
+      "display" : "Clinical procedure"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "65653002",
+      "display" : "Pulse taking"
+    }],
+    "text" : "Pulse taking"
+  },
+  "subject" : {
+    "reference" : "Patient/uc1-Nomen-Nescio"
+  },
+  "encounter" : {
+    "reference" : "Encounter/uc1-Motor-Vehicle-Collision"
+  },
+  "performedDateTime" : "2025-01-01T12:14:00.000+01:00"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="uc1-TR-GI-Decision-Making-Observation"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/tr-gi-decision-making-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation uc1-TR-GI-Decision-Making-Observation</b></p><a name="uc1-TR-GI-Decision-Making-Observation"> </a><a name="hcuc1-TR-GI-Decision-Making-Observation"> </a><a name="uc1-TR-GI-Decision-Making-Observation-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tr-gi-decision-making-observation.html">Decision Making Observation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 413383002}">Ability to make decisions</span></p><p><b>subject</b>: <a href="Patient-uc1-Nomen-Nescio.html">Nescio Nomen  Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Encounter-uc1-Motor-Vehicle-Collision.html">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>effective</b>: 2025-01-01 12:18:00+0200</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 103391001}">Patient needs urgent care</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="413383002"/>
+      <display value="Ability to make decisions"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/uc1-Nomen-Nescio"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/uc1-Motor-Vehicle-Collision"/>
+  </encounter>
+  <effectiveDateTime value="2025-01-01T12:18:00.000+02:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103391001"/>
+      <display value="Patient needs urgent care"/>
+    </coding>
+    <text value="Patient needs urgent care"/>
+  </valueCodeableConcept>
+</Observation>

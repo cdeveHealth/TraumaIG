@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/CodeSystem/tr-general-codes-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TR_General_Codes_CS",
+      "title" : "TR CodeSystem",
+      "description" : "All custom codes relevant for IG"
+    }
+  ]
+}

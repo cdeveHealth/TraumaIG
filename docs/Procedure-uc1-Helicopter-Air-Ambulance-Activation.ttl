@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Procedure/uc1-Helicopter-Air-Ambulance-Activation> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uc1-Helicopter-Air-Ambulance-Activation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/tr-gi-decision-making-procedure"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/tr-gi-decision-making-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure uc1-Helicopter-Air-Ambulance-Activation</b></p><a name=\"uc1-Helicopter-Air-Ambulance-Activation\"> </a><a name=\"hcuc1-Helicopter-Air-Ambulance-Activation\"> </a><a name=\"uc1-Helicopter-Air-Ambulance-Activation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-gi-decision-making-procedure.html\">Decision Making after General Impresission</a></p></div><p><b>status</b>: final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 129264002}\">Clinical action</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 716734002}\">Provision of helicopter air ambulance</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:129264002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "129264002" ] ;
+       fhir:display [ fhir:v "Clinical action" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:716734002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "716734002" ] ;
+       fhir:display [ fhir:v "Provision of helicopter air ambulance" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/uc1-Nomen-Nescio> ;
+     fhir:reference [ fhir:v "Patient/uc1-Nomen-Nescio" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/uc1-Motor-Vehicle-Collision> ;
+     fhir:reference [ fhir:v "Encounter/uc1-Motor-Vehicle-Collision" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

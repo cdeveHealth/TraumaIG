@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-AW-Airway-Adjuncts-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-AW-Airway-Adjuncts-VS</b></p><a name="TR-AW-Airway-Adjuncts-VS"> </a><a name="hcTR-AW-Airway-Adjuncts-VS"> </a><a name="TR-AW-Airway-Adjuncts-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/7443007">7443007</a></td><td>Insertion of oropharyngeal airway</td></tr><tr><td><a href="http://snomed.info/id/182692007">182692007</a></td><td>Nasopharyngeal airway insertion</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-AW-Airway-Adjuncts-VS"/>
+  <version value="0.1.0"/>
+  <title value="Airway Adjuncts Procedures"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Includes SNOMED CT codes for procedures related to airway adjuncts, such as oropharyngeal and nasopharyngeal airway insertion."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="7443007"/>
+        <display value="Insertion of oropharyngeal airway"/>
+      </concept>
+      <concept>
+        <code value="182692007"/>
+        <display value="Nasopharyngeal airway insertion"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

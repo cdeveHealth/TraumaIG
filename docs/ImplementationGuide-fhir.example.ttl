@@ -1,0 +1,2272 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ImplementationGuide/fhir.example> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir.example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><a name=\"fhir.example-en-US\"> </a><h2>TraumaIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ImplementationGuide/fhir.example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TraumaIG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-05-07T20:15:41+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Constantin Renner"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Constantin Renner" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "fhir.example"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_at_fhir_core_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ImplementationGuide/hl7.at.fhir.core.r4"^^xsd:anyURI ;
+       fhir:link <http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/ImplementationGuide/hl7.at.fhir.core.r4>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.at.fhir.core.r4" ] ;
+     fhir:version [ fhir:v "2.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "2025+"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://example.org/history.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r4#0.3.0"
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "2025+"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://example.org/history.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Adjuncts Procedure" ] ;
+       fhir:description [ fhir:v "Nasopharyngeal airway placed to maintain passage." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-airway-adjuncts-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-airway-adjuncts-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-airway-adjuncts-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-airway-adjuncts-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Adjuncts Procedures" ] ;
+       fhir:description [ fhir:v "Procedures involving the insertion and management of airway adjuncts." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Adjuncts-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Adjuncts-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Adjuncts Procedures" ] ;
+       fhir:description [ fhir:v "Includes SNOMED CT codes for procedures related to airway adjuncts, such as oropharyngeal and nasopharyngeal airway insertion." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-airway-clearance-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-airway-clearance-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Clearance" ] ;
+       fhir:description [ fhir:v "Procedures to clear obstructions from the airway." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-AW-Airway-Clearance-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Airway-Clearance-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Clearance Procedure" ] ;
+       fhir:description [ fhir:v "Suctioning performed to clear blood, secretions, and foreign bodies." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-airway-clearance-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-airway-clearance-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-AW-Opening-Manuver-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Opening-Manuver-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Opening Maneuver" ] ;
+       fhir:description [ fhir:v "Modified jaw thrust applied due to suspected neck injury." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-opening-maneuver-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-opening-maneuver-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-opening-maneuver-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-opening-maneuver-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Opening Maneuvers" ] ;
+       fhir:description [ fhir:v "Procedures related to manual airway opening techniques." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Airway-Patency-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Airway-Patency-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Patency" ] ;
+       fhir:description [ fhir:v "Example for General Impression: Airway Patency - Patient unresponsive, does not speak" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-gi-airwaypatencyobservation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-gi-airwaypatencyobservation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-status-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-status-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Airway Status" ] ;
+       fhir:description [ fhir:v "Defines if the airway of the patient is obstructed or not" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/trauma-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/trauma-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Base Trauma Encounter" ] ;
+       fhir:description [ fhir:v "Profile for trauma-related clinical encounters." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/trauma-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/trauma-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Base Trauma IG Observation" ] ;
+       fhir:description [ fhir:v "This profile defines how the Observation resource should be used to meet the needs of all trauma-related Observation profiles." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/trauma-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/trauma-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Base Trauma Patient" ] ;
+       fhir:description [ fhir:v "A trauma patient based on the HL7 Austria Core Patient profile, with minimal demographic information enabled, since this is often the case in Trauma Care" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/trauma-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/trauma-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Base Trauma Procedure" ] ;
+       fhir:description [ fhir:v "This profile defines specific constraints on the Procedure resource in order to create the requirements for all specialized trauma procedure profiles." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Breathing Sounds" ] ;
+       fhir:description [ fhir:v "Certain breathing sounds are an indication for aw obstruction." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-breathing-sound-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-breathing-sound-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Breathing Sounds Observation" ] ;
+       fhir:description [ fhir:v "Observation related to breathing sounds, such as wheezing or stridor." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Breathing-Sound-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Breathing-Sound-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Breathing Sounds Observation" ] ;
+       fhir:description [ fhir:v "Observation related to breathing sounds, such as wheezing or stridor." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-breathing-sound-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-breathing-sound-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Cervical-Spine-Assessment-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Cervical-Spine-Assessment-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Cervical Spine Assessment Codes" ] ;
+       fhir:description [ fhir:v "Includes SNOMED CT codes related to cervical spine injuries and assessments." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-cervical-spine-assessment-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-cervical-spine-assessment-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Cervical Spine Assessment Observation" ] ;
+       fhir:description [ fhir:v "Observation related to assessing injuries to the cervical spine." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Cervical-Spine-Assessment-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Cervical-Spine-Assessment-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Cervical Spine Assessment Observation" ] ;
+       fhir:description [ fhir:v "Cervical spine found tender with instability." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-cervical-spine-assessment-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-cervical-spine-assessment-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-cervical-spine-intervention-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-cervical-spine-intervention-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Cervical Spine Intervention" ] ;
+       fhir:description [ fhir:v "Procedures related to the immobilization and stabilization of the cervical spine." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-AW-Cervical-Spine-Intervention-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Cervical-Spine-Intervention-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Cervical Spine Intervention" ] ;
+       fhir:description [ fhir:v "Cervical collar applied for immobilization." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-cervical-spine-intervention-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-cervical-spine-intervention-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Cervical-Spine-Intervention-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Cervical-Spine-Intervention-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Cervical Spine Intervention Codes" ] ;
+       fhir:description [ fhir:v "Includes SNOMED CT codes related to cervical spine immobilization and stabilization procedures." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Circulatory-Impression-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Circulatory-Impression-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Circulatory Impression" ] ;
+       fhir:description [ fhir:v "Example for General Impression: Circulatory condition – Radial pulse weak and thready" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-gi-circulatory-impression-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-gi-circulatory-impression-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-GI-Circulatory-Impression-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-GI-Circulatory-Impression-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Circulatory Impression Procedure" ] ;
+       fhir:description [ fhir:v "Example for General Impression: Manual pulse taking due to hemodynamic instability" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-gi-circulatory-impression-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-gi-circulatory-impression-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Clearance-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Clearance-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Codes for clearing airway" ] ;
+       fhir:description [ fhir:v "Includes SNOMED CT codes related to airway clearance procedures and findings." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-Conditions-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-Conditions-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Conditons" ] ;
+       fhir:description [ fhir:v "This value set should have the most important arbeitsdiagnonsen" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-GI-Decision-Making-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-GI-Decision-Making-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Decision Codes General Impression" ] ;
+       fhir:description [ fhir:v "Roughly defines what options after General Impression" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-gi-decision-making-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-gi-decision-making-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Decision Making after General Impresission" ] ;
+       fhir:description [ fhir:v "Documentation of imediate Procedures after judging general state of patient" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Decision-Making-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Decision-Making-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Decision Making Impression" ] ;
+       fhir:description [ fhir:v "Example for General Impression: Urgent transfer to trauma center indicated" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-gi-decision-making-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-gi-decision-making-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-gi-decision-making-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-gi-decision-making-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Decision Making Observation" ] ;
+       fhir:description [ fhir:v "Observations of Immediate Actions" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-bundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "Document Bundle" ] ;
+       fhir:description [ fhir:v "A document Bundle containing only tr-composition." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Bundle/uc1-bundle> ;
+         fhir:reference [ fhir:v "Bundle/uc1-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "Document Bundle Instance" ] ;
+       fhir:description [ fhir:v "An instance of a document Bundle containing use case 1 composition." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-bundle"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-bundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Encounter/uc1-Motor-Vehicle-Collision> ;
+         fhir:reference [ fhir:v "Encounter/uc1-Motor-Vehicle-Collision" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter corresponding to MVC" ] ;
+       fhir:description [ fhir:v "Encounter made during the treatment of person in MVC" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/trauma-encounter"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/trauma-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-d-neuro-fast-observations> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-d-neuro-fast-observations" ]
+       ] ;
+       fhir:name [ fhir:v "Fast Assessment" ] ;
+       fhir:description [ fhir:v "Assessment to identify stroke (Insult) Symptoms in trauma patients." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-D-Neuro-FAST-Observations> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-D-Neuro-FAST-Observations" ]
+       ] ;
+       fhir:name [ fhir:v "FAST Assessment" ] ;
+       fhir:description [ fhir:v "Assessment to identify stroke (Insult) symptoms in trauma patients." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-d-neuro-fast-observations"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-d-neuro-fast-observations>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Fluid-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Obstruction-Causes-Fluid-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Fluid in the airway codes" ] ;
+       fhir:description [ fhir:v "Describes different ways of suffocating due to fluids in the upper AW" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-fluids-in-aw-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-fluids-in-aw-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Fluids in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation related to airway obstruction due to fluids." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Fluids-In-AW-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Fluids-In-AW-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Fluids in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation related to airway obstruction due to fluids." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-fluids-in-aw-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-fluids-in-aw-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-foreign-body-aw-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-foreign-body-aw-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Foreign Body in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation of airway obstruction due to foreign bodies." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Foreign-Body-AW-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Foreign-Body-AW-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Foreign Body in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation of airway obstruction due to foreign bodies." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-foreign-body-aw-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-foreign-body-aw-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Foreign Body Obstruction of AW" ] ;
+       fhir:description [ fhir:v "Different foreign bodies that can cause an obstruction" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-GI-AW-Patency-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-GI-AW-Patency-VS" ]
+       ] ;
+       fhir:name [ fhir:v "General Impresion AW Patency" ] ;
+       fhir:description [ fhir:v "Codes related to Blickdiagnose AW Patency" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-gi-airwaypatencyobservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-gi-airwaypatencyobservation" ]
+       ] ;
+       fhir:name [ fhir:v "General Impression Airway Patency" ] ;
+       fhir:description [ fhir:v "Impressions about Airway Patency" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-gi-circulatory-impression-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-gi-circulatory-impression-observation" ]
+       ] ;
+       fhir:name [ fhir:v "General Impression Circulatory Observation" ] ;
+       fhir:description [ fhir:v "Impressions about general Circulatory condition of patient" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-GI-Mental-Status-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-GI-Mental-Status-VS" ]
+       ] ;
+       fhir:name [ fhir:v "General Impression Mental Status" ] ;
+       fhir:description [ fhir:v "This value has some first impressions of the mental state of the patient." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-GI-Circulation-Impression-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-GI-Circulation-Impression-VS" ]
+       ] ;
+       fhir:name [ fhir:v "General Impression of Circulation" ] ;
+       fhir:description [ fhir:v "Used to judge if patient coulsd be in potential shock" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-GI-Impression-Procedure-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-GI-Impression-Procedure-VS" ]
+       ] ;
+       fhir:name [ fhir:v "General Impression of Circulation Procedures" ] ;
+       fhir:description [ fhir:v "Used to judge if patient coulsd be in potential shock" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-Helicopter-Air-Ambulance-Activation> ;
+         fhir:reference [ fhir:v "Procedure/uc1-Helicopter-Air-Ambulance-Activation" ]
+       ] ;
+       fhir:name [ fhir:v "Helicopter Air Ambulance Activation" ] ;
+       fhir:description [ fhir:v "Provision of helicopter air ambulance after general impression and decision" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-gi-decision-making-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-gi-decision-making-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Mental-Status-Impression-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Mental-Status-Impression-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Mental Status Impression" ] ;
+       fhir:description [ fhir:v "Example for General Impression: Poor response to external stimuli" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-gi-mental-status-impression-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-gi-mental-status-impression-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-gi-mental-status-impression-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-gi-mental-status-impression-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Observation of General Impression of Mental State of Patient" ] ;
+       fhir:description [ fhir:v "Quick overview of patient mental state." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Structure-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Obstruction-Causes-Structure-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Obstruction caused due to change in Neck Structure" ] ;
+       fhir:description [ fhir:v "Trauma to the neck or head can cause airway to close up." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Opening-Maneuvers-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Opening-Maneuvers-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Opening Maneuvers" ] ;
+       fhir:description [ fhir:v "Different Ways of opening the patients mouth" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/pathologic-side> ;
+         fhir:reference [ fhir:v "StructureDefinition/pathologic-side" ]
+       ] ;
+       fhir:name [ fhir:v "Pathologic Side" ] ;
+       fhir:description [ fhir:v "Specifies the anatomical side affected by the finding or observation" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-gi-circulatory-impression-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-gi-circulatory-impression-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Procedures to obtain a circulatory impression" ] ;
+       fhir:description [ fhir:v "Procedures to get an impression of the circulatory situation of a patient" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-br-rise-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-br-rise-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Respiratory chest wall movement" ] ;
+       fhir:description [ fhir:v "Assessment of the rise of the chest to check for trauma" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Br-Rise-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Rise-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Respiratory chest wall movement" ] ;
+       fhir:description [ fhir:v "Chest wall movement noted to be asymmetric on the left. Haematothorax observed." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-rise-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-rise-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-c-skin-assessment-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-c-skin-assessment-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Skin assessment" ] ;
+       fhir:description [ fhir:v "Skin assessment for trauma using LOINC 72284-3 Panel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-C-Skin-Assessment-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-C-Skin-Assessment-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Skin assessment" ] ;
+       fhir:description [ fhir:v "Skin assessment for trauma using LOINC 72284-3 Panel." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-c-skin-assessment-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-c-skin-assessment-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-C-Skin-Assessment-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-C-Skin-Assessment-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Skin Assessment Values" ] ;
+       fhir:description [ fhir:v "Includes LOINC codes related to the Skin assessment panel 72284-3." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-soft-tissue-collaps-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-soft-tissue-collaps-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Soft Tissue Collapse in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation related to airway obstruction due to soft tissue collapse." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Soft-Tissue-Collaps-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Soft-Tissue-Collaps-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Soft Tissue Collapse in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation related to airway obstruction due to soft tissue collapse." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-soft-tissue-collaps-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-soft-tissue-collaps-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-Airway-Obstruction-Causes-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Softtissue AW Obstruction" ] ;
+       fhir:description [ fhir:v "Obstruction of Airway due to Softtissue without head or neck trauma" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-AW-AW-Status-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-AW-AW-Status-VS" ]
+       ] ;
+       fhir:name [ fhir:v "Status of Airway" ] ;
+       fhir:description [ fhir:v "Codes to define if theres not a A problem" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-aw-structual-change-in-aw-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-aw-structual-change-in-aw-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Structural Changes in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation of airway obstructions due to structural changes like swelling or trauma." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Structual-Change-In-AW-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Structual-Change-In-AW-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Structural Changes in Airway Observation" ] ;
+       fhir:description [ fhir:v "Observation of airway obstructions due to structural changes like swelling or trauma." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-aw-structual-change-in-aw-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-aw-structual-change-in-aw-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CodeSystem/tr-general-codes-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/tr-general-codes-cs" ]
+       ] ;
+       fhir:name [ fhir:v "TR CodeSystem" ] ;
+       fhir:description [ fhir:v "All custom codes relevant for IG" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-composition> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-composition" ]
+       ] ;
+       fhir:name [ fhir:v "TR Composition" ] ;
+       fhir:description [ fhir:v "Structured documentation of the primary clinical assessment including airway, breathing, circulation and disability." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Composition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Composition/uc1-tr-composition> ;
+         fhir:reference [ fhir:v "Composition/uc1-tr-composition" ]
+       ] ;
+       fhir:name [ fhir:v "UC1 TR Composition" ] ;
+       fhir:description [ fhir:v "Structured documentation of the primary clinical assessment." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-composition"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-composition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Patient/uc1-Nomen-Nescio> ;
+         fhir:reference [ fhir:v "Patient/uc1-Nomen-Nescio" ]
+       ] ;
+       fhir:name [ fhir:v "uc1-Nomen-Nescio" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/trauma-patient"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/trauma-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/Severity-VS> ;
+         fhir:reference [ fhir:v "ValueSet/Severity-VS" ]
+       ] ;
+       fhir:name [ fhir:v "VS  Severity" ] ;
+       fhir:description [ fhir:v "ValueSet expressing the severity or presence of something" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/Anatomical-Terminology> ;
+         fhir:reference [ fhir:v "ValueSet/Anatomical-Terminology" ]
+       ] ;
+       fhir:name [ fhir:v "VS Anatomical Terminology" ] ;
+       fhir:description [ fhir:v "Anatomical Terminology" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/TR-D-Fast-VS> ;
+         fhir:reference [ fhir:v "ValueSet/TR-D-Fast-VS" ]
+       ] ;
+       fhir:name [ fhir:v "VS for FAST Assessment" ] ;
+       fhir:description [ fhir:v "ValueSet for  SNOMED CT concepts used for a FAST assessment." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:url ;
+           fhir:v "toc.html"^^xsd:anyURI
+         ]
+       ] ) ;
+       fhir:name [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "index.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "background.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "background.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Background" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "examples.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "examples.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "usecase.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "usecase.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Usecase" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

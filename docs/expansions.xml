@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="1f90891f-fdd9-40c6-b1e6-27b6bb5aeee4"/>
+  <meta>
+    <lastUpdated value="2025-05-07T20:16:00.023+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TR-C-Skin-Assessment-VS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
+            <p>This value set contains 12 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17200-9"> </a>  
+                  <a href="https://loinc.org/LA17200-9/">LA17200-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Red (erythematous)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17205-8"> </a>  
+                  <a href="https://loinc.org/LA17205-8/">LA17205-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Mottled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17198-5"> </a>  
+                  <a href="https://loinc.org/LA17198-5/">LA17198-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Cyanotic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17206-6"> </a>  
+                  <a href="https://loinc.org/LA17206-6/">LA17206-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Pale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17201-7"> </a>  
+                  <a href="https://loinc.org/LA17201-7/">LA17201-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Flushed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17197-7"> </a>  
+                  <a href="https://loinc.org/LA17197-7/">LA17197-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Clammy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17199-3"> </a>  
+                  <a href="https://loinc.org/LA17199-3/">LA17199-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Dry</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA18217-2"> </a>  
+                  <a href="https://loinc.org/LA18217-2/">LA18217-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Diaphoretic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA19044-9"> </a>  
+                  <a href="https://loinc.org/LA19044-9/">LA19044-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Moist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA15475-9"> </a>  
+                  <a href="https://loinc.org/LA15475-9/">LA15475-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Cold</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17202-5"> </a>  
+                  <a href="https://loinc.org/LA17202-5/">LA17202-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Hot</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA17207-4"> </a>  
+                  <a href="https://loinc.org/LA17207-4/">LA17207-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Warm</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TR-C-Skin-Assessment-VS"/>
+        <version value="0.1.0"/>
+        <title value="Skin Assessment Values"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T20:15:41+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:e8030091-9725-4756-adb6-dbab0d292eef"/>
+          <timestamp value="2025-05-07T20:16:18+02:00"/>
+          <total value="12"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17200-9"/>
+            <display value="Red (erythematous)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17205-8"/>
+            <display value="Mottled"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17198-5"/>
+            <display value="Cyanotic"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17206-6"/>
+            <display value="Pale"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17201-7"/>
+            <display value="Flushed"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17197-7"/>
+            <display value="Clammy"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17199-3"/>
+            <display value="Dry"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA18217-2"/>
+            <display value="Diaphoretic"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA19044-9"/>
+            <display value="Moist"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA15475-9"/>
+            <display value="Cold"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17202-5"/>
+            <display value="Hot"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17207-4"/>
+            <display value="Warm"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

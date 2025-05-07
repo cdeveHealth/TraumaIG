@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TR-C-Skin-Assessment-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-C-Skin-Assessment-VS</b></p><a name=\"TR-C-Skin-Assessment-VS\"> </a><a name=\"hcTR-C-Skin-Assessment-VS\"> </a><a name=\"TR-C-Skin-Assessment-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA17200-9/\">LA17200-9</a></td><td>Red</td></tr><tr><td><a href=\"https://loinc.org/LA17205-8/\">LA17205-8</a></td><td>Mottled</td></tr><tr><td><a href=\"https://loinc.org/LA17198-5/\">LA17198-5</a></td><td>Cyanotic</td></tr><tr><td><a href=\"https://loinc.org/LA17206-6/\">LA17206-6</a></td><td>Pale</td></tr><tr><td><a href=\"https://loinc.org/LA17201-7/\">LA17201-7</a></td><td>Flushed</td></tr><tr><td><a href=\"https://loinc.org/LA17197-7/\">LA17197-7</a></td><td>Clammy</td></tr><tr><td><a href=\"https://loinc.org/LA17199-3/\">LA17199-3</a></td><td>Dry</td></tr><tr><td><a href=\"https://loinc.org/LA18217-2/\">LA18217-2</a></td><td>Diaphoretic</td></tr><tr><td><a href=\"https://loinc.org/LA19044-9/\">LA19044-9</a></td><td>Moist</td></tr><tr><td><a href=\"https://loinc.org/LA15475-9/\">LA15475-9</a></td><td>Cold</td></tr><tr><td><a href=\"https://loinc.org/LA17202-5/\">LA17202-5</a></td><td>Hot</td></tr><tr><td><a href=\"https://loinc.org/LA17207-4/\">LA17207-4</a></td><td>Warm</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TR-C-Skin-Assessment-VS",
+  "version" : "0.1.0",
+  "title" : "Skin Assessment Values",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-07T20:15:41+02:00",
+  "publisher" : "Constantin Renner",
+  "contact" : [{
+    "name" : "Constantin Renner",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "constantinrenner1@gmail.com"
+    }]
+  }],
+  "description" : "Includes LOINC codes related to the Skin assessment panel 72284-3.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA17200-9",
+        "display" : "Red"
+      },
+      {
+        "code" : "LA17205-8",
+        "display" : "Mottled"
+      },
+      {
+        "code" : "LA17198-5",
+        "display" : "Cyanotic"
+      },
+      {
+        "code" : "LA17206-6",
+        "display" : "Pale"
+      },
+      {
+        "code" : "LA17201-7",
+        "display" : "Flushed"
+      },
+      {
+        "code" : "LA17197-7",
+        "display" : "Clammy"
+      },
+      {
+        "code" : "LA17199-3",
+        "display" : "Dry"
+      },
+      {
+        "code" : "LA18217-2",
+        "display" : "Diaphoretic"
+      },
+      {
+        "code" : "LA19044-9",
+        "display" : "Moist"
+      },
+      {
+        "code" : "LA15475-9",
+        "display" : "Cold"
+      },
+      {
+        "code" : "LA17202-5",
+        "display" : "Hot"
+      },
+      {
+        "code" : "LA17207-4",
+        "display" : "Warm"
+      }]
+    }]
+  }
+}

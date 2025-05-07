@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TR-AW-Airway-Clearance-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-AW-Airway-Clearance-VS</b></p><a name=\"TR-AW-Airway-Clearance-VS\"> </a><a name=\"hcTR-AW-Airway-Clearance-VS\"> </a><a name=\"TR-AW-Airway-Clearance-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/10849003\">10849003</a></td><td>Removal of foreign body</td></tr><tr><td><a href=\"http://snomed.info/id/300231003\">300231003</a></td><td>Removal of foreign body from mouth</td></tr><tr><td><a href=\"http://snomed.info/id/274414006\">274414006</a></td><td>Laryngoscopy to remove object</td></tr><tr><td><a href=\"http://snomed.info/id/1338041004\">1338041004</a></td><td>Wheeze clears with coughing</td></tr><tr><td><a href=\"http://snomed.info/id/53950000\">53950000</a></td><td>Respiratory therapy</td></tr><tr><td><a href=\"http://snomed.info/id/230040009\">230040009</a></td><td>Airway suction technique</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TR-AW-Airway-Clearance-VS",
+  "version" : "0.1.0",
+  "title" : "Codes for clearing airway",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-07T20:15:41+02:00",
+  "publisher" : "Constantin Renner",
+  "contact" : [{
+    "name" : "Constantin Renner",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "constantinrenner1@gmail.com"
+    }]
+  }],
+  "description" : "Includes SNOMED CT codes related to airway clearance procedures and findings.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/version/2025-02-01",
+      "concept" : [{
+        "code" : "10849003",
+        "display" : "Removal of foreign body"
+      },
+      {
+        "code" : "300231003",
+        "display" : "Removal of foreign body from mouth"
+      },
+      {
+        "code" : "274414006",
+        "display" : "Laryngoscopy to remove object"
+      },
+      {
+        "code" : "1338041004",
+        "display" : "Wheeze clears with coughing"
+      },
+      {
+        "code" : "53950000",
+        "display" : "Respiratory therapy"
+      },
+      {
+        "code" : "230040009",
+        "display" : "Airway suction technique"
+      }]
+    }]
+  }
+}

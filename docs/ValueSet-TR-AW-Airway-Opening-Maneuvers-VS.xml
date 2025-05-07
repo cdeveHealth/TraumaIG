@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-AW-Airway-Opening-Maneuvers-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-AW-Airway-Opening-Maneuvers-VS</b></p><a name="TR-AW-Airway-Opening-Maneuvers-VS"> </a><a name="hcTR-AW-Airway-Opening-Maneuvers-VS"> </a><a name="TR-AW-Airway-Opening-Maneuvers-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/445392009">445392009</a></td><td>Obtaining airway by head extension</td></tr><tr><td><a href="http://snomed.info/id/232666000">232666000</a></td><td>Jaw thrust</td></tr><tr><td><a href="http://snomed.info/id/427561002">427561002</a></td><td>Modified jaw thrust</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-AW-Airway-Opening-Maneuvers-VS"/>
+  <version value="0.1.0"/>
+  <title value="Opening Maneuvers"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Different Ways of opening the patients mouth"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="445392009"/>
+        <display value="Obtaining airway by head extension"/>
+      </concept>
+      <concept>
+        <code value="232666000"/>
+        <display value="Jaw thrust"/>
+      </concept>
+      <concept>
+        <code value="427561002"/>
+        <display value="Modified jaw thrust"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

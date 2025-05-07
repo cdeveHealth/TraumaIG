@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-AW-Cervical-Spine-Assessment-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-AW-Cervical-Spine-Assessment-VS</b></p><a name="TR-AW-Cervical-Spine-Assessment-VS"> </a><a name="hcTR-AW-Cervical-Spine-Assessment-VS"> </a><a name="TR-AW-Cervical-Spine-Assessment-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/417163006">417163006</a></td><td>Traumatic or non-traumatic injury</td></tr><tr><td><a href="http://snomed.info/id/262522002">262522002</a></td><td>Injury of cervical spine</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-AW-Cervical-Spine-Assessment-VS"/>
+  <version value="0.1.0"/>
+  <title value="Cervical Spine Assessment Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Includes SNOMED CT codes related to cervical spine injuries and assessments."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="417163006"/>
+        <display value="Traumatic or non-traumatic injury"/>
+      </concept>
+      <concept>
+        <code value="262522002"/>
+        <display value="Injury of cervical spine"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS</b></p><a name=\"TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS\"> </a><a name=\"hcTR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS\"> </a><a name=\"TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (Österreich) (German (Austria), de)</b></td></tr><tr><td><a href=\"http://snomed.info/id/301282008\">301282008</a></td><td>Finding of respiration</td><td>Beobachtung der Atmung</td></tr><tr><td><a href=\"http://snomed.info/id/56018004\">56018004</a></td><td>Wheezing</td><td>Giemen</td></tr><tr><td><a href=\"http://snomed.info/id/301285005\">301285005</a></td><td>Finding of sound of breathing</td><td>Feststellung von Atemgeräuschen</td></tr><tr><td><a href=\"http://snomed.info/id/248573009\">248573009</a></td><td>Noisy respiration</td><td>Geräuschvolle Atmung</td></tr><tr><td><a href=\"http://snomed.info/id/248573009\">248573009</a></td><td>Rattling breathing</td><td>Rasselnde Atmung</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS",
+  "version" : "0.1.0",
+  "title" : "Breathing Sounds",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-07T20:15:41+02:00",
+  "publisher" : "Constantin Renner",
+  "contact" : [{
+    "name" : "Constantin Renner",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "constantinrenner1@gmail.com"
+    }]
+  }],
+  "description" : "Certain breathing sounds are an indication for aw obstruction.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/version/2025-02-01",
+      "concept" : [{
+        "code" : "301282008",
+        "display" : "Finding of respiration",
+        "designation" : [{
+          "language" : "de-AT",
+          "value" : "Beobachtung der Atmung"
+        }]
+      },
+      {
+        "code" : "56018004",
+        "display" : "Wheezing",
+        "designation" : [{
+          "language" : "de-AT",
+          "value" : "Giemen"
+        }]
+      },
+      {
+        "code" : "301285005",
+        "display" : "Finding of sound of breathing",
+        "designation" : [{
+          "language" : "de-AT",
+          "value" : "Feststellung von Atemgeräuschen"
+        }]
+      },
+      {
+        "code" : "248573009",
+        "display" : "Noisy respiration",
+        "designation" : [{
+          "language" : "de-AT",
+          "value" : "Geräuschvolle Atmung"
+        }]
+      },
+      {
+        "code" : "248573009",
+        "display" : "Rattling breathing",
+        "designation" : [{
+          "language" : "de-AT",
+          "value" : "Rasselnde Atmung"
+        }]
+      }]
+    }]
+  }
+}

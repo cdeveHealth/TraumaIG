@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TR-GI-Circulation-Impression-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-GI-Circulation-Impression-VS</b></p><a name=\"TR-GI-Circulation-Impression-VS\"> </a><a name=\"hcTR-GI-Circulation-Impression-VS\"> </a><a name=\"TR-GI-Circulation-Impression-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/73155008\">73155008</a></td><td>Abnormal peripheral pulse</td></tr><tr><td><a href=\"http://snomed.info/id/12146004\">12146004</a></td><td>Normal pulse</td></tr><tr><td><a href=\"http://snomed.info/id/15137004\">15137004</a></td><td>Normal radial pulse</td></tr><tr><td><a href=\"http://snomed.info/id/276323006\">276323006</a></td><td>Finding of color of skin</td></tr><tr><td><a href=\"http://snomed.info/id/276323006\">276323006</a></td><td>Finding of color of skin</td></tr><tr><td><a href=\"http://snomed.info/id/297949006\">297949006</a></td><td>Finding of moistness of skin</td></tr><tr><td><a href=\"http://snomed.info/id/248753002\">248753002</a></td><td>Capillary refill</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TR-GI-Circulation-Impression-VS",
+  "version" : "0.1.0",
+  "title" : "General Impression of Circulation",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-07T20:15:41+02:00",
+  "publisher" : "Constantin Renner",
+  "contact" : [{
+    "name" : "Constantin Renner",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "constantinrenner1@gmail.com"
+    }]
+  }],
+  "description" : "Used to judge if patient coulsd be in potential shock",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/version/2025-02-01",
+      "concept" : [{
+        "code" : "73155008",
+        "display" : "Abnormal peripheral pulse"
+      },
+      {
+        "code" : "12146004",
+        "display" : "Normal pulse"
+      },
+      {
+        "code" : "15137004",
+        "display" : "Normal radial pulse"
+      },
+      {
+        "code" : "276323006",
+        "display" : "Finding of color of skin"
+      },
+      {
+        "code" : "276323006",
+        "display" : "Finding of color of skin"
+      },
+      {
+        "code" : "297949006",
+        "display" : "Finding of moistness of skin"
+      },
+      {
+        "code" : "248753002",
+        "display" : "Capillary refill"
+      }]
+    }]
+  }
+}

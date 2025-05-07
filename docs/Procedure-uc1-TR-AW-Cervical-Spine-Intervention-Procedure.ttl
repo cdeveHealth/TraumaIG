@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Procedure/uc1-TR-AW-Cervical-Spine-Intervention-Procedure> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uc1-TR-AW-Cervical-Spine-Intervention-Procedure"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/tr-aw-cervical-spine-intervention-procedure"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/tr-aw-cervical-spine-intervention-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure uc1-TR-AW-Cervical-Spine-Intervention-Procedure</b></p><a name=\"uc1-TR-AW-Cervical-Spine-Intervention-Procedure\"> </a><a name=\"hcuc1-TR-AW-Cervical-Spine-Intervention-Procedure\"> </a><a name=\"uc1-TR-AW-Cervical-Spine-Intervention-Procedure-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-aw-cervical-spine-intervention-procedure.html\">Cervical Spine Intervention</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 426498007}\">Spinal stabilization procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 398041008}\">Cervical spine immobilization</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:426498007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "426498007" ] ;
+       fhir:display [ fhir:v "Spinal stabilization procedure" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:398041008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "398041008" ] ;
+       fhir:display [ fhir:v "Cervical spine immobilization" ]
+     ] ) ;
+     fhir:text [ fhir:v "Cervical spine immobilization" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/uc1-Nomen-Nescio> ;
+     fhir:reference [ fhir:v "Patient/uc1-Nomen-Nescio" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/uc1-Motor-Vehicle-Collision> ;
+     fhir:reference [ fhir:v "Encounter/uc1-Motor-Vehicle-Collision" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

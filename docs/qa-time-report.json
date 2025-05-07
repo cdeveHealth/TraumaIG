@@ -1,0 +1,3164 @@
+{
+  "date" : "Wed, 07 May, 2025 20:16:00 +0200",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-fhir.example.json",
+      "size" : 24279,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 19,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 589
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 244
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 62
+        },
+        {
+          "activity" : "generate2",
+          "start" : 30,
+          "length" : 49
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-uc1-bundle.json",
+      "size" : 9768,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 48
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 30,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tr-general-codes-cs.json",
+      "size" : 1982,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 30,
+          "length" : 892
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Composition-uc1-tr-composition.json",
+      "size" : 7479,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Encounter-uc1-Motor-Vehicle-Collision.json",
+      "size" : 388,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-AW-Breathing-Sound-Observation.json",
+      "size" : 811,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-AW-Cervical-Spine-Assessment-Observation.json",
+      "size" : 890,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 9
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 50,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-AW-Fluids-In-AW-Observation.json",
+      "size" : 812,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-AW-Foreign-Body-AW-Observation.json",
+      "size" : 810,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-AW-Soft-Tissue-Collaps-Observation.json",
+      "size" : 844,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-AW-Structual-Change-In-AW-Observation.json",
+      "size" : 846,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-Br-Rise-Observation.json",
+      "size" : 2987,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-C-Skin-Assessment-Observation.json",
+      "size" : 1818,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-D-Neuro-FAST-Observations.json",
+      "size" : 2184,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-GI-Airway-Patency-Observation.json",
+      "size" : 814,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-GI-Circulatory-Impression-Observation.json",
+      "size" : 845,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-GI-Decision-Making-Observation.json",
+      "size" : 833,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-uc1-TR-GI-Mental-Status-Impression-Observation.json",
+      "size" : 851,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-uc1-Nomen-Nescio.json",
+      "size" : 307,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-uc1-Helicopter-Air-Ambulance-Activation.json",
+      "size" : 724,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-uc1-TR-AW-Airway-Adjuncts-Procedure.json",
+      "size" : 826,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-uc1-TR-AW-Airway-Clearance-Procedure.json",
+      "size" : 792,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-uc1-TR-AW-Cervical-Spine-Intervention-Procedure.json",
+      "size" : 800,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-uc1-TR-AW-Opening-Manuver-Procedure.json",
+      "size" : 781,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-uc1-TR-GI-Circulatory-Impression-Procedure.json",
+      "size" : 799,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-pathologic-side.json",
+      "size" : 1476,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 4
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 74
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 30
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 87
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 521
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-airway-adjuncts-procedure.json",
+      "size" : 1323,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 79
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 132
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 158
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 182
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 162
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 4
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-airway-clearance-procedure.json",
+      "size" : 1290,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 15
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 105
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 107
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 144
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 121
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-breathing-sound-observation.json",
+      "size" : 1359,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 48
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 108
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 128
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 169
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 135
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-cervical-spine-assessment-observation.json",
+      "size" : 1383,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 92
+        },
+        {
+          "activity" : "generate1",
+          "start" : 24,
+          "length" : 124
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 145
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 126
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-cervical-spine-intervention-procedure.json",
+      "size" : 1375,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 88
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 108
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 119
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 99
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-fluids-in-aw-observation.json",
+      "size" : 1327,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 93
+        },
+        {
+          "activity" : "generateLogicalMaps",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 118
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 143
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 110
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-foreign-body-aw-observation.json",
+      "size" : 1349,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 89
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 133
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 109
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-opening-maneuver-procedure.json",
+      "size" : 1311,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 88
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 102
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 113
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 95
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-soft-tissue-collaps-observation.json",
+      "size" : 1370,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 98
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 144
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 107
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-status-observation.json",
+      "size" : 1276,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 92
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 116
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 121
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 109
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-aw-structual-change-in-aw-observation.json",
+      "size" : 1410,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 86
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 121
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 105
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-br-rise-observation.json",
+      "size" : 6232,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 142
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 213
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 221
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 153
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-bundle.json",
+      "size" : 1718,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 78
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 87
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 116
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 188
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 115
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-c-skin-assessment-observation.json",
+      "size" : 4365,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 129
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 193
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 188
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 177
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-composition.json",
+      "size" : 28901,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 55
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 863
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 808
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 540
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 584
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 17
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-d-neuro-fast-observations.json",
+      "size" : 4996,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 22,
+          "length" : 118
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 218
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 187
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 169
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-gi-airwaypatencyobservation.json",
+      "size" : 1303,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 22,
+          "length" : 77
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 130
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 106
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-gi-circulatory-impression-observation.json",
+      "size" : 1370,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 22,
+          "length" : 85
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 119
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 115
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-gi-circulatory-impression-procedure.json",
+      "size" : 1368,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 22,
+          "length" : 79
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 100
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 101
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 89
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-gi-decision-making-observation.json",
+      "size" : 1303,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 80
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 116
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 120
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 106
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-gi-decision-making-procedure.json",
+      "size" : 1329,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 75
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 100
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 96
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 87
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-tr-gi-mental-status-impression-observation.json",
+      "size" : 1363,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 78
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 111
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 105
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-trauma-encounter.json",
+      "size" : 1092,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 92
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 111
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 108
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 96
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-trauma-observation.json",
+      "size" : 1929,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 85
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 116
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 117
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 127
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-trauma-patient.json",
+      "size" : 768,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 21
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 291
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 312
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 351
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 321
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 9
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 68,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-trauma-procedure.json",
+      "size" : 1764,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 65
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 111
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 100
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 89
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 68,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-Anatomical-Terminology.json",
+      "size" : 1538,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 184
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 29
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 51,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-Severity-VS.json",
+      "size" : 776,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-AW-Status-VS.json",
+      "size" : 566,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Adjuncts-VS.json",
+      "size" : 795,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Clearance-VS.json",
+      "size" : 1176,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.json",
+      "size" : 1860,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Obstruction-Causes-Fluid-VS.json",
+      "size" : 1453,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 38
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS.json",
+      "size" : 1118,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Obstruction-Causes-Structure-VS.json",
+      "size" : 1557,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Obstruction-Causes-VS.json",
+      "size" : 647,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Airway-Opening-Maneuvers-VS.json",
+      "size" : 807,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Cervical-Spine-Assessment-VS.json",
+      "size" : 765,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-AW-Cervical-Spine-Intervention-VS.json",
+      "size" : 908,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 18
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-C-Skin-Assessment-VS.json",
+      "size" : 1502,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 32
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-Conditions-VS.json",
+      "size" : 557,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-D-Fast-VS.json",
+      "size" : 1017,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-GI-AW-Patency-VS.json",
+      "size" : 974,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-GI-Circulation-Impression-VS.json",
+      "size" : 1246,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "scan",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-GI-Decision-Making-VS.json",
+      "size" : 731,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-GI-Impression-Procedure-VS.json",
+      "size" : 829,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TR-GI-Mental-Status-VS.json",
+      "size" : 624,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 18,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 19
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/tr-general-codes-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tr-general-codes-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tr-general-codes-cs</b></p><a name=\"tr-general-codes-cs\"> </a><a name=\"hctr-general-codes-cs\"> </a><a name=\"tr-general-codes-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tr-general-codes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">GI<a name=\"tr-general-codes-cs-GI\"> </a></td><td>General Impression</td><td>General Impression Doc</td></tr><tr><td style=\"white-space:nowrap\">GICI<a name=\"tr-general-codes-cs-GICI\"> </a></td><td>GI Circulation Impresseion</td><td>GI Circulation Impression section</td></tr><tr><td style=\"white-space:nowrap\">GIMental<a name=\"tr-general-codes-cs-GIMental\"> </a></td><td>Mental Status</td><td>What is the first impression of the mental state</td></tr><tr><td style=\"white-space:nowrap\">GIGD<a name=\"tr-general-codes-cs-GIGD\"> </a></td><td>GI General Decision Making</td><td>GI General Decision Making Section</td></tr><tr><td style=\"white-space:nowrap\">AWCSP<a name=\"tr-general-codes-cs-AWCSP\"> </a></td><td>Airway and C-Spine Management</td><td>Main section for airway and cervical spine management</td></tr><tr><td style=\"white-space:nowrap\">AWOBS<a name=\"tr-general-codes-cs-AWOBS\"> </a></td><td>Airway Obstruction Causes</td><td>Section for documenting causes of airway obstruction</td></tr><tr><td style=\"white-space:nowrap\">AWPRC<a name=\"tr-general-codes-cs-AWPRC\"> </a></td><td>Airway Procedure</td><td>Section for documenting airway interventions</td></tr><tr><td style=\"white-space:nowrap\">CSPOBS<a name=\"tr-general-codes-cs-CSPOBS\"> </a></td><td>Cervical Spine Observation</td><td>Section for documenting cervical spine assessment</td></tr><tr><td style=\"white-space:nowrap\">CSPPRC<a name=\"tr-general-codes-cs-CSPPRC\"> </a></td><td>Cervical Spine Procedure</td><td>Section for documenting cervical spine interventions</td></tr><tr><td style=\"white-space:nowrap\">br<a name=\"tr-general-codes-cs-br\"> </a></td><td>Breathing</td><td>Breathing Assessment</td></tr><tr><td style=\"white-space:nowrap\">cir<a name=\"tr-general-codes-cs-cir\"> </a></td><td>Circulation</td><td>Circulation Assessment</td></tr><tr><td style=\"white-space:nowrap\">dis<a name=\"tr-general-codes-cs-dis\"> </a></td><td>Disability</td><td>Disability Assessment</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/tr-general-codes-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TR_General_Codes_CS"] ; # 
+  fhir:title [ fhir:v "TR CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-05-05"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Constantin Renner"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Constantin Renner" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "All custom codes relevant for IG"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "GI" ] ;
+     fhir:display [ fhir:v "General Impression" ] ;
+     fhir:definition [ fhir:v "General Impression Doc" ]
+  ] [
+     fhir:code [ fhir:v "GICI" ] ;
+     fhir:display [ fhir:v "GI Circulation Impresseion" ] ;
+     fhir:definition [ fhir:v "GI Circulation Impression section" ]
+  ] [
+     fhir:code [ fhir:v "GIMental" ] ;
+     fhir:display [ fhir:v "Mental Status" ] ;
+     fhir:definition [ fhir:v "What is the first impression of the mental state" ]
+  ] [
+     fhir:code [ fhir:v "GIGD" ] ;
+     fhir:display [ fhir:v "GI General Decision Making" ] ;
+     fhir:definition [ fhir:v "GI General Decision Making Section" ]
+  ] [
+     fhir:code [ fhir:v "AWCSP" ] ;
+     fhir:display [ fhir:v "Airway and C-Spine Management" ] ;
+     fhir:definition [ fhir:v "Main section for airway and cervical spine management" ]
+  ] [
+     fhir:code [ fhir:v "AWOBS" ] ;
+     fhir:display [ fhir:v "Airway Obstruction Causes" ] ;
+     fhir:definition [ fhir:v "Section for documenting causes of airway obstruction" ]
+  ] [
+     fhir:code [ fhir:v "AWPRC" ] ;
+     fhir:display [ fhir:v "Airway Procedure" ] ;
+     fhir:definition [ fhir:v "Section for documenting airway interventions" ]
+  ] [
+     fhir:code [ fhir:v "CSPOBS" ] ;
+     fhir:display [ fhir:v "Cervical Spine Observation" ] ;
+     fhir:definition [ fhir:v "Section for documenting cervical spine assessment" ]
+  ] [
+     fhir:code [ fhir:v "CSPPRC" ] ;
+     fhir:display [ fhir:v "Cervical Spine Procedure" ] ;
+     fhir:definition [ fhir:v "Section for documenting cervical spine interventions" ]
+  ] [
+     fhir:code [ fhir:v "br" ] ;
+     fhir:display [ fhir:v "Breathing" ] ;
+     fhir:definition [ fhir:v "Breathing Assessment" ]
+  ] [
+     fhir:code [ fhir:v "cir" ] ;
+     fhir:display [ fhir:v "Circulation" ] ;
+     fhir:definition [ fhir:v "Circulation Assessment" ]
+  ] [
+     fhir:code [ fhir:v "dis" ] ;
+     fhir:display [ fhir:v "Disability" ] ;
+     fhir:definition [ fhir:v "Disability Assessment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

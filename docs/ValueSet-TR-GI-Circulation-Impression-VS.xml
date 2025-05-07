@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-GI-Circulation-Impression-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-GI-Circulation-Impression-VS</b></p><a name="TR-GI-Circulation-Impression-VS"> </a><a name="hcTR-GI-Circulation-Impression-VS"> </a><a name="TR-GI-Circulation-Impression-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/73155008">73155008</a></td><td>Abnormal peripheral pulse</td></tr><tr><td><a href="http://snomed.info/id/12146004">12146004</a></td><td>Normal pulse</td></tr><tr><td><a href="http://snomed.info/id/15137004">15137004</a></td><td>Normal radial pulse</td></tr><tr><td><a href="http://snomed.info/id/276323006">276323006</a></td><td>Finding of color of skin</td></tr><tr><td><a href="http://snomed.info/id/276323006">276323006</a></td><td>Finding of color of skin</td></tr><tr><td><a href="http://snomed.info/id/297949006">297949006</a></td><td>Finding of moistness of skin</td></tr><tr><td><a href="http://snomed.info/id/248753002">248753002</a></td><td>Capillary refill</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-GI-Circulation-Impression-VS"/>
+  <version value="0.1.0"/>
+  <title value="General Impression of Circulation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Used to judge if patient coulsd be in potential shock"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="73155008"/>
+        <display value="Abnormal peripheral pulse"/>
+      </concept>
+      <concept>
+        <code value="12146004"/>
+        <display value="Normal pulse"/>
+      </concept>
+      <concept>
+        <code value="15137004"/>
+        <display value="Normal radial pulse"/>
+      </concept>
+      <concept>
+        <code value="276323006"/>
+        <display value="Finding of color of skin"/>
+      </concept>
+      <concept>
+        <code value="276323006"/>
+        <display value="Finding of color of skin"/>
+      </concept>
+      <concept>
+        <code value="297949006"/>
+        <display value="Finding of moistness of skin"/>
+      </concept>
+      <concept>
+        <code value="248753002"/>
+        <display value="Capillary refill"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

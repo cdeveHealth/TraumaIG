@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TR-AW-Airway-Obstruction-Causes-Structure-VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-AW-Airway-Obstruction-Causes-Structure-VS</b></p><a name=\"TR-AW-Airway-Obstruction-Causes-Structure-VS\"> </a><a name=\"hcTR-AW-Airway-Obstruction-Causes-Structure-VS\"> </a><a name=\"TR-AW-Airway-Obstruction-Causes-Structure-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/52653008\">52653008</a></td><td>Animal bite wound of neck</td></tr><tr><td><a href=\"http://snomed.info/id/428152007\">428152007</a></td><td>Penetrating wound of neck</td></tr><tr><td><a href=\"http://snomed.info/id/283653006\">283653006</a></td><td>Nail wound of neck</td></tr><tr><td><a href=\"http://snomed.info/id/397180001\">397180001</a></td><td>Open wound of head and/or neck</td></tr><tr><td><a href=\"http://snomed.info/id/283789008\">283789008</a></td><td>Animal bite wound of head and neck</td></tr><tr><td><a href=\"http://snomed.info/id/10954491000119108\">10954491000119108</a></td><td>Gunshot wound of neck</td></tr><tr><td><a href=\"http://snomed.info/id/722635008\">722635008</a></td><td>Traumatic amputation of part of head</td></tr><tr><td><a href=\"http://snomed.info/id/417163006\">417163006</a></td><td>Traumatic or non-traumatic injury</td></tr><tr><td><a href=\"http://snomed.info/id/82271004\">82271004</a></td><td>Injury of head</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Structure-VS",
+  "version" : "0.1.0",
+  "title" : "Obstruction caused due to change in Neck Structure",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-07T20:15:41+02:00",
+  "publisher" : "Constantin Renner",
+  "contact" : [{
+    "name" : "Constantin Renner",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "constantinrenner1@gmail.com"
+    }]
+  }],
+  "description" : "Trauma to the neck or head can cause airway to close up.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/version/2025-02-01",
+      "concept" : [{
+        "code" : "52653008",
+        "display" : "Animal bite wound of neck"
+      },
+      {
+        "code" : "428152007",
+        "display" : "Penetrating wound of neck"
+      },
+      {
+        "code" : "283653006",
+        "display" : "Nail wound of neck"
+      },
+      {
+        "code" : "397180001",
+        "display" : "Open wound of head and/or neck"
+      },
+      {
+        "code" : "283789008",
+        "display" : "Animal bite wound of head and neck"
+      },
+      {
+        "code" : "10954491000119108",
+        "display" : "Gunshot wound of neck"
+      },
+      {
+        "code" : "722635008",
+        "display" : "Traumatic amputation of part of head"
+      },
+      {
+        "code" : "417163006",
+        "display" : "Traumatic or non-traumatic injury"
+      },
+      {
+        "code" : "82271004",
+        "display" : "Injury of head"
+      }]
+    }]
+  }
+}

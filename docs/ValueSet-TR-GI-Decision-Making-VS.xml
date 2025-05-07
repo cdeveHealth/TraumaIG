@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-GI-Decision-Making-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-GI-Decision-Making-VS</b></p><a name="TR-GI-Decision-Making-VS"> </a><a name="hcTR-GI-Decision-Making-VS"> </a><a name="TR-GI-Decision-Making-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/716734002">716734002</a></td><td>Patient does not need urgent care</td></tr><tr><td><a href="http://snomed.info/id/103391001">103391001</a></td><td/></tr><tr><td><a href="http://snomed.info/id/1357728000">1357728000</a></td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-GI-Decision-Making-VS"/>
+  <version value="0.1.0"/>
+  <title value="Decision Codes General Impression"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Roughly defines what options after General Impression"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="716734002"/>
+        <display value="Patient does not need urgent care"/>
+      </concept>
+      <concept>
+        <code value="103391001"/>
+      </concept>
+      <concept>
+        <code value="1357728000"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS</b></p><a name=\"TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS\"> </a><a name=\"hcTR-AW-Airway-Obstruction-Causes-Foreign-Body-VS\"> </a><a name=\"TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1162521000\">1162521000</a></td><td>Fracture of teeth</td></tr><tr><td><a href=\"http://snomed.info/id/278616006\">278616006</a></td><td>Fractured denture</td></tr><tr><td><a href=\"http://snomed.info/id/1303387001\">1303387001</a></td><td>Fracture of bone of jaw</td></tr><tr><td><a href=\"http://snomed.info/id/429491000\">429491000</a></td><td>Obstruction of airway caused by foreign body</td></tr><tr><td><a href=\"http://snomed.info/id/427890000\">427890000</a></td><td>Partial obstruction of airway caused by foreign body</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/TR-AW-Airway-Obstruction-Causes-Foreign-Body-VS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Foreign Body Obstruction of AW"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-05-07T20:15:41+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Constantin Renner"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Constantin Renner" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Different foreign bodies that can cause an obstruction"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/version/2025-02-01" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1162521000" ] ;
+         fhir:display [ fhir:v "Fracture of teeth" ]
+       ] [
+         fhir:code [ fhir:v "278616006" ] ;
+         fhir:display [ fhir:v "Fractured denture" ]
+       ] [
+         fhir:code [ fhir:v "1303387001" ] ;
+         fhir:display [ fhir:v "Fracture of bone of jaw" ]
+       ] [
+         fhir:code [ fhir:v "429491000" ] ;
+         fhir:display [ fhir:v "Obstruction of airway caused by foreign body" ]
+       ] [
+         fhir:code [ fhir:v "427890000" ] ;
+         fhir:display [ fhir:v "Partial obstruction of airway caused by foreign body" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

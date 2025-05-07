@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-GI-AW-Patency-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-GI-AW-Patency-VS</b></p><a name="TR-GI-AW-Patency-VS"> </a><a name="hcTR-GI-AW-Patency-VS"> </a><a name="TR-GI-AW-Patency-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/286368006">286368006</a></td><td>Able to speak</td></tr><tr><td><a href="http://snomed.info/id/286378009">286378009</a></td><td>Difficulty talking</td></tr><tr><td><a href="http://snomed.info/id/286371003">286371003</a></td><td>Does not speak</td></tr><tr><td><a href="http://snomed.info/id/274657005">274657005</a></td><td>Change in voice</td></tr><tr><td><a href="http://snomed.info/id/301282008">301282008</a></td><td>Finding of respiration</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-GI-AW-Patency-VS"/>
+  <version value="0.1.0"/>
+  <title value="General Impresion AW Patency"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Codes related to Blickdiagnose AW Patency"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="286368006"/>
+        <display value="Able to speak"/>
+      </concept>
+      <concept>
+        <code value="286378009"/>
+        <display value="Difficulty talking"/>
+      </concept>
+      <concept>
+        <code value="286371003"/>
+        <display value="Does not speak"/>
+      </concept>
+      <concept>
+        <code value="274657005"/>
+        <display value="Change in voice"/>
+      </concept>
+      <concept>
+        <code value="301282008"/>
+        <display value="Finding of respiration"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,277 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Bundle/uc1-bundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uc1-bundle"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/tr-bundle"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/tr-bundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://example.org/fhir/bundles"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "uc1-bundle-001" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2025-01-01T19:01:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "Composition/uc1-tr-composition"^^xsd:anyURI ] ;
+     fhir:resource ( <Composition/uc1-tr-composition> )
+  ] ) . # 
+
+<Composition/uc1-tr-composition> a fhir:Composition ;
+  fhir:id [ fhir:v "uc1-tr-composition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/tr-composition"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/tr-composition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_uc1-tr-composition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition uc1-tr-composition</b></p><a name=\"uc1-tr-composition\"> </a><a name=\"hcuc1-tr-composition\"> </a><a name=\"uc1-tr-composition-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-composition.html\">TR Composition</a></p></div><p><b>identifier</b>: tr-composition-uc1</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 67796-3}\">EMS patient care report - version 3 Document NEMSIS</span></p><p><b>encounter</b>: <a href=\"Encounter/uc1-motor-vehicle-collision\">Encounter/uc1-motor-vehicle-collision</a></p><p><b>date</b>: 2025-01-01 19:00:00+0200</p><p><b>author</b>: <a href=\"Patient/uc1-nomen-nescio\">Patient/uc1-nomen-nescio</a></p><p><b>title</b>: Primary Survey Protocol</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "tr-composition-uc1" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:67796-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67796-3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/uc1-nomen-nescio> ;
+     fhir:reference [ fhir:v "Patient/uc1-nomen-nescio" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/uc1-motor-vehicle-collision> ;
+     fhir:reference [ fhir:v "Encounter/uc1-motor-vehicle-collision" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-01-01T19:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://example.org/Patient/uc1-nomen-nescio> ;
+     fhir:reference [ fhir:v "Patient/uc1-nomen-nescio" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Primary Survey Protocol"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "General Impression" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GI" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>General Impression Section</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:section ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "GIAWP" ]
+         ] )
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Airway-Patency-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Airway-Patency-Observation" ]
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "GICI" ]
+         ] )
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Circulatory-Cmpression-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Circulatory-Cmpression-Observation" ]
+       ] [
+         fhir:link <http://example.org/Procedure/uc1-TR-GI-Circulatory-Impression-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-GI-Circulatory-Impression-Procedure" ]
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "GIMental" ]
+         ] )
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Mental-Status-Impression-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Mental-Status-Impression-Observation" ]
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "GIGD" ]
+         ] )
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/uc1-TR-GI-Decision-Making-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-GI-Decision-Making-Observation" ]
+       ] [
+         fhir:link <http://example.org/Procedure/uc1-TR-GI-Decision-Making-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-GI-Decision-Making-Procedure" ]
+       ] )
+     ] )
+  ] [
+     fhir:title [ fhir:v "Airway and C-Spine Management" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AWCSP" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Airway and C-Spine Section</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:section ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "AWOBS" ]
+         ] )
+       ] ;
+       fhir:section ( [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-AW-Status-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-AW-Status-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-AW-Fluids-In-AW-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-AW-Fluids-In-AW-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-AW-Foreign-Body-AW-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-AW-Foreign-Body-AW-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-AW-Breathing-Sound-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-AW-Breathing-Sound-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-AW-Structual-Change-In-AW-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-AW-Structual-Change-In-AW-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-AW-Soft-Tissue-Collaps-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-AW-Soft-Tissue-Collaps-Observation" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "AWPRC" ]
+         ] )
+       ] ;
+       fhir:section ( [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-AW-Opening-Manuver-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Opening-Manuver-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-AW-Airway-Clearance-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Airway-Clearance-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CSPOBS" ]
+         ] )
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/uc1-TR-AW-Cervical-Spine-Assessment-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-AW-Cervical-Spine-Assessment-Observation" ]
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CSPPRC" ]
+         ] )
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Procedure/uc1-TR-AW-Cervical-Spine-Intervention-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Cervical-Spine-Intervention-Procedure" ]
+       ] )
+     ] )
+  ] [
+     fhir:title [ fhir:v "Breathing Section" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "br" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Breathing Section</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Observation/uc1-TR-BR-Rise-Observation> ;
+       fhir:reference [ fhir:v "Observation/uc1-TR-BR-Rise-Observation" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Circulation" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cir" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Circulation Section</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Observation/uc1-TR-C-Skin-assessment-Observation> ;
+       fhir:reference [ fhir:v "Observation/uc1-TR-C-Skin-assessment-Observation" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Disability" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dis" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Disability Section</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Observation/uc1-TR-D-Neuro-FAST-Observation> ;
+       fhir:reference [ fhir:v "Observation/uc1-TR-D-Neuro-FAST-Observation" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

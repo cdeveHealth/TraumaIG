@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-AW-Cervical-Spine-Intervention-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-AW-Cervical-Spine-Intervention-VS</b></p><a name="TR-AW-Cervical-Spine-Intervention-VS"> </a><a name="hcTR-AW-Cervical-Spine-Intervention-VS"> </a><a name="TR-AW-Cervical-Spine-Intervention-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/362958002">362958002</a></td><td>Procedure by site</td></tr><tr><td><a href="http://snomed.info/id/398041008">398041008</a></td><td>Cervical spine immobilization</td></tr><tr><td><a href="http://snomed.info/id/449199004">449199004</a></td><td>Manual inline stabilization of cervical spine</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-AW-Cervical-Spine-Intervention-VS"/>
+  <version value="0.1.0"/>
+  <title value="Cervical Spine Intervention Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Includes SNOMED CT codes related to cervical spine immobilization and stabilization procedures."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="362958002"/>
+        <display value="Procedure by site"/>
+      </concept>
+      <concept>
+        <code value="398041008"/>
+        <display value="Cervical spine immobilization"/>
+      </concept>
+      <concept>
+        <code value="449199004"/>
+        <display value="Manual inline stabilization of cervical spine"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

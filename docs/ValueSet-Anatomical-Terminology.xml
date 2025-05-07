@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Anatomical-Terminology"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Anatomical-Terminology</b></p><a name="Anatomical-Terminology"> </a><a name="hcAnatomical-Terminology"> </a><a name="Anatomical-Terminology-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/7771000">7771000</a></td><td>Left (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/51440002">51440002</a></td><td>Right and left (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/24028007">24028007</a></td><td>Right (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/66787007">66787007</a></td><td>Cephalic (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/3583002">3583002</a></td><td>Caudal (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/255549009">255549009</a></td><td>Anterior (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/255561001">255561001</a></td><td>Medial (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/49370004">49370004</a></td><td>Lateral (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/40415009">40415009</a></td><td>Proximal (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/46053002">46053002</a></td><td>Distal (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/Anatomical-Terminology"/>
+  <version value="0.1.0"/>
+  <title value="VS Anatomical Terminology"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Anatomical Terminology"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="7771000"/>
+        <display value="Left (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="51440002"/>
+        <display value="Right and left (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="24028007"/>
+        <display value="Right (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="66787007"/>
+        <display value="Cephalic (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="3583002"/>
+        <display value="Caudal (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="255549009"/>
+        <display value="Anterior (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="255561001"/>
+        <display value="Medial (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="49370004"/>
+        <display value="Lateral (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="40415009"/>
+        <display value="Proximal (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="46053002"/>
+        <display value="Distal (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

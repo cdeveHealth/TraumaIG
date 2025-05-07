@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tr-general-codes-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tr-general-codes-cs</b></p><a name="tr-general-codes-cs"> </a><a name="hctr-general-codes-cs"> </a><a name="tr-general-codes-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tr-general-codes-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">GI<a name="tr-general-codes-cs-GI"> </a></td><td>General Impression</td><td>General Impression Doc</td></tr><tr><td style="white-space:nowrap">GICI<a name="tr-general-codes-cs-GICI"> </a></td><td>GI Circulation Impresseion</td><td>GI Circulation Impression section</td></tr><tr><td style="white-space:nowrap">GIMental<a name="tr-general-codes-cs-GIMental"> </a></td><td>Mental Status</td><td>What is the first impression of the mental state</td></tr><tr><td style="white-space:nowrap">GIGD<a name="tr-general-codes-cs-GIGD"> </a></td><td>GI General Decision Making</td><td>GI General Decision Making Section</td></tr><tr><td style="white-space:nowrap">AWCSP<a name="tr-general-codes-cs-AWCSP"> </a></td><td>Airway and C-Spine Management</td><td>Main section for airway and cervical spine management</td></tr><tr><td style="white-space:nowrap">AWOBS<a name="tr-general-codes-cs-AWOBS"> </a></td><td>Airway Obstruction Causes</td><td>Section for documenting causes of airway obstruction</td></tr><tr><td style="white-space:nowrap">AWPRC<a name="tr-general-codes-cs-AWPRC"> </a></td><td>Airway Procedure</td><td>Section for documenting airway interventions</td></tr><tr><td style="white-space:nowrap">CSPOBS<a name="tr-general-codes-cs-CSPOBS"> </a></td><td>Cervical Spine Observation</td><td>Section for documenting cervical spine assessment</td></tr><tr><td style="white-space:nowrap">CSPPRC<a name="tr-general-codes-cs-CSPPRC"> </a></td><td>Cervical Spine Procedure</td><td>Section for documenting cervical spine interventions</td></tr><tr><td style="white-space:nowrap">br<a name="tr-general-codes-cs-br"> </a></td><td>Breathing</td><td>Breathing Assessment</td></tr><tr><td style="white-space:nowrap">cir<a name="tr-general-codes-cs-cir"> </a></td><td>Circulation</td><td>Circulation Assessment</td></tr><tr><td style="white-space:nowrap">dis<a name="tr-general-codes-cs-dis"> </a></td><td>Disability</td><td>Disability Assessment</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tr-general-codes-cs"/>
+  <version value="0.1.0"/>
+  <name value="TR_General_Codes_CS"/>
+  <title value="TR CodeSystem"/>
+  <status value="draft"/>
+  <date value="2025-05-05"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="All custom codes relevant for IG"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="GI"/>
+    <display value="General Impression"/>
+    <definition value="General Impression Doc"/>
+  </concept>
+  <concept>
+    <code value="GICI"/>
+    <display value="GI Circulation Impresseion"/>
+    <definition value="GI Circulation Impression section"/>
+  </concept>
+  <concept>
+    <code value="GIMental"/>
+    <display value="Mental Status"/>
+    <definition value="What is the first impression of the mental state"/>
+  </concept>
+  <concept>
+    <code value="GIGD"/>
+    <display value="GI General Decision Making"/>
+    <definition value="GI General Decision Making Section"/>
+  </concept>
+  <concept>
+    <code value="AWCSP"/>
+    <display value="Airway and C-Spine Management"/>
+    <definition value="Main section for airway and cervical spine management"/>
+  </concept>
+  <concept>
+    <code value="AWOBS"/>
+    <display value="Airway Obstruction Causes"/>
+    <definition value="Section for documenting causes of airway obstruction"/>
+  </concept>
+  <concept>
+    <code value="AWPRC"/>
+    <display value="Airway Procedure"/>
+    <definition value="Section for documenting airway interventions"/>
+  </concept>
+  <concept>
+    <code value="CSPOBS"/>
+    <display value="Cervical Spine Observation"/>
+    <definition value="Section for documenting cervical spine assessment"/>
+  </concept>
+  <concept>
+    <code value="CSPPRC"/>
+    <display value="Cervical Spine Procedure"/>
+    <definition value="Section for documenting cervical spine interventions"/>
+  </concept>
+  <concept>
+    <code value="br"/>
+    <display value="Breathing"/>
+    <definition value="Breathing Assessment"/>
+  </concept>
+  <concept>
+    <code value="cir"/>
+    <display value="Circulation"/>
+    <definition value="Circulation Assessment"/>
+  </concept>
+  <concept>
+    <code value="dis"/>
+    <display value="Disability"/>
+    <definition value="Disability Assessment"/>
+  </concept>
+</CodeSystem>

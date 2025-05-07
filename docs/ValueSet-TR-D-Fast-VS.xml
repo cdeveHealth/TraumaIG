@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TR-D-Fast-VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TR-D-Fast-VS</b></p><a name="TR-D-Fast-VS"> </a><a name="hcTR-D-Fast-VS"> </a><a name="TR-D-Fast-VS-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/280816001">280816001</a></td><td>Facial palsy (disorder)</td></tr><tr><td><a href="http://snomed.info/id/249944006">249944006</a></td><td>Monoparesis - arm (disorder)</td></tr><tr><td><a href="http://snomed.info/id/8011004">8011004</a></td><td>Dysarthria (finding)</td></tr><tr><td><a href="http://snomed.info/id/87486003">87486003</a></td><td>Aphasia (finding)</td></tr><tr><td><a href="http://snomed.info/id/405795006">405795006</a></td><td>Time of symptom onset (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TR-D-Fast-VS"/>
+  <version value="0.1.0"/>
+  <title value="VS for FAST Assessment"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T20:15:41+02:00"/>
+  <publisher value="Constantin Renner"/>
+  <contact>
+    <name value="Constantin Renner"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="constantinrenner1@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for  SNOMED CT concepts used for a FAST assessment."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/version/2025-02-01"/>
+      <concept>
+        <code value="280816001"/>
+        <display value="Facial palsy (disorder)"/>
+      </concept>
+      <concept>
+        <code value="249944006"/>
+        <display value="Monoparesis - arm (disorder)"/>
+      </concept>
+      <concept>
+        <code value="8011004"/>
+        <display value="Dysarthria (finding)"/>
+      </concept>
+      <concept>
+        <code value="87486003"/>
+        <display value="Aphasia (finding)"/>
+      </concept>
+      <concept>
+        <code value="405795006"/>
+        <display value="Time of symptom onset (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
