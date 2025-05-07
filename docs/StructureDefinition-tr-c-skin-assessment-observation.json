@@ -10,13 +10,13 @@
   "name" : "TR_C_Skin_Assessment_Observation",
   "title" : "Skin assessment",
   "status" : "draft",
-  "date" : "2025-05-07T20:15:41+02:00",
+  "date" : "2025-05-07T21:31:29+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://github.com/cdeveHealth"
     },
     {
       "system" : "email",

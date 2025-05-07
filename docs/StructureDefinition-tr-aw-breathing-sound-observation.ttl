@@ -19,13 +19,13 @@
   fhir:name [ fhir:v "TR_AW_Breathing_Sound_Observation"] ; # 
   fhir:title [ fhir:v "Breathing Sounds Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-07T20:15:41+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-07T21:31:29+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:value [ fhir:v "https://github.com/cdeveHealth" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "constantinrenner1@gmail.com" ]

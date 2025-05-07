@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1f90891f-fdd9-40c6-b1e6-27b6bb5aeee4"/>
+  <id value="535d01db-b239-4a8f-b40f-0cf7271a26e0"/>
   <meta>
-    <lastUpdated value="2025-05-07T20:16:00.023+02:00"/>
+    <lastUpdated value="2025-05-07T21:31:45.011+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -134,10 +134,10 @@
         <title value="Skin Assessment Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-05-07T20:15:41+02:00"/>
+        <date value="2025-05-07T21:31:29+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:e8030091-9725-4756-adb6-dbab0d292eef"/>
-          <timestamp value="2025-05-07T20:16:18+02:00"/>
+          <identifier value="urn:uuid:4f518324-2305-4c9b-837c-ef41f80a0356"/>
+          <timestamp value="2025-05-07T21:32:03+02:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>

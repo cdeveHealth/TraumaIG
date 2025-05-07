@@ -16,7 +16,7 @@
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://github.com/cdeveHealth"
     },
     {
       "system" : "email",

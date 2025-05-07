@@ -16,13 +16,13 @@
   <name value="TR_GI_Circulatory_Impression_Observation"/>
   <title value="General Impression Circulatory Observation"/>
   <status value="draft"/>
-  <date value="2025-05-07T20:15:41+02:00"/>
+  <date value="2025-05-07T21:31:29+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://github.com/cdeveHealth"/>
     </telecom>
     <telecom>
       <system value="email"/>
