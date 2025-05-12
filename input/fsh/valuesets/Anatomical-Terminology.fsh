@@ -38,3 +38,6 @@ Description: "Anatomical Terminology"
 
 * compose.include.concept[+].code = #46053002
 * compose.include.concept[=].display = "Distal (qualifier value)"
+
+* compose.include.concept[+].code = #119567009
+* compose.include.concept[=].display = "Structure of artery of head (body structure)"

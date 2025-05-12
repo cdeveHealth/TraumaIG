@@ -17,3 +17,14 @@ Description: "ValueSet expressing the severity or presence of something"
 
 * compose.include.concept[+].code = #2667000
 * compose.include.concept[=].display = "Absent (qualifier value)"
+
+* compose.include.concept[+].code = #255361000
+* compose.include.concept[=].display = "Slow (qualifier value)"
+
+
+* compose.include.concept[+].code = #277748003
+* compose.include.concept[=].display = "Fast (qualifier value)"
+
+
+* compose.include.concept[+].code = #17621005
+* compose.include.concept[=].display = "  Normal (qualifier value)"

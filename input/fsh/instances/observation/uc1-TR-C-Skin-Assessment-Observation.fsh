@@ -1,5 +1,5 @@
-Instance: uc1-TR-C-Skin-Assessment-Observation
-InstanceOf: TR_C_Skin_Assessment_Observation
+Instance: uc1-TR-Circulation-Skin-Assessment-Observation
+InstanceOf: TR_Circulation_Skin_Assessment_Observation
 Title: "Skin assessment"
 Description: "Skin assessment for trauma using LOINC 72284-3 Panel."
 Usage: #example

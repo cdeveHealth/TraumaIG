@@ -180,7 +180,7 @@ Description: "Structured documentation of the primary clinical assessment includ
 * section[TR-Circulation-Section].code = $TR-General-Codes-CS#cir
 * section[TR-Circulation-Section].text 1..1
 * section[TR-Circulation-Section].text ^short = "Human narrative"
-* section[TR-Circulation-Section].entry only Reference(TR_C_Skin_Assessment_Observation)
+* section[TR-Circulation-Section].entry only Reference(TR_Circulation_Skin_Assessment_Observation)
 
 // Section: Disability (neurological function - FAST assessment and more to come)
 * section[TR-Disability-Section] ^short = "Disability"

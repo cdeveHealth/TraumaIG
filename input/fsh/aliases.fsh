@@ -30,6 +30,7 @@ Alias: $TR-AW-Cervical-Spine-Intervention-VS =                          http://e
 
 //--- Circulation
 Alias: $TR-C-Skin-Assessment-VS =                                       http://example.com/ValueSet/TR-C-Skin-Assessment-VS
+Alias: $TR-Circulation-Bleeding-Control-VS =                            http://example.com/ValueSet/TR-Circulation-Bleeding-Control-VS
 
 //--- Disability 
 Alias: $TR-D-Fast-VS =                                                  http://example.com/ValueSet/TR-D-Fast-VS
