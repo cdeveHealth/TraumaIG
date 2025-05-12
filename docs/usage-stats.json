@@ -24,6 +24,12 @@
         "title": "Base Trauma IG Observation"
       }
     ],
+    "MedicationAdministration": [
+      {
+        "url": "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma",
+        "title": "MedicationAdministration of Oxygen"
+      }
+    ],
     "Bundle": [
       {
         "url": "http://example.org/StructureDefinition/tr-bundle",

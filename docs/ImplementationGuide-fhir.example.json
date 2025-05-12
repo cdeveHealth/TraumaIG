@@ -9,13 +9,13 @@
   "version" : "0.1.0",
   "name" : "TraumaIG",
   "status" : "draft",
-  "date" : "2025-05-07T21:31:29+02:00",
+  "date" : "2025-05-12T20:06:16+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://github.com/cdeveHealth"
+      "value" : "http://example.org/example-publisher"
     },
     {
       "system" : "email",
@@ -609,6 +609,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-medication-oxygen-procedure"
+      },
+      "name" : "Administration of Oxygen",
+      "description" : "Procedure to describe  the administration of Oxygen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Procedure"
       }],
       "reference" : {
@@ -801,6 +813,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-circulation-cardiac-arrest-observation"
+      },
+      "name" : "Cardiac Arrest",
+      "description" : "Low Blood Pressure and absent pulse in arteria carotis is a sure sign of caardiac arrest.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-circulation-cpr-procedure"
+      },
+      "name" : "Cardiopulmonary resuscitation",
+      "description" : "Doing Cardiopulmonary resuscitation due to cardiac arrest",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -964,6 +1000,18 @@
       },
       "name" : "Decision Making Observation",
       "description" : "Observations of Immediate Actions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TR-Circulation-Bleeding-Control-VS"
+      },
+      "name" : "Different Codes for Bleeding Control",
+      "description" : "Getting the patient to stop bleeding with these different methods.",
       "exampleBoolean" : false
     },
     {
@@ -1185,6 +1233,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-medication-oxygen-ma"
+      },
+      "name" : "MedicationAdministration of Oxygen",
+      "description" : "Procedure to describe the administration of Oxygen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1200,10 +1260,46 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure"
+      },
+      "name" : "Needle decomp because of tension pneumothorax",
+      "description" : "Performing needle decompression because of tension pneumothorax",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-finding-respiration-rate-observation"
+      },
+      "name" : "Observation of Breathing rate",
+      "description" : "Observation of the breathing rate of the patient. Slow - Normal - Fast.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tr-gi-mental-status-impression-observation"
       },
       "name" : "Observation of General Impression of Mental State of Patient",
       "description" : "Quick overview of patient mental state.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"
+      },
+      "name" : "Observation of SpO2",
+      "description" : "Observation of Oxygen Saturation",
       "exampleBoolean" : false
     },
     {
@@ -1248,10 +1344,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tr-circulation-bleeding-control-vs"
+      },
+      "name" : "Procedure for Bleeding Control",
+      "description" : "Procedures to control bleeding of patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tr-gi-circulatory-impression-procedure"
       },
       "name" : "Procedures to obtain a circulatory impression",
       "description" : "Procedures to get an impression of the circulatory situation of a patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-bag-mask-procedure"
+      },
+      "name" : "Respiratory assist, manual",
+      "description" : "Performing needle decompression because of tension pneumothorax",
       "exampleBoolean" : false
     },
     {
@@ -1284,7 +1404,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tr-c-skin-assessment-observation"
+        "reference" : "StructureDefinition/tr-circulation-skin-assessment-observation"
       },
       "name" : "Skin assessment",
       "description" : "Skin assessment for trauma using LOINC 72284-3 Panel.",
@@ -1296,11 +1416,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/uc1-TR-C-Skin-Assessment-Observation"
+        "reference" : "Observation/uc1-TR-Circulation-Skin-Assessment-Observation"
       },
       "name" : "Skin assessment",
       "description" : "Skin assessment for trauma using LOINC 72284-3 Panel.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/tr-c-skin-assessment-observation"
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-skin-assessment-observation"
     },
     {
       "extension" : [{
@@ -1408,6 +1528,18 @@
       },
       "name" : "TR Composition",
       "description" : "Structured documentation of the primary clinical assessment including airway, breathing, circulation and disability.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-exp-examination-procedure"
+      },
+      "name" : "Trauma Check",
+      "description" : "Procedure of checking patient for signs of trauma.",
       "exampleBoolean" : false
     },
     {

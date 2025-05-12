@@ -98,6 +98,48 @@
     "name" : "TR_AW_Structual_Change_In_AW_Observation"
   },
   {
+    "id" : "tr-br-breathing-bag-mask-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-bag-mask-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Breathing_Bag_Mask_Procedure"
+  },
+  {
+    "id" : "tr-br-breathing-finding-oxygen-saturation-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Breathing_Finding_Oxygen_Saturation_Observation"
+  },
+  {
+    "id" : "tr-br-breathing-finding-respiration-rate-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-finding-respiration-rate-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Breathing_Finding_Respiration_Rate_Observation"
+  },
+  {
+    "id" : "tr-br-breathing-intervention-tension-pneumothorax-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Breathing_Inervention_Tension_Pneumothorax_Procedure"
+  },
+  {
+    "id" : "tr-br-breathing-medication-oxygen-ma",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma",
+    "version" : "0.1.0",
+    "name" : "Tr_Br_Breathing_Medication_Oxygen_MA"
+  },
+  {
+    "id" : "tr-br-breathing-medication-oxygen-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Breathing_Medication_Oxygen_Procedure"
+  },
+  {
     "id" : "tr-br-rise-observation",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/tr-br-rise-observation",
@@ -112,11 +154,32 @@
     "name" : "TR_Bundle"
   },
   {
-    "id" : "tr-c-skin-assessment-observation",
+    "id" : "tr-circulation-bleeding-control-vs",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/tr-c-skin-assessment-observation",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs",
     "version" : "0.1.0",
-    "name" : "TR_C_Skin_Assessment_Observation"
+    "name" : "TR_Circulation_Bleeding_Control_Procedure"
+  },
+  {
+    "id" : "tr-circulation-cardiac-arrest-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-cardiac-arrest-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Circulation_Cardiac_Arrest_Observation"
+  },
+  {
+    "id" : "tr-circulation-cpr-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-cpr-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_Circulation_CPR_Procedure"
+  },
+  {
+    "id" : "tr-circulation-skin-assessment-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-skin-assessment-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Circulation_Skin_Assessment_Observation"
   },
   {
     "id" : "tr-composition",
@@ -131,6 +194,13 @@
     "url" : "http://example.org/StructureDefinition/tr-d-neuro-fast-observations",
     "version" : "0.1.0",
     "name" : "TR_D_Neuro_Fast_Observation"
+  },
+  {
+    "id" : "tr-exp-examination-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-exp-examination-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_Exp_Examination_Procedure"
   },
   {
     "id" : "tr-gi-airwaypatencyobservation",
@@ -284,6 +354,12 @@
     "id" : "TR-C-Skin-Assessment-VS",
     "type" : "ValueSet",
     "url" : "http://example.org/ValueSet/TR-C-Skin-Assessment-VS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TR-Circulation-Bleeding-Control-VS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS",
     "version" : "0.1.0"
   },
   {

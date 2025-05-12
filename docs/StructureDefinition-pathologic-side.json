@@ -10,13 +10,13 @@
   "name" : "PathologicSideExtension",
   "title" : "Pathologic Side",
   "status" : "draft",
-  "date" : "2025-05-07T21:31:29+02:00",
+  "date" : "2025-05-12T20:06:16+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://github.com/cdeveHealth"
+      "value" : "http://example.org/example-publisher"
     },
     {
       "system" : "email",

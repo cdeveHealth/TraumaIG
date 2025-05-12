@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TR-Circulation-Bleeding-Control-VS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TR-Circulation-Bleeding-Control-VS</b></p><a name=\"TR-Circulation-Bleeding-Control-VS\"> </a><a name=\"hcTR-Circulation-Bleeding-Control-VS\"> </a><a name=\"TR-Circulation-Bleeding-Control-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/26906007\">26906007</a></td><td>Application of dressing, pressure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/20655006\">20655006</a></td><td>Application of tourniquet (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/735346000\">735346000</a></td><td>Control of hemorrhage by application of direct pressure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/3895009\">3895009</a></td><td>Application of dressing (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/51241000\">51241000</a></td><td>Control of hemorrhage (procedure)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "Different Codes for Bleeding Control"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-05-12T20:06:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Constantin Renner"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Constantin Renner" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Getting the patient to stop bleeding with these different methods."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "26906007" ] ;
+         fhir:display [ fhir:v "Application of dressing, pressure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "20655006" ] ;
+         fhir:display [ fhir:v "Application of tourniquet (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "735346000" ] ;
+         fhir:display [ fhir:v "Control of hemorrhage by application of direct pressure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "3895009" ] ;
+         fhir:display [ fhir:v "Application of dressing (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "51241000" ] ;
+         fhir:display [ fhir:v "Control of hemorrhage (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

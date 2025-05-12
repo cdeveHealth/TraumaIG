@@ -3,20 +3,20 @@
   "id" : "Anatomical-Terminology",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Anatomical-Terminology</b></p><a name=\"Anatomical-Terminology\"> </a><a name=\"hcAnatomical-Terminology\"> </a><a name=\"Anatomical-Terminology-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/51440002\">51440002</a></td><td>Right and left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/66787007\">66787007</a></td><td>Cephalic (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/3583002\">3583002</a></td><td>Caudal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255549009\">255549009</a></td><td>Anterior (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255561001\">255561001</a></td><td>Medial (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/49370004\">49370004</a></td><td>Lateral (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/40415009\">40415009</a></td><td>Proximal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/46053002\">46053002</a></td><td>Distal (qualifier value)</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Anatomical-Terminology</b></p><a name=\"Anatomical-Terminology\"> </a><a name=\"hcAnatomical-Terminology\"> </a><a name=\"Anatomical-Terminology-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/51440002\">51440002</a></td><td>Right and left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/66787007\">66787007</a></td><td>Cephalic (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/3583002\">3583002</a></td><td>Caudal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255549009\">255549009</a></td><td>Anterior (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255561001\">255561001</a></td><td>Medial (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/49370004\">49370004</a></td><td>Lateral (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/40415009\">40415009</a></td><td>Proximal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/46053002\">46053002</a></td><td>Distal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/119567009\">119567009</a></td><td>Structure of artery of head (body structure)</td></tr></table></li></ul></div>"
   },
   "url" : "http://example.org/ValueSet/Anatomical-Terminology",
   "version" : "0.1.0",
   "title" : "VS Anatomical Terminology",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-05-07T21:31:29+02:00",
+  "date" : "2025-05-12T20:06:16+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://github.com/cdeveHealth"
+      "value" : "http://example.org/example-publisher"
     },
     {
       "system" : "email",
@@ -67,6 +67,10 @@
       {
         "code" : "46053002",
         "display" : "Distal (qualifier value)"
+      },
+      {
+        "code" : "119567009",
+        "display" : "Structure of artery of head (body structure)"
       }]
     }]
   }

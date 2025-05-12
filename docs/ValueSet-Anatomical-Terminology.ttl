@@ -11,20 +11,20 @@
   fhir:id [ fhir:v "Anatomical-Terminology"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Anatomical-Terminology</b></p><a name=\"Anatomical-Terminology\"> </a><a name=\"hcAnatomical-Terminology\"> </a><a name=\"Anatomical-Terminology-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/51440002\">51440002</a></td><td>Right and left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/66787007\">66787007</a></td><td>Cephalic (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/3583002\">3583002</a></td><td>Caudal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255549009\">255549009</a></td><td>Anterior (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255561001\">255561001</a></td><td>Medial (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/49370004\">49370004</a></td><td>Lateral (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/40415009\">40415009</a></td><td>Proximal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/46053002\">46053002</a></td><td>Distal (qualifier value)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Anatomical-Terminology</b></p><a name=\"Anatomical-Terminology\"> </a><a name=\"hcAnatomical-Terminology\"> </a><a name=\"Anatomical-Terminology-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/51440002\">51440002</a></td><td>Right and left (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/66787007\">66787007</a></td><td>Cephalic (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/3583002\">3583002</a></td><td>Caudal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255549009\">255549009</a></td><td>Anterior (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255561001\">255561001</a></td><td>Medial (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/49370004\">49370004</a></td><td>Lateral (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/40415009\">40415009</a></td><td>Proximal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/46053002\">46053002</a></td><td>Distal (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/119567009\">119567009</a></td><td>Structure of artery of head (body structure)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ValueSet/Anatomical-Terminology"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:title [ fhir:v "VS Anatomical Terminology"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-05-07T21:31:29+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-12T20:06:16+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/cdeveHealth" ]
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
@@ -65,6 +65,9 @@
        ] [
          fhir:code [ fhir:v "46053002" ] ;
          fhir:display [ fhir:v "Distal (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "119567009" ] ;
+         fhir:display [ fhir:v "Structure of artery of head (body structure)" ]
        ] )
      ] )
   ] . # 

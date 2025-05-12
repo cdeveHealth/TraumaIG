@@ -10,13 +10,13 @@
   <title value="Obstruction caused due to change in Neck Structure"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2025-05-07T21:31:29+02:00"/>
+  <date value="2025-05-12T20:06:16+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/cdeveHealth"/>
+      <value value="http://example.org/example-publisher"/>
     </telecom>
     <telecom>
       <system value="email"/>

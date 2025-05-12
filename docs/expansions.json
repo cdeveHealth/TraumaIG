@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "535d01db-b239-4a8f-b40f-0cf7271a26e0",
+  "id" : "00baa1b6-0253-4184-a44c-7af19c40dc89",
   "meta" : {
-    "lastUpdated" : "2025-05-07T21:31:45.011+02:00"
+    "lastUpdated" : "2025-05-12T20:06:33.033+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "title" : "Skin Assessment Values",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-05-07T21:31:29+02:00",
+      "date" : "2025-05-12T20:06:16+02:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4f518324-2305-4c9b-837c-ef41f80a0356",
-        "timestamp" : "2025-05-07T21:32:03+02:00",
+        "identifier" : "urn:uuid:e315ab6e-5cbf-47c5-96f7-3b82be0f8c20",
+        "timestamp" : "2025-05-12T20:06:54+02:00",
         "total" : 12,
         "offset" : 0,
         "parameter" : [{
@@ -111,6 +111,81 @@
           "system" : "http://loinc.org",
           "code" : "LA17207-4",
           "display" : "Warm"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-26906007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/26906007\">26906007</a></td><td>http://snomed.info/sct</td><td>Application of dressing, pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-20655006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/20655006\">20655006</a></td><td>http://snomed.info/sct</td><td>Application of tourniquet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-735346000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/735346000\">735346000</a></td><td>http://snomed.info/sct</td><td>Control of hemorrhage by application of direct pressure (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-3895009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/3895009\">3895009</a></td><td>http://snomed.info/sct</td><td>Application of dressing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-51241000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/51241000\">51241000</a></td><td>http://snomed.info/sct</td><td>Control of hemorrhage</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS",
+      "version" : "0.1.0",
+      "title" : "Different Codes for Bleeding Control",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-05-12T20:06:16+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:8ff3e004-25a5-4093-9024-6b606d566f7b",
+        "timestamp" : "2025-05-12T20:06:54+02:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "26906007",
+          "display" : "Application of dressing, pressure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "20655006",
+          "display" : "Application of tourniquet"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "735346000",
+          "display" : "Control of hemorrhage by application of direct pressure (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "3895009",
+          "display" : "Application of dressing"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "51241000",
+          "display" : "Control of hemorrhage"
         }]
       }
     }

@@ -127,6 +127,15 @@
       "systems" : ["http://loinc.org"]
     },
     {
+      "url" : "http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : "Different Codes for Bleeding Control",
+      "description" : "Getting the patient to stop bleeding with these different methods.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://example.org/ValueSet/TR-Conditions-VS",
       "version" : "0.1.0",
       "status" : "draft",

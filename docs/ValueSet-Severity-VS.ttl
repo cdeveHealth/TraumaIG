@@ -11,20 +11,20 @@
   fhir:id [ fhir:v "Severity-VS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Severity-VS</b></p><a name=\"Severity-VS\"> </a><a name=\"hcSeverity-VS\"> </a><a name=\"Severity-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/52101004\">52101004</a></td><td>Present (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255604002\">255604002</a></td><td>Mild (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/2667000\">2667000</a></td><td>Absent (qualifier value)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Severity-VS</b></p><a name=\"Severity-VS\"> </a><a name=\"hcSeverity-VS\"> </a><a name=\"Severity-VS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/version/2025-02-01</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/52101004\">52101004</a></td><td>Present (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255604002\">255604002</a></td><td>Mild (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/2667000\">2667000</a></td><td>Absent (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/255361000\">255361000</a></td><td>Slow (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/277748003\">277748003</a></td><td>Fast (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/17621005\">17621005</a></td><td>  Normal (qualifier value)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ValueSet/Severity-VS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:title [ fhir:v "VS  Severity"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-05-07T21:31:29+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-12T20:06:16+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/cdeveHealth" ]
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
@@ -44,6 +44,15 @@
        ] [
          fhir:code [ fhir:v "2667000" ] ;
          fhir:display [ fhir:v "Absent (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "255361000" ] ;
+         fhir:display [ fhir:v "Slow (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "277748003" ] ;
+         fhir:display [ fhir:v "Fast (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "17621005" ] ;
+         fhir:display [ fhir:v "  Normal (qualifier value)" ]
        ] )
      ] )
   ] . # 

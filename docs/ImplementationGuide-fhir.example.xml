@@ -9,13 +9,13 @@
   <version value="0.1.0"/>
   <name value="TraumaIG"/>
   <status value="draft"/>
-  <date value="2025-05-07T21:31:29+02:00"/>
+  <date value="2025-05-12T20:06:16+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/cdeveHealth"/>
+      <value value="http://example.org/example-publisher"/>
     </telecom>
     <telecom>
       <system value="email"/>
@@ -452,6 +452,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-br-breathing-medication-oxygen-procedure"/>
+      </reference>
+      <name value="Administration of Oxygen"/>
+      <description value="Procedure to describe  the administration of Oxygen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
@@ -628,6 +639,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-circulation-cardiac-arrest-observation"/>
+      </reference>
+      <name value="Cardiac Arrest"/>
+      <description value="Low Blood Pressure and absent pulse in arteria carotis is a sure sign of caardiac arrest."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-circulation-cpr-procedure"/>
+      </reference>
+      <name value="Cardiopulmonary resuscitation"/>
+      <description value="Doing Cardiopulmonary resuscitation due to cardiac arrest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -778,6 +811,17 @@
       </reference>
       <name value="Decision Making Observation"/>
       <description value="Observations of Immediate Actions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TR-Circulation-Bleeding-Control-VS"/>
+      </reference>
+      <name value="Different Codes for Bleeding Control"/>
+      <description value="Getting the patient to stop bleeding with these different methods."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -980,6 +1024,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-br-breathing-medication-oxygen-ma"/>
+      </reference>
+      <name value="MedicationAdministration of Oxygen"/>
+      <description value="Procedure to describe the administration of Oxygen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -994,10 +1049,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure"/>
+      </reference>
+      <name value="Needle decomp because of tension pneumothorax"/>
+      <description value="Performing needle decompression because of tension pneumothorax"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-br-breathing-finding-respiration-rate-observation"/>
+      </reference>
+      <name value="Observation of Breathing rate"/>
+      <description value="Observation of the breathing rate of the patient. Slow - Normal - Fast."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tr-gi-mental-status-impression-observation"/>
       </reference>
       <name value="Observation of General Impression of Mental State of Patient"/>
       <description value="Quick overview of patient mental state."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"/>
+      </reference>
+      <name value="Observation of SpO2"/>
+      <description value="Observation of Oxygen Saturation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1038,10 +1126,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tr-circulation-bleeding-control-vs"/>
+      </reference>
+      <name value="Procedure for Bleeding Control"/>
+      <description value="Procedures to control bleeding of patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tr-gi-circulatory-impression-procedure"/>
       </reference>
       <name value="Procedures to obtain a circulatory impression"/>
       <description value="Procedures to get an impression of the circulatory situation of a patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-br-breathing-bag-mask-procedure"/>
+      </reference>
+      <name value="Respiratory assist, manual"/>
+      <description value="Performing needle decompression because of tension pneumothorax"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1071,7 +1181,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tr-c-skin-assessment-observation"/>
+        <reference value="StructureDefinition/tr-circulation-skin-assessment-observation"/>
       </reference>
       <name value="Skin assessment"/>
       <description value="Skin assessment for trauma using LOINC 72284-3 Panel."/>
@@ -1082,11 +1192,11 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/uc1-TR-C-Skin-Assessment-Observation"/>
+        <reference value="Observation/uc1-TR-Circulation-Skin-Assessment-Observation"/>
       </reference>
       <name value="Skin assessment"/>
       <description value="Skin assessment for trauma using LOINC 72284-3 Panel."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/tr-c-skin-assessment-observation"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-skin-assessment-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1185,6 +1295,17 @@
       </reference>
       <name value="TR Composition"/>
       <description value="Structured documentation of the primary clinical assessment including airway, breathing, circulation and disability."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-exp-examination-procedure"/>
+      </reference>
+      <name value="Trauma Check"/>
+      <description value="Procedure of checking patient for signs of trauma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

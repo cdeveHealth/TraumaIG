@@ -13,6 +13,7 @@ http://example.org/ValueSet/TR-AW-Airway-Opening-Maneuvers-VS,0.1.0,draft,,,Open
 http://example.org/ValueSet/TR-AW-Cervical-Spine-Assessment-VS,0.1.0,draft,,,Cervical Spine Assessment Codes,"Includes SNOMED CT codes related to cervical spine injuries and assessments.",,"SCT"
 http://example.org/ValueSet/TR-AW-Cervical-Spine-Intervention-VS,0.1.0,draft,,,Cervical Spine Intervention Codes,"Includes SNOMED CT codes related to cervical spine immobilization and stabilization procedures.",,"SCT"
 http://example.org/ValueSet/TR-C-Skin-Assessment-VS,0.1.0,draft,,,Skin Assessment Values,"Includes LOINC codes related to the Skin assessment panel 72284-3.",,"LOINC"
+http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS,0.1.0,draft,,,Different Codes for Bleeding Control,"Getting the patient to stop bleeding with these different methods.",,"SCT"
 http://example.org/ValueSet/TR-Conditions-VS,0.1.0,draft,,,Conditons,"This value set should have the most important arbeitsdiagnonsen",,"SCT"
 http://example.org/ValueSet/TR-D-Fast-VS,0.1.0,draft,,,VS for FAST Assessment,"ValueSet for  SNOMED CT concepts used for a FAST assessment.",,"SCT"
 http://example.org/ValueSet/TR-GI-AW-Patency-VS,0.1.0,draft,,,General Impresion AW Patency,"Codes related to Blickdiagnose AW Patency",,"SCT"

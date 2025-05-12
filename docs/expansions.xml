@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="535d01db-b239-4a8f-b40f-0cf7271a26e0"/>
+  <id value="00baa1b6-0253-4184-a44c-7af19c40dc89"/>
   <meta>
-    <lastUpdated value="2025-05-07T21:31:45.011+02:00"/>
+    <lastUpdated value="2025-05-12T20:06:33.033+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -134,10 +134,10 @@
         <title value="Skin Assessment Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-05-07T21:31:29+02:00"/>
+        <date value="2025-05-12T20:06:16+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:4f518324-2305-4c9b-837c-ef41f80a0356"/>
-          <timestamp value="2025-05-07T21:32:03+02:00"/>
+          <identifier value="urn:uuid:e315ab6e-5cbf-47c5-96f7-3b82be0f8c20"/>
+          <timestamp value="2025-05-12T20:06:54+02:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -227,6 +227,141 @@
             <system value="http://loinc.org"/>
             <code value="LA17207-4"/>
             <display value="Warm"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-26906007"> </a>  
+                  <a href="http://snomed.info/id/26906007">26906007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Application of dressing, pressure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-20655006"> </a>  
+                  <a href="http://snomed.info/id/20655006">20655006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Application of tourniquet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-735346000"> </a>  
+                  <a href="http://snomed.info/id/735346000">735346000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Control of hemorrhage by application of direct pressure (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-3895009"> </a>  
+                  <a href="http://snomed.info/id/3895009">3895009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Application of dressing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51241000"> </a>  
+                  <a href="http://snomed.info/id/51241000">51241000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Control of hemorrhage</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TR-Circulation-Bleeding-Control-VS"/>
+        <version value="0.1.0"/>
+        <title value="Different Codes for Bleeding Control"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-12T20:06:16+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8ff3e004-25a5-4093-9024-6b606d566f7b"/>
+          <timestamp value="2025-05-12T20:06:54+02:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26906007"/>
+            <display value="Application of dressing, pressure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="20655006"/>
+            <display value="Application of tourniquet"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="735346000"/>
+            <display value="Control of hemorrhage by application of direct pressure (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="3895009"/>
+            <display value="Application of dressing"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51241000"/>
+            <display value="Control of hemorrhage"/>
           </contains>
         </expansion>
       </ValueSet>
