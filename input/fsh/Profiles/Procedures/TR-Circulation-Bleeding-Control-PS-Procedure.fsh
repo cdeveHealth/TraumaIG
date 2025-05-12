@@ -10,7 +10,7 @@ Description: "Application of Pelvic Sling due to Pelvic Fracture"
 * category = #outpatient
 * category MS
 
-* partOf only Reference()
+* partOf only Reference(TR_Circulation_Bleeding_Control_PS_Observation)
 * partOf 1..1 MS 
 
 * performer.actor only Reference(Practitioner)
