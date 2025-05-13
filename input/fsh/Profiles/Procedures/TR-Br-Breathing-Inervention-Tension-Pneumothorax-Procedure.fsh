@@ -7,6 +7,9 @@ Description: "Performing needle decompression because of tension pneumothorax"
 * code = $sct#1290622004 "Needle chest decompression for tension pneumothorax (procedure)"
 * code MS
 
+* partOf only Reference(TR_Br_Breathing_Disorder_Of_Thorax_Observation)
+* partOf 1..1 MS 
+
 * category = #outpatient
 * category MS
 
