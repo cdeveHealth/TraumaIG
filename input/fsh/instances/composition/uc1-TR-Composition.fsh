@@ -63,7 +63,7 @@ Description: "Structured documentation of the primary clinical assessment."
 * section[TR-Breathing-Section].code = $TR-General-Codes-CS#br
 * section[TR-Breathing-Section].text.status = #generated
 * section[TR-Breathing-Section].text.div = "<div>Breathing Section</div>"
-* section[TR-Breathing-Section].entry = Reference(Observation/uc1-TR-BR-Rise-Observation)
+* section[TR-Breathing-Section].entry = Reference(Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation)
 
 
 * section[TR-Circulation-Section].title = "Circulation"

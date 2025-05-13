@@ -171,7 +171,7 @@ Description: "Structured documentation of the primary clinical assessment includ
 * section[TR-Breathing-Section].code = $TR-General-Codes-CS#br
 * section[TR-Breathing-Section].text 1..1
 * section[TR-Breathing-Section].text ^short = "Human narrative"
-* section[TR-Breathing-Section].entry only Reference(TR_Br_Rise_Observation)
+* section[TR-Breathing-Section].entry only Reference(TR_Br_Breathing_Disorder_Of_Thorax_Observation)
 
 // Section: Circulation (Skin Assessment and more to come )
 * section[TR-Circulation-Section] ^short = "Circulation"

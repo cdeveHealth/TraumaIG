@@ -1,11 +1,11 @@
-Instance: uc1-TR-Br-Rise-Observation
-InstanceOf: TR_Br_Rise_Observation
+Instance: uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation
+InstanceOf: TR_Br_Breathing_Disorder_Of_Thorax_Observation
 Title: "Respiratory chest wall movement"
 Description: "Chest wall movement noted to be asymmetric on the left. Haematothorax observed."
 Usage: #example
 
 * status = #final
-* code = $sct#366128006 "Symmetry of chest movement - finding"
+* code = $sct#64572001 "Disease (disorder)"
 * code.text = "Symmetry of chest movement"
 * subject.reference = "Patient/uc1-Nomen-Nescio"
 * encounter.reference = "Encounter/uc1-Motor-Vehicle-Collision"
