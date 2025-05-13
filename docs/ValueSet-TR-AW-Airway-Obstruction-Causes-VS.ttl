@@ -18,13 +18,13 @@
   fhir:title [ fhir:v "Softtissue AW Obstruction"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-05-12T20:06:16+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-13T19:16:00+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:value [ fhir:v "https://github.com/cdeveHealth" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "constantinrenner1@gmail.com" ]

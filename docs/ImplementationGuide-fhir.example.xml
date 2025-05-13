@@ -9,13 +9,13 @@
   <version value="0.1.0"/>
   <name value="TraumaIG"/>
   <status value="draft"/>
-  <date value="2025-05-12T20:06:16+02:00"/>
+  <date value="2025-05-13T19:16:00+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://github.com/cdeveHealth"/>
     </telecom>
     <telecom>
       <system value="email"/>
@@ -829,6 +829,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"/>
+      </reference>
+      <name value="Disorder of thoracic cavity"/>
+      <description value="Observation that can document Tension pneumothorax and hemothorax"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tr-bundle"/>
       </reference>
       <name value="Document Bundle"/>
@@ -1082,6 +1093,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tr-circulation-bleeding-control-ps-observation"/>
+      </reference>
+      <name value="Observation of Pelvic Fracture"/>
+      <description value="Pelvic Fracture needs Pelvic Sling Procedure to stop critical bleeding."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"/>
       </reference>
       <name value="Observation of SpO2"/>
@@ -1126,6 +1148,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tr-circulation-bleeding-control-ps-procedure"/>
+      </reference>
+      <name value="Pelvic Sling Procedure"/>
+      <description value="Application of Pelvic Sling due to Pelvic Fracture"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tr-circulation-bleeding-control-vs"/>
       </reference>
       <name value="Procedure for Bleeding Control"/>
@@ -1156,25 +1189,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tr-br-rise-observation"/>
-      </reference>
-      <name value="Respiratory chest wall movement"/>
-      <description value="Assessment of the rise of the chest to check for trauma"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/uc1-TR-Br-Rise-Observation"/>
+        <reference value="Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"/>
       </reference>
       <name value="Respiratory chest wall movement"/>
       <description value="Chest wall movement noted to be asymmetric on the left. Haematothorax observed."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-rise-observation"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

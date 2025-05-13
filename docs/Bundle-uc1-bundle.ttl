@@ -236,8 +236,8 @@
        fhir:div "<div>Breathing Section</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
-       fhir:link <http://example.org/Observation/uc1-TR-BR-Rise-Observation> ;
-       fhir:reference [ fhir:v "Observation/uc1-TR-BR-Rise-Observation" ]
+       fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation> ;
+       fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation" ]
      ] )
   ] [
      fhir:title [ fhir:v "Circulation" ] ;

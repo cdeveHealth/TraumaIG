@@ -9,13 +9,13 @@
   "version" : "0.1.0",
   "name" : "TraumaIG",
   "status" : "draft",
-  "date" : "2025-05-12T20:06:16+02:00",
+  "date" : "2025-05-13T19:16:00+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://github.com/cdeveHealth"
     },
     {
       "system" : "email",
@@ -1020,6 +1020,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"
+      },
+      "name" : "Disorder of thoracic cavity",
+      "description" : "Observation that can document Tension pneumothorax and hemothorax",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tr-bundle"
       },
       "name" : "Document Bundle",
@@ -1296,6 +1308,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tr-circulation-bleeding-control-ps-observation"
+      },
+      "name" : "Observation of Pelvic Fracture",
+      "description" : "Pelvic Fracture needs Pelvic Sling Procedure to stop critical bleeding.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"
       },
       "name" : "Observation of SpO2",
@@ -1344,6 +1368,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/tr-circulation-bleeding-control-ps-procedure"
+      },
+      "name" : "Pelvic Sling Procedure",
+      "description" : "Application of Pelvic Sling due to Pelvic Fracture",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tr-circulation-bleeding-control-vs"
       },
       "name" : "Procedure for Bleeding Control",
@@ -1377,26 +1413,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tr-br-rise-observation"
-      },
-      "name" : "Respiratory chest wall movement",
-      "description" : "Assessment of the rise of the chest to check for trauma",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/uc1-TR-Br-Rise-Observation"
+        "reference" : "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"
       },
       "name" : "Respiratory chest wall movement",
       "description" : "Chest wall movement noted to be asymmetric on the left. Haematothorax observed.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-rise-observation"
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"
     },
     {
       "extension" : [{

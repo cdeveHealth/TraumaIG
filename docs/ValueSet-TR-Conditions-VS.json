@@ -10,13 +10,13 @@
   "title" : "Conditons",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-05-12T20:06:16+02:00",
+  "date" : "2025-05-13T19:16:00+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://github.com/cdeveHealth"
     },
     {
       "system" : "email",

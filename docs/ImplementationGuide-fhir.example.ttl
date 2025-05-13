@@ -17,13 +17,13 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TraumaIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-12T20:06:16+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-13T19:16:00+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:value [ fhir:v "https://github.com/cdeveHealth" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
@@ -1460,6 +1460,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-br-breathing-disorder-of-thorax-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Disorder of thoracic cavity" ] ;
+       fhir:description [ fhir:v "Observation that can document Tension pneumothorax and hemothorax" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://example.org/StructureDefinition/tr-bundle> ;
          fhir:reference [ fhir:v "StructureDefinition/tr-bundle" ]
        ] ;
@@ -1881,6 +1899,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-circulation-bleeding-control-ps-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Observation of Pelvic Fracture" ] ;
+       fhir:description [ fhir:v "Pelvic Fracture needs Pelvic Sling Procedure to stop critical bleeding." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation" ]
        ] ;
@@ -1953,6 +1989,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-circulation-bleeding-control-ps-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Pelvic Sling Procedure" ] ;
+       fhir:description [ fhir:v "Application of Pelvic Sling due to Pelvic Fracture" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs> ;
          fhir:reference [ fhir:v "StructureDefinition/tr-circulation-bleeding-control-vs" ]
        ] ;
@@ -2003,37 +2057,19 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/tr-br-rise-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/tr-br-rise-observation" ]
-       ] ;
-       fhir:name [ fhir:v "Respiratory chest wall movement" ] ;
-       fhir:description [ fhir:v "Assessment of the rise of the chest to check for trauma" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Observation/uc1-TR-Br-Rise-Observation> ;
-         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Rise-Observation" ]
+         fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation" ]
        ] ;
        fhir:name [ fhir:v "Respiratory chest wall movement" ] ;
        fhir:description [ fhir:v "Chest wall movement noted to be asymmetric on the left. Haematothorax observed." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://example.org/StructureDefinition/tr-br-rise-observation"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/tr-br-rise-observation>
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation>
        ]
      ] [
        fhir:extension ( [

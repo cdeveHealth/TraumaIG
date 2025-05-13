@@ -215,7 +215,7 @@
           "div" : "<div>Breathing Section</div>"
         },
         "entry" : [{
-          "reference" : "Observation/uc1-TR-BR-Rise-Observation"
+          "reference" : "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"
         }]
       },
       {

@@ -105,6 +105,13 @@
     "name" : "TR_Br_Breathing_Bag_Mask_Procedure"
   },
   {
+    "id" : "tr-br-breathing-disorder-of-thorax-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Br_Breathing_Disorder_Of_Thorax_Observation"
+  },
+  {
     "id" : "tr-br-breathing-finding-oxygen-saturation-observation",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation",
@@ -140,18 +147,25 @@
     "name" : "TR_Br_Breathing_Medication_Oxygen_Procedure"
   },
   {
-    "id" : "tr-br-rise-observation",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/tr-br-rise-observation",
-    "version" : "0.1.0",
-    "name" : "TR_Br_Rise_Observation"
-  },
-  {
     "id" : "tr-bundle",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/tr-bundle",
     "version" : "0.1.0",
     "name" : "TR_Bundle"
+  },
+  {
+    "id" : "tr-circulation-bleeding-control-ps-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Circulation_Bleeding_Control_PS_Observation"
+  },
+  {
+    "id" : "tr-circulation-bleeding-control-ps-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure",
+    "version" : "0.1.0",
+    "name" : "TR_Circulation_Bleeding_Control_PS_Procedure"
   },
   {
     "id" : "tr-circulation-bleeding-control-vs",

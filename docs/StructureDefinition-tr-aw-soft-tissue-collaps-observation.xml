@@ -16,13 +16,13 @@
   <name value="TR_AW_Soft_Tissue_Collaps_Observation"/>
   <title value="Soft Tissue Collapse in Airway Observation"/>
   <status value="draft"/>
-  <date value="2025-05-12T20:06:16+02:00"/>
+  <date value="2025-05-13T19:16:00+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://github.com/cdeveHealth"/>
     </telecom>
     <telecom>
       <system value="email"/>
