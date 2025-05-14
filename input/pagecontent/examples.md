@@ -14,7 +14,7 @@ A **Bundle** is utilized by the IG in order to display all the relevant informat
 Below is a list of interesting documentation specified in the Implementation Guide:
 
 - **Profile**: [TR_Composition](StructureDefinition-tr-composition.html)
-- **Profile**: [TraumaIG/input/fsh/Profiles/Observations/TR-Br-Breathing-Disorder-Of-Thorax-Observation.fsh](StructureDefinition-TR-Br-Breathing-Disorder-Of-Thorax-Observation.html)
+- **Profile**: [TR_ Disorder of thoracic cavity](StructureDefinition-TR-Br-Breathing-Disorder-Of-Thorax-Observation.html)
 - **Profile**: [TR_C_Skin_Assessment_Observation](StructureDefinition-tr-c-skin-assessment-observation.html)
 - **Instance**: [TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS](ValueSet-TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.html)
 
