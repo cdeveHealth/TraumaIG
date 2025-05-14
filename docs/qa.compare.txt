@@ -4,7 +4,7 @@ TraumaIG : Validation Results
 err = 151, warn = 273, info = 37
 $--
 Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://example.org)
- Build Errors : 9 / 6 / 0
+ Build Errors : 8 / 6 / 0
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Bundle-uc1-bundle : 73 / 13 / 8
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/CodeSystem-tr-general-codes-cs : 0 / 2 / 2
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Composition-uc1-tr-composition : 51 / 13 / 5
@@ -105,7 +105,6 @@ ERROR: /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi
 ERROR: /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/output/Bundle-uc1-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 170, column 3867: The link 'Patient/uc1-nomen-nescio' for "Patient/uc1-nomen-nescio" cannot be resolved
 ERROR: /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/output/Composition-uc1-tr-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 170, column 762: The link 'Encounter/uc1-motor-vehicle-collision' for "Encounter/uc1-motor-vehicle-collision" cannot be resolved
 ERROR: /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/output/Composition-uc1-tr-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 170, column 917: The link 'Patient/uc1-nomen-nescio' for "Patient/uc1-nomen-nescio" cannot be resolved
-ERROR: /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/output/examples.html#/html/body/div/div/div/div/div/ul/li/a at Line 157, column 34: The link 'StructureDefinition-tr-c-skin-assessment-observation.html' for "TR_C_Skin_Assessment_Observation" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

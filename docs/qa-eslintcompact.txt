@@ -10,7 +10,6 @@ Generic: line 0, col 0, Error - The link 'Encounter/uc1-motor-vehicle-collision'
 Generic: line 0, col 0, Error - The link 'Patient/uc1-nomen-nescio' for "Patient/uc1-nomen-nescio" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'Encounter/uc1-motor-vehicle-collision' for "Encounter/uc1-motor-vehicle-collision" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'Patient/uc1-nomen-nescio' for "Patient/uc1-nomen-nescio" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'StructureDefinition-tr-c-skin-assessment-observation.html' for "TR_C_Skin_Assessment_Observation" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)

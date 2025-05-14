@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Opening Maneuvers"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-05-14T23:21:35+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-14T23:43:24+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
