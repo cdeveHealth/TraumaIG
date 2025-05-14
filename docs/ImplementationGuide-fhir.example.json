@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TraumaIG",
   "status" : "draft",
-  "date" : "2025-05-13T19:16:00+02:00",
+  "date" : "2025-05-14T23:21:35+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
@@ -1068,7 +1068,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tr-d-neuro-fast-observations"
+        "reference" : "StructureDefinition/tr-disability-neuro-fast-observations"
       },
       "name" : "Fast Assessment",
       "description" : "Assessment to identify stroke (Insult) Symptoms in trauma patients.",
@@ -1080,11 +1080,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/uc1-TR-D-Neuro-FAST-Observations"
+        "reference" : "Observation/uc1-TR-Disability-Neuro-FAST-Observations"
       },
       "name" : "FAST Assessment",
       "description" : "Assessment to identify stroke (Insult) symptoms in trauma patients.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/tr-d-neuro-fast-observations"
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-disability-neuro-fast-observations"
     },
     {
       "extension" : [{
@@ -1233,6 +1233,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-disability-gcs-observation"
+      },
+      "name" : "Glasgow Coma Scale",
+      "description" : "Simplyfied Swiss IG GCS Score Observation to reflect Austrian Red Cross Documentation Standards.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Procedure"
       }],
       "reference" : {
@@ -1241,6 +1253,18 @@
       "name" : "Helicopter Air Ambulance Activation",
       "description" : "Provision of helicopter air ambulance after general impression and decision",
       "exampleCanonical" : "http://example.org/StructureDefinition/tr-gi-decision-making-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-br-breathing-increased-breathing-effort-observation"
+      },
+      "name" : "Increased Breathing Effort",
+      "description" : "Observation that describes signs of increased breathing effort",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1421,6 +1445,18 @@
       "name" : "Respiratory chest wall movement",
       "description" : "Chest wall movement noted to be asymmetric on the left. Haematothorax observed.",
       "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-circulation-signs-of-schock-observation"
+      },
+      "name" : "Signs of Schock",
+      "description" : "This Observation covers the indicators for schock.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

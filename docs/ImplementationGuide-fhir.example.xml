@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TraumaIG"/>
   <status value="draft"/>
-  <date value="2025-05-13T19:16:00+02:00"/>
+  <date value="2025-05-14T23:21:35+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
@@ -873,7 +873,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tr-d-neuro-fast-observations"/>
+        <reference value="StructureDefinition/tr-disability-neuro-fast-observations"/>
       </reference>
       <name value="Fast Assessment"/>
       <description value="Assessment to identify stroke (Insult) Symptoms in trauma patients."/>
@@ -884,11 +884,11 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/uc1-TR-D-Neuro-FAST-Observations"/>
+        <reference value="Observation/uc1-TR-Disability-Neuro-FAST-Observations"/>
       </reference>
       <name value="FAST Assessment"/>
       <description value="Assessment to identify stroke (Insult) symptoms in trauma patients."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/tr-d-neuro-fast-observations"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-disability-neuro-fast-observations"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1024,6 +1024,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-disability-gcs-observation"/>
+      </reference>
+      <name value="Glasgow Coma Scale"/>
+      <description value="Simplyfied Swiss IG GCS Score Observation to reflect Austrian Red Cross Documentation Standards."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
@@ -1032,6 +1043,17 @@
       <name value="Helicopter Air Ambulance Activation"/>
       <description value="Provision of helicopter air ambulance after general impression and decision"/>
       <exampleCanonical value="http://example.org/StructureDefinition/tr-gi-decision-making-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-br-breathing-increased-breathing-effort-observation"/>
+      </reference>
+      <name value="Increased Breathing Effort"/>
+      <description value="Observation that describes signs of increased breathing effort"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1197,6 +1219,17 @@
       <name value="Respiratory chest wall movement"/>
       <description value="Chest wall movement noted to be asymmetric on the left. Haematothorax observed."/>
       <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-circulation-signs-of-schock-observation"/>
+      </reference>
+      <name value="Signs of Schock"/>
+      <description value="This Observation covers the indicators for schock."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

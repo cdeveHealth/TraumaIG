@@ -126,6 +126,13 @@
     "name" : "TR_Br_Breathing_Finding_Respiration_Rate_Observation"
   },
   {
+    "id" : "tr-br-breathing-increased-breathing-effort-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation",
+    "version" : "0.1.0",
+    "name" : "Tr_Br_Breathing_Increased_Breathing_Effort_Observation"
+  },
+  {
     "id" : "tr-br-breathing-intervention-tension-pneumothorax-procedure",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure",
@@ -189,6 +196,13 @@
     "name" : "TR_Circulation_CPR_Procedure"
   },
   {
+    "id" : "tr-circulation-signs-of-schock-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation",
+    "version" : "0.1.0",
+    "name" : "TR_Circulation_Signs_Of_Shock_Observation"
+  },
+  {
     "id" : "tr-circulation-skin-assessment-observation",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/tr-circulation-skin-assessment-observation",
@@ -203,11 +217,18 @@
     "name" : "TR_Composition"
   },
   {
-    "id" : "tr-d-neuro-fast-observations",
+    "id" : "tr-disability-gcs-observation",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/tr-d-neuro-fast-observations",
+    "url" : "http://example.org/StructureDefinition/tr-disability-gcs-observation",
     "version" : "0.1.0",
-    "name" : "TR_D_Neuro_Fast_Observation"
+    "name" : "TR_Disability_GCS_Observation"
+  },
+  {
+    "id" : "tr-disability-neuro-fast-observations",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-disability-neuro-fast-observations",
+    "version" : "0.1.0",
+    "name" : "TR_Disability_Neuro_Fast_Observation"
   },
   {
     "id" : "tr-exp-examination-procedure",

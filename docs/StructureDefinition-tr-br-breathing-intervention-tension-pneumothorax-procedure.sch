@@ -12,6 +12,8 @@
   <sch:pattern>
     <sch:title>f:Procedure</sch:title>
     <sch:rule context="f:Procedure">
+      <sch:assert test="count(f:partOf) &gt;= 1">partOf: minimum cardinality of 'partOf' is 1</sch:assert>
+      <sch:assert test="count(f:partOf) &lt;= 1">partOf: maximum cardinality of 'partOf' is 1</sch:assert>
       <sch:assert test="count(f:performed[x]) &gt;= 1">performed[x]: minimum cardinality of 'performed[x]' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

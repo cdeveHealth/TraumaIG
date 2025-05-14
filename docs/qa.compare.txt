@@ -1,7 +1,7 @@
 TraumaIG : Validation Results
 =========================================
 
-err = 151, warn = 260, info = 36
+err = 151, warn = 273, info = 37
 $--
 Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://example.org)
  Build Errors : 9 / 6 / 0
@@ -18,7 +18,7 @@ Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://example
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-AW-Structual-Change-In-AW-Observation : 0 / 2 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation : 5 / 3 / 4
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-Circulation-Skin-Assessment-Observation : 3 / 4 / 1
- /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-D-Neuro-FAST-Observations : 1 / 4 / 1
+ /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-Disability-Neuro-FAST-Observations : 1 / 4 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-GI-Airway-Patency-Observation : 1 / 2 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-GI-Circulatory-Impression-Observation : 0 / 2 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/Observation-uc1-TR-GI-Decision-Making-Observation : 1 / 2 / 1
@@ -46,6 +46,7 @@ Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://example
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-disorder-of-thorax-observation : 0 / 0 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-finding-oxygen-saturation-observation : 0 / 1 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-finding-respiration-rate-observation : 0 / 3 / 1
+ /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-increased-breathing-effort-observation : 0 / 1 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-intervention-tension-pneumothorax-procedure : 0 / 3 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-medication-oxygen-ma : 0 / 3 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-br-breathing-medication-oxygen-procedure : 0 / 1 / 1
@@ -55,9 +56,11 @@ Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://example
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-circulation-bleeding-control-vs : 0 / 1 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-circulation-cardiac-arrest-observation : 0 / 1 / 2
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-circulation-cpr-procedure : 0 / 1 / 1
+ /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-circulation-signs-of-schock-observation : 0 / 1 / 2
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-circulation-skin-assessment-observation : 0 / 0 / 1
- /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-composition : 0 / 26 / 1
- /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-d-neuro-fast-observations : 0 / 0 / 1
+ /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-composition : 0 / 36 / 1
+ /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-disability-gcs-observation : 0 / 1 / 1
+ /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-disability-neuro-fast-observations : 0 / 0 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-exp-examination-procedure : 0 / 3 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-gi-airwaypatencyobservation : 0 / 0 / 1
  /Users/cc/Desktop/Work/Uni/FH-Joanneum/BSC_Arbeit/Epics/IG_Creation/Sushi_Projects/trauma_v1_0/TraumaIG/fsh-generated/resources/StructureDefinition-tr-gi-circulatory-impression-observation : 0 / 0 / 1
@@ -315,12 +318,12 @@ WARNING: Observation/uc1-TR-Circulation-Skin-Assessment-Observation: Observation
 ERROR: Observation/uc1-TR-Circulation-Skin-Assessment-Observation: Observation.component[2].code.coding[0].display: Wrong Display Name 'Skin temperature' for http://loinc.org#39106-0. Valid display is one of 3 choices: 'Temperature of Skin' (en-US), 'Temperature of Skin' (en-US) or 'Temp Skin' (en-US) (for the language(s) 'en-US')
 WARNING: Observation/uc1-TR-Circulation-Skin-Assessment-Observation: Observation.component[2].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/TR-C-Skin-Assessment-VS' not found
 WARNING: Observation/uc1-TR-Circulation-Skin-Assessment-Observation: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-uc1-TR-D-Neuro-FAST-Observations.json ==
-WARNING: Observation/uc1-TR-D-Neuro-FAST-Observations: Observation.component[0].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/Severity-VS' not found
-ERROR: Observation/uc1-TR-D-Neuro-FAST-Observations: Observation.component[1].code.coding[0].display: Wrong Display Name 'Monoparesis (disorder)' for http://snomed.info/sct#249944006. There are no valid display names found for language(s) 'en-US'. Default display is 'Monoparesis - arm'
-WARNING: Observation/uc1-TR-D-Neuro-FAST-Observations: Observation.component[1].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/Severity-VS' not found
-WARNING: Observation/uc1-TR-D-Neuro-FAST-Observations: Observation.component[2].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/TR-D-Fast-VS' not found
-WARNING: Observation/uc1-TR-D-Neuro-FAST-Observations: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-uc1-TR-Disability-Neuro-FAST-Observations.json ==
+WARNING: Observation/uc1-TR-Disability-Neuro-FAST-Observations: Observation.component[0].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/Severity-VS' not found
+ERROR: Observation/uc1-TR-Disability-Neuro-FAST-Observations: Observation.component[1].code.coding[0].display: Wrong Display Name 'Monoparesis (disorder)' for http://snomed.info/sct#249944006. There are no valid display names found for language(s) 'en-US'. Default display is 'Monoparesis - arm'
+WARNING: Observation/uc1-TR-Disability-Neuro-FAST-Observations: Observation.component[1].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/Severity-VS' not found
+WARNING: Observation/uc1-TR-Disability-Neuro-FAST-Observations: Observation.component[2].value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/TR-D-Fast-VS' not found
+WARNING: Observation/uc1-TR-Disability-Neuro-FAST-Observations: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-uc1-TR-GI-Airway-Patency-Observation.json ==
 ERROR: Observation/uc1-TR-GI-Airway-Patency-Observation: Observation.encounter: Unable to resolve resource with reference 'Encounter/uc1-Motor-vehicle_collision'
 WARNING: Observation/uc1-TR-GI-Airway-Patency-Observation: Observation.value.ofType(CodeableConcept): ValueSet 'http://example.com/ValueSet/TR-GI-AW-Patency-VS' not found
@@ -386,9 +389,11 @@ WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition
 WARNING: StructureDefinition/tr-br-breathing-finding-respiration-rate-observation: StructureDefinition.snapshot.element[14].short: value should not start or finish with whitespace ' Respiratory rate (observable entity)'
 WARNING: StructureDefinition/tr-br-breathing-finding-respiration-rate-observation: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' Respiratory rate (observable entity)'
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-br-breathing-finding-respiration-rate-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tr-br-breathing-increased-breathing-effort-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tr-br-breathing-intervention-tension-pneumothorax-procedure.json ==
 WARNING: StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tr-br-breathing-medication-oxygen-ma.json ==
 WARNING: StructureDefinition/tr-br-breathing-medication-oxygen-ma: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -403,9 +408,9 @@ WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition
 WARNING: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 ERROR: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name ' Pelvic sling (procedure)' for http://snomed.info/sct#182556001. There are no valid display names found for language(s) 'en-US'. Default display is 'Pelvic sling'
 WARNING: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept).coding[0].display: value should not start or finish with whitespace ' Pelvic sling (procedure)'
-WARNING: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name ' Pelvic sling (procedure)' for http://snomed.info/sct#182556001. There are no valid display names found for language(s) 'en-US'. Default display is 'Pelvic sling'
-WARNING: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].display: value should not start or finish with whitespace ' Pelvic sling (procedure)'
+WARNING: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name ' Pelvic sling (procedure)' for http://snomed.info/sct#182556001. There are no valid display names found for language(s) 'en-US'. Default display is 'Pelvic sling'
+WARNING: StructureDefinition/tr-circulation-bleeding-control-ps-procedure: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].display: value should not start or finish with whitespace ' Pelvic sling (procedure)'
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tr-circulation-bleeding-control-vs.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs'): The Implementation Guide contains no examples for this profile
@@ -414,6 +419,9 @@ INFORMATION: StructureDefinition/tr-circulation-cardiac-arrest-observation: Stru
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-circulation-cardiac-arrest-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tr-circulation-cpr-procedure.json ==
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-circulation-cpr-procedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tr-circulation-signs-of-schock-observation.json ==
+INFORMATION: StructureDefinition/tr-circulation-signs-of-schock-observation: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tr-circulation-skin-assessment-observation.json ==
 == fsh-generated/resources/StructureDefinition-tr-composition.json ==
 WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[67].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
@@ -428,7 +436,12 @@ WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.elemen
 WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[323].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[337].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[351].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[365].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[421].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[491].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[505].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[575].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[631].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.snapshot.element[645].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
@@ -440,12 +453,19 @@ WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.el
 WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[60].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[63].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[67].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[72].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[77].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
-== fsh-generated/resources/StructureDefinition-tr-d-neuro-fast-observations.json ==
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[71].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[82].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[94].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[98].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[109].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[119].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/tr-composition: StructureDefinition.differential.element[124].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-tr-disability-gcs-observation.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-disability-gcs-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tr-disability-neuro-fast-observations.json ==
 == fsh-generated/resources/StructureDefinition-tr-exp-examination-procedure.json ==
 WARNING: StructureDefinition/tr-exp-examination-procedure: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: StructureDefinition/tr-exp-examination-procedure: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/tr-exp-examination-procedure: StructureDefinition.differential.element[0].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/tr-exp-examination-procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tr-gi-airwaypatencyobservation.json ==
 == fsh-generated/resources/StructureDefinition-tr-gi-circulatory-impression-observation.json ==

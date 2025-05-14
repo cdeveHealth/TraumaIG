@@ -3,7 +3,7 @@
   "id" : "tr-general-codes-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tr-general-codes-cs</b></p><a name=\"tr-general-codes-cs\"> </a><a name=\"hctr-general-codes-cs\"> </a><a name=\"tr-general-codes-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tr-general-codes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">GI<a name=\"tr-general-codes-cs-GI\"> </a></td><td>General Impression</td><td>General Impression Doc</td></tr><tr><td style=\"white-space:nowrap\">GICI<a name=\"tr-general-codes-cs-GICI\"> </a></td><td>GI Circulation Impresseion</td><td>GI Circulation Impression section</td></tr><tr><td style=\"white-space:nowrap\">GIMental<a name=\"tr-general-codes-cs-GIMental\"> </a></td><td>Mental Status</td><td>What is the first impression of the mental state</td></tr><tr><td style=\"white-space:nowrap\">GIGD<a name=\"tr-general-codes-cs-GIGD\"> </a></td><td>GI General Decision Making</td><td>GI General Decision Making Section</td></tr><tr><td style=\"white-space:nowrap\">AWCSP<a name=\"tr-general-codes-cs-AWCSP\"> </a></td><td>Airway and C-Spine Management</td><td>Main section for airway and cervical spine management</td></tr><tr><td style=\"white-space:nowrap\">AWOBS<a name=\"tr-general-codes-cs-AWOBS\"> </a></td><td>Airway Obstruction Causes</td><td>Section for documenting causes of airway obstruction</td></tr><tr><td style=\"white-space:nowrap\">AWPRC<a name=\"tr-general-codes-cs-AWPRC\"> </a></td><td>Airway Procedure</td><td>Section for documenting airway interventions</td></tr><tr><td style=\"white-space:nowrap\">CSPOBS<a name=\"tr-general-codes-cs-CSPOBS\"> </a></td><td>Cervical Spine Observation</td><td>Section for documenting cervical spine assessment</td></tr><tr><td style=\"white-space:nowrap\">CSPPRC<a name=\"tr-general-codes-cs-CSPPRC\"> </a></td><td>Cervical Spine Procedure</td><td>Section for documenting cervical spine interventions</td></tr><tr><td style=\"white-space:nowrap\">br<a name=\"tr-general-codes-cs-br\"> </a></td><td>Breathing</td><td>Breathing Assessment</td></tr><tr><td style=\"white-space:nowrap\">cir<a name=\"tr-general-codes-cs-cir\"> </a></td><td>Circulation</td><td>Circulation Assessment</td></tr><tr><td style=\"white-space:nowrap\">dis<a name=\"tr-general-codes-cs-dis\"> </a></td><td>Disability</td><td>Disability Assessment</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tr-general-codes-cs</b></p><a name=\"tr-general-codes-cs\"> </a><a name=\"hctr-general-codes-cs\"> </a><a name=\"tr-general-codes-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tr-general-codes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">GI<a name=\"tr-general-codes-cs-GI\"> </a></td><td>General Impression</td><td>General Impression Doc</td></tr><tr><td style=\"white-space:nowrap\">GICI<a name=\"tr-general-codes-cs-GICI\"> </a></td><td>GI Circulation Impresseion</td><td>GI Circulation Impression section</td></tr><tr><td style=\"white-space:nowrap\">GIMental<a name=\"tr-general-codes-cs-GIMental\"> </a></td><td>Mental Status</td><td>What is the first impression of the mental state</td></tr><tr><td style=\"white-space:nowrap\">GIGD<a name=\"tr-general-codes-cs-GIGD\"> </a></td><td>GI General Decision Making</td><td>GI General Decision Making Section</td></tr><tr><td style=\"white-space:nowrap\">AWCSP<a name=\"tr-general-codes-cs-AWCSP\"> </a></td><td>Airway and C-Spine Management</td><td>Main section for airway and cervical spine management</td></tr><tr><td style=\"white-space:nowrap\">AWOBS<a name=\"tr-general-codes-cs-AWOBS\"> </a></td><td>Airway Obstruction Causes</td><td>Section for documenting causes of airway obstruction</td></tr><tr><td style=\"white-space:nowrap\">AWPRC<a name=\"tr-general-codes-cs-AWPRC\"> </a></td><td>Airway Procedure</td><td>Section for documenting airway interventions</td></tr><tr><td style=\"white-space:nowrap\">CSPOBS<a name=\"tr-general-codes-cs-CSPOBS\"> </a></td><td>Cervical Spine Observation</td><td>Section for documenting cervical spine assessment</td></tr><tr><td style=\"white-space:nowrap\">CSPPRC<a name=\"tr-general-codes-cs-CSPPRC\"> </a></td><td>Cervical Spine Procedure</td><td>Section for documenting cervical spine interventions</td></tr><tr><td style=\"white-space:nowrap\">br<a name=\"tr-general-codes-cs-br\"> </a></td><td>Breathing</td><td>Breathing Assessment</td></tr><tr><td style=\"white-space:nowrap\">brf<a name=\"tr-general-codes-cs-brf\"> </a></td><td>Breathing Finding</td><td>Breahting Finding Section</td></tr><tr><td style=\"white-space:nowrap\">brp<a name=\"tr-general-codes-cs-brp\"> </a></td><td>Breathing Procedure</td><td>Breathing Procedure Section</td></tr><tr><td style=\"white-space:nowrap\">cir<a name=\"tr-general-codes-cs-cir\"> </a></td><td>Circulation</td><td>Circulation Assessment</td></tr><tr><td style=\"white-space:nowrap\">cirob<a name=\"tr-general-codes-cs-cirob\"> </a></td><td>Circulation Observation</td><td>Circulation Observation</td></tr><tr><td style=\"white-space:nowrap\">cirpro<a name=\"tr-general-codes-cs-cirpro\"> </a></td><td>Circulation Procedure</td><td>Circulation Procedure</td></tr><tr><td style=\"white-space:nowrap\">dis<a name=\"tr-general-codes-cs-dis\"> </a></td><td>Disability</td><td>Disability Assessment</td></tr><tr><td style=\"white-space:nowrap\">exp<a name=\"tr-general-codes-cs-exp\"> </a></td><td>Exposure</td><td>Exposure Assessment</td></tr></table></div>"
   },
   "url" : "http://example.org/CodeSystem/tr-general-codes-cs",
   "version" : "0.1.0",
@@ -25,7 +25,7 @@
   }],
   "description" : "All custom codes relevant for IG",
   "content" : "complete",
-  "count" : 12,
+  "count" : 17,
   "concept" : [{
     "code" : "GI",
     "display" : "General Impression",
@@ -77,13 +77,38 @@
     "definition" : "Breathing Assessment"
   },
   {
+    "code" : "brf",
+    "display" : "Breathing Finding",
+    "definition" : "Breahting Finding Section"
+  },
+  {
+    "code" : "brp",
+    "display" : "Breathing Procedure",
+    "definition" : "Breathing Procedure Section"
+  },
+  {
     "code" : "cir",
     "display" : "Circulation",
     "definition" : "Circulation Assessment"
   },
   {
+    "code" : "cirob",
+    "display" : "Circulation Observation",
+    "definition" : "Circulation Observation"
+  },
+  {
+    "code" : "cirpro",
+    "display" : "Circulation Procedure",
+    "definition" : "Circulation Procedure"
+  },
+  {
     "code" : "dis",
     "display" : "Disability",
     "definition" : "Disability Assessment"
+  },
+  {
+    "code" : "exp",
+    "display" : "Exposure",
+    "definition" : "Exposure Assessment"
   }]
 }

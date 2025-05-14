@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7b199100-daab-4923-a776-090d925303fc"/>
+  <id value="d2bf2a31-5229-4474-9682-e71ca68de669"/>
   <meta>
-    <lastUpdated value="2025-05-13T19:16:21.803+02:00"/>
+    <lastUpdated value="2025-05-14T23:21:59.391+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -134,10 +134,10 @@
         <title value="Skin Assessment Values"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-05-13T19:16:00+02:00"/>
+        <date value="2025-05-14T23:21:35+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:0be7cc93-c191-4124-b57d-fb49b01cdf58"/>
-          <timestamp value="2025-05-13T19:17:17+02:00"/>
+          <identifier value="urn:uuid:ff0af4f4-4b7f-4630-a73b-67363573a3fe"/>
+          <timestamp value="2025-05-14T23:22:26+02:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -304,10 +304,10 @@
         <title value="Different Codes for Bleeding Control"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-05-13T19:16:00+02:00"/>
+        <date value="2025-05-14T23:21:35+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:de88a9ac-f3af-4c57-b894-b66c531dbf3e"/>
-          <timestamp value="2025-05-13T19:17:17+02:00"/>
+          <identifier value="urn:uuid:b0b55622-2e31-4aef-8842-e84845e88dae"/>
+          <timestamp value="2025-05-14T23:22:26+02:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

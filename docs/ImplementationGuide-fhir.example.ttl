@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TraumaIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-13T19:16:00+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-14T23:21:35+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
@@ -1534,8 +1534,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/tr-d-neuro-fast-observations> ;
-         fhir:reference [ fhir:v "StructureDefinition/tr-d-neuro-fast-observations" ]
+         fhir:link <http://example.org/StructureDefinition/tr-disability-neuro-fast-observations> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-disability-neuro-fast-observations" ]
        ] ;
        fhir:name [ fhir:v "Fast Assessment" ] ;
        fhir:description [ fhir:v "Assessment to identify stroke (Insult) Symptoms in trauma patients." ] ;
@@ -1552,15 +1552,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Observation/uc1-TR-D-Neuro-FAST-Observations> ;
-         fhir:reference [ fhir:v "Observation/uc1-TR-D-Neuro-FAST-Observations" ]
+         fhir:link <http://example.org/Observation/uc1-TR-Disability-Neuro-FAST-Observations> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Disability-Neuro-FAST-Observations" ]
        ] ;
        fhir:name [ fhir:v "FAST Assessment" ] ;
        fhir:description [ fhir:v "Assessment to identify stroke (Insult) symptoms in trauma patients." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://example.org/StructureDefinition/tr-d-neuro-fast-observations"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/tr-d-neuro-fast-observations>
+         fhir:v "http://example.org/StructureDefinition/tr-disability-neuro-fast-observations"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-disability-neuro-fast-observations>
        ]
      ] [
        fhir:extension ( [
@@ -1785,6 +1785,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-disability-gcs-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-disability-gcs-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Glasgow Coma Scale" ] ;
+       fhir:description [ fhir:v "Simplyfied Swiss IG GCS Score Observation to reflect Austrian Red Cross Documentation Standards." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Procedure"
          ]
        ] ) ;
@@ -1798,6 +1816,24 @@
          a fhir:canonical ;
          fhir:v "http://example.org/StructureDefinition/tr-gi-decision-making-procedure"^^xsd:anyURI ;
          fhir:link <http://example.org/StructureDefinition/tr-gi-decision-making-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-br-breathing-increased-breathing-effort-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Increased Breathing Effort" ] ;
+       fhir:description [ fhir:v "Observation that describes signs of increased breathing effort" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
        ]
      ] [
        fhir:extension ( [
@@ -2070,6 +2106,24 @@
          a fhir:canonical ;
          fhir:v "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"^^xsd:anyURI ;
          fhir:link <http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-circulation-signs-of-schock-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Signs of Schock" ] ;
+       fhir:description [ fhir:v "This Observation covers the indicators for schock." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
        ]
      ] [
        fhir:extension ( [
