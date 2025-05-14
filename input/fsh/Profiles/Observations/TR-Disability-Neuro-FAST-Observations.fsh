@@ -1,6 +1,6 @@
-Profile: TR_D_Neuro_Fast_Observation
+Profile: TR_Disability_Neuro_Fast_Observation
 Parent: Trauma_Observation
-Id: tr-d-neuro-fast-observations
+Id: tr-disability-neuro-fast-observations
 Title: "Fast Assessment"
 Description: "Assessment to identify stroke (Insult) Symptoms in trauma patients."
 

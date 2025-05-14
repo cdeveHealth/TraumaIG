@@ -2,6 +2,7 @@
 
 Profile: TR_Disability_GCS_Observation
 Parent: Trauma_Observation
+Id: tr-disability-gcs-observation
 Title: "Glasgow Coma Scale"
 Description: "Simplyfied Swiss IG GCS Score Observation to reflect Austrian Red Cross Documentation Standards."
 * . ^short = "CGCS"

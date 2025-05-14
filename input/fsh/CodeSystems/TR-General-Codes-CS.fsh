@@ -25,9 +25,15 @@ Description: "All custom codes relevant for IG"
 
 // Breathing, Circulation, Disability  
 * #br "Breathing" "Breathing Assessment"
+* #brf "Breathing Finding" "Breahting Finding Section"
+* #brp "Breathing Procedure" "Breathing Procedure Section"
 
 * #cir "Circulation" "Circulation Assessment"
+* #cirob "Circulation Observation" "Circulation Observation"
+* #cirpro "Circulation Procedure" "Circulation Procedure"
 
 * #dis "Disability" "Disability Assessment"
+
+* #exp "Exposure" "Exposure Assessment"
 
 

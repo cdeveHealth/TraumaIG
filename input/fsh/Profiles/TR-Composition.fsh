@@ -27,7 +27,8 @@ Description: "Structured documentation of the primary clinical assessment includ
     TR-Airway-And-C-Spine-Management-Section 0..1 and 
     TR-Breathing-Section 0..1 and 
     TR-Circulation-Section 0..1 and 
-    TR-Disability-Section 0..1 
+    TR-Disability-Section 0..1 and 
+    TR-Exposure-Section 0..1 
    
 * section[TR-General-Impression-Section] ^short = "General Impression"
 * section[TR-General-Impression-Section].title 1..1
@@ -146,7 +147,7 @@ Description: "Structured documentation of the primary clinical assessment includ
     TR-Airway-Opening-Manuvers-Section 0..* and
     TR-Airway-Clearance-Section 0..* and
     TR-Airway-Adjuncts-Section 0..*
-
+// ________> Add manual airway opening code!! 
 // Entry: Procedure for manual airway opening
 * section[TR-Airway-And-C-Spine-Management-Section].section[TR-Airway-Procedure-Section].section[TR-Airway-Opening-Manuvers-Section].entry only Reference(TR_AW_Opening_Manuver_Procedure)
 
@@ -171,16 +172,134 @@ Description: "Structured documentation of the primary clinical assessment includ
 * section[TR-Breathing-Section].code = $TR-General-Codes-CS#br
 * section[TR-Breathing-Section].text 1..1
 * section[TR-Breathing-Section].text ^short = "Human narrative"
-* section[TR-Breathing-Section].entry only Reference(TR_Br_Breathing_Disorder_Of_Thorax_Observation)
 
-// Section: Circulation (Skin Assessment and more to come )
+// Subsections of Breathing (Respiration Rate, Increased Breathing Effort, Oxygen Saturation, Disorder of Thorax)
+* section[TR-Breathing-Section].section ^slicing.discriminator.type = #value
+* section[TR-Breathing-Section].section ^slicing.discriminator.path = "code"
+* section[TR-Breathing-Section].section ^slicing.rules = #open
+* section[TR-Breathing-Section].section contains
+    TR-Br-Breathing-Finding-Section 0..* and 
+    TR-Br-Breathing-Procedure-Section 0..* 
+   
+ // Section: Breathing Findings
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].code = $TR-General-Codes-CS#brf 
+
+// Nested slicing definition for Breathing Finding Section 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section ^slicing.discriminator.type = #profile
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section ^slicing.discriminator.path = "resolve()"
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section ^slicing.rules = #open
+
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section contains
+    TR-Br-Breathing-Disorder-Of-Thorax-Observation 0..* and
+    TR-Br-Breathing-Finding-Oxygen-Saturation-Observation 0..* and
+    TR-Br-Breathing-Finding-Respiration-Rate-Observation 0..* and 
+    Tr-Br-Breathing-Increased-Breathing-Effort-Observation 0..* 
+
+// Entry: Disorder of Thorax 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[TR-Br-Breathing-Disorder-Of-Thorax-Observation].entry only Reference(TR_Br_Breathing_Disorder_Of_Thorax_Observation)
+
+// Entry: Disorder of Thorax 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[TR-Br-Breathing-Finding-Oxygen-Saturation-Observation].entry only Reference(TR_Br_Breathing_Finding_Oxygen_Saturation_Observation)
+
+// Entry: Disorder of Thorax 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[TR-Br-Breathing-Finding-Respiration-Rate-Observation].entry only Reference(TR_Br_Breathing_Finding_Respiration_Rate_Observation)
+
+// Entry: Disorder of Thorax 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[Tr-Br-Breathing-Increased-Breathing-Effort-Observation].entry only Reference(Tr_Br_Breathing_Increased_Breathing_Effort_Observation)
+
+ // Section: Breathing Findings
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].code = $TR-General-Codes-CS#brp 
+
+// Nested slicing definition for Breathing Finding Section 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section ^slicing.discriminator.type = #profile
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section ^slicing.discriminator.path = "resolve()"
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section ^slicing.rules = #open
+
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section contains
+    TR-Br-Breathing-Bag-Mask-Procedure 0..* and 
+    TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure 0..* and 
+    TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure 0..* and 
+    TR-Br-Breathing-Procedure-Medication-Oxygen-MA 0..*
+
+// Entry: Bag Mask  
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Bag-Mask-Procedure].entry only Reference(TR_Br_Breathing_Bag_Mask_Procedure)
+
+// Entry: Tension Pneu   
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure].entry only Reference(TR_Br_Breathing_Inervention_Tension_Pneumothorax_Procedure)
+
+// Entry: Give Medication Oxygen 
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure].entry only Reference(TR_Br_Breathing_Medication_Oxygen_Procedure)
+
+// Entry:  Medication Oxygen Def
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Procedure-Medication-Oxygen-MA].entry only Reference(Tr_Br_Breathing_Medication_Oxygen_MA)
+
+
+// Section: Circulation (Procedure and Observation)
 * section[TR-Circulation-Section] ^short = "Circulation"
 * section[TR-Circulation-Section].title 1..1
 * section[TR-Circulation-Section].title ^short = "Circulation"
 * section[TR-Circulation-Section].code = $TR-General-Codes-CS#cir
 * section[TR-Circulation-Section].text 1..1
 * section[TR-Circulation-Section].text ^short = "Human narrative"
-* section[TR-Circulation-Section].entry only Reference(TR_Circulation_Skin_Assessment_Observation)
+
+
+
+// Subsections of Circulation
+* section[TR-Circulation-Section].section ^slicing.discriminator.type = #value
+* section[TR-Circulation-Section].section ^slicing.discriminator.path = "code"
+* section[TR-Circulation-Section].section ^slicing.rules = #open
+* section[TR-Circulation-Section].section contains
+    TR-Circulation-Observation-Section 0..* and 
+    TR-Circulation-Procedure-Section 0..* 
+   
+// Section: Breathing Findings
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].code = $TR-General-Codes-CS#cirob
+
+// Nested slicing definition for Breathing Finding Section 
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section ^slicing.discriminator.type = #profile
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section ^slicing.discriminator.path = "resolve"
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section ^slicing.rules = #open
+
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section contains
+    TR-Circulation-Bleeding-Control-PS-Observation 0..* and
+    TR-Circulation-Cardiac-Arrest-Observation 0..* and
+    TR-Circulation-Signs-Of-Shock-Observation 0..* and 
+    TR-Circulation-Skin-Assessment-Observation 0..* 
+
+// Entry: 
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Bleeding-Control-PS-Observation].entry only Reference(TR_Circulation_Bleeding_Control_PS_Observation)
+
+// Entry: 
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Cardiac-Arrest-Observation].entry only Reference(TR_Circulation_Cardiac_Arrest_Observation)
+
+// Entry: 
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Signs-Of-Shock-Observation].entry only Reference(TR_Circulation_Signs_Of_Shock_Observation)
+
+// Entry: 
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Skin-Assessment-Observation].entry only Reference(TR_Circulation_Skin_Assessment_Observation)
+
+// Section: 
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].code = $TR-General-Codes-CS#cirpro
+
+// Nested slicing definition for Breathing Finding Section 
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section ^slicing.discriminator.type = #profile
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section ^slicing.discriminator.path = "resolve"
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section ^slicing.rules = #open
+
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section contains
+    TR-Circulation-Bleeding-Control-Procedure 0..* and 
+    TR-Circulation-Bleeding-Control-PS-Procedure 0..* and 
+    TR-Circulation-CPR-Procedure 0..* 
+
+// Entry: Bleeding Control 
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section[TR-Circulation-Bleeding-Control-Procedure].entry only Reference(TR_Circulation_Bleeding_Control_Procedure)
+
+// Entry:  Pelvic Sling 
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section[TR-Circulation-Bleeding-Control-PS-Procedure].entry only Reference(TR_Circulation_Bleeding_Control_PS_Procedure)
+
+// Entry: CPR 
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section[TR-Circulation-CPR-Procedure].entry only Reference(TR_Circulation_CPR_Procedure)
+
 
 // Section: Disability (neurological function - FAST assessment and more to come)
 * section[TR-Disability-Section] ^short = "Disability"
@@ -189,4 +308,32 @@ Description: "Structured documentation of the primary clinical assessment includ
 * section[TR-Disability-Section].code = $TR-General-Codes-CS#dis 
 * section[TR-Disability-Section].text 1..1
 * section[TR-Disability-Section].text ^short = "Human narrative"
-* section[TR-Disability-Section].entry only Reference(TR_D_Neuro_Fast_Observation)
+* section[TR-Disability-Section].entry 0..*
+* section[TR-Disability-Section].entry only Reference(TR_Disability_Neuro_Fast_Observation or TR_Disability_GCS_Observation)
+
+/*
+
+Slice entry. Das sollte eigentlich nicht notwendig sein. --> entry without extra slicing besser/simpler? 
+
+* section[TR-Disability-Section].entry ^slicing.discriminator.type = #type
+* section[TR-Disability-Section].entry ^slicing.discriminator.path = "resolve()"
+* section[TR-Disability-Section].entry ^slicing.rules = #open
+
+* section[TR-Disability-Section].entry contains
+    NeuroFastObservation 0..1 and
+    GCSObservation 0..1
+
+* section[TR-Disability-Section].entry[NeuroFastObservation] only Reference(TR_Disability_Neuro_Fast_Observation)
+* section[TR-Disability-Section].entry[GCSObservation] only Reference(TR_Disability_GCS_Observation)
+*/
+
+// Section: Exposure (Exposure - Trauma Check Section)
+* section[TR-Exposure-Section] ^short = "Exposure"
+* section[TR-Exposure-Section].title 1..1
+* section[TR-Exposure-Section].title ^short = "Exposure"
+* section[TR-Exposure-Section].code = $TR-General-Codes-CS#exp 
+* section[TR-Exposure-Section].text 1..1
+* section[TR-Exposure-Section].text ^short = "Human narrative"
+* section[TR-Exposure-Section].entry only Reference(TR_Exp_Examination_Procedure)
+
+

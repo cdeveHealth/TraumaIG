@@ -1,5 +1,5 @@
-Instance: uc1-TR-D-Neuro-FAST-Observations
-InstanceOf: TR_D_Neuro_Fast_Observation
+Instance: uc1-TR-Disability-Neuro-FAST-Observations
+InstanceOf: TR_Disability_Neuro_Fast_Observation
 Title: "FAST Assessment"
 Description: "Assessment to identify stroke (Insult) symptoms in trauma patients."
 Usage: #example
