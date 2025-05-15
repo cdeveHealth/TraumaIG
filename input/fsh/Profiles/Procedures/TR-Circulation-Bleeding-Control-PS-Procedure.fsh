@@ -4,7 +4,7 @@ Id: tr-circulation-bleeding-control-ps-procedure
 Title: "Pelvic Sling Procedure"
 Description: "Application of Pelvic Sling due to Pelvic Fracture"
 
-* code = $sct#182556001 " Pelvic sling (procedure)"
+* code = $sct#182556001 "Pelvic sling (procedure)"
 * code MS
 
 * category = #outpatient

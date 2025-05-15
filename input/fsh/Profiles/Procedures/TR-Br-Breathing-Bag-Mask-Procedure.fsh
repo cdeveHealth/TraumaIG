@@ -4,7 +4,7 @@ Id: tr-br-breathing-bag-mask-procedure
 Title: "Respiratory assist, manual"
 Description: "Performing needle decompression because of tension pneumothorax"
 
-* code = $sct#425696007 " Manual respiratory assistance using bag and mask (procedure)"
+* code = $sct#425696007 "Manual respiratory assistance using bag and mask (procedure)"
 * code MS
 
 * category = #outpatient
