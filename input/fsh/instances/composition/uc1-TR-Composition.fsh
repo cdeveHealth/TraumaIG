@@ -63,7 +63,18 @@ Description: "Structured documentation of the primary clinical assessment."
 * section[TR-Breathing-Section].code = $TR-General-Codes-CS#br
 * section[TR-Breathing-Section].text.status = #generated
 * section[TR-Breathing-Section].text.div = "<div>Breathing Section</div>"
-* section[TR-Breathing-Section].entry = Reference(Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation)
+
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].code = $TR-General-Codes-CS#brf
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[TR-Br-Breathing-Disorder-Of-Thorax-Observation].entry = Reference(Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation)
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[TR-Br-Breathing-Finding-Respiration-Rate-Observation].entry = Reference(Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation)
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[TR-Br-Breathing-Finding-Oxygen-Saturation-Observation].entry = Reference(Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation)
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Finding-Section].section[Tr-Br-Breathing-Increased-Breathing-Effort-Observation].entry = Reference(Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation)
+
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].code = $TR-General-Codes-CS#brp
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Bag-Mask-Procedure].entry = Reference(Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure)
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure].entry = Reference(Procedure/uc1-TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure)
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure].entry = Reference(Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure)
+* section[TR-Breathing-Section].section[TR-Br-Breathing-Procedure-Section].section[TR-Br-Breathing-Procedure-Medication-Oxygen-MA].entry = Reference(MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA)
 
 
 * section[TR-Circulation-Section].title = "Circulation"
@@ -72,9 +83,30 @@ Description: "Structured documentation of the primary clinical assessment."
 * section[TR-Circulation-Section].text.div = "<div>Circulation Section</div>"
 * section[TR-Circulation-Section].entry = Reference(Observation/uc1-TR-C-Skin-assessment-Observation)
 
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].code = $TR-General-Codes-CS#cirob
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Bleeding-Control-PS-Observation].entry = Reference(Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation)
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Cardiac-Arrest-Observation].entry = Reference(Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation)
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Signs-Of-Shock-Observation].entry = Reference(Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation)
+* section[TR-Circulation-Section].section[TR-Circulation-Observation-Section].section[TR-Circulation-Skin-Assessment-Observation].entry = Reference(Observation/uc1-TR-Circulation-Skin-Assessment-Observation)
+
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].code = $TR-General-Codes-CS#cirpro
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section[TR-Circulation-Bleeding-Control-Procedure].entry = Reference(Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure)
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section[TR-Circulation-Bleeding-Control-PS-Procedure].entry = Reference(Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure)
+* section[TR-Circulation-Section].section[TR-Circulation-Procedure-Section].section[TR-Circulation-CPR-Procedure].entry = Reference(Procedure/uc1-TR-Circulation-CPR-Procedure)
+
 
 * section[TR-Disability-Section].title = "Disability"
 * section[TR-Disability-Section].code = $TR-General-Codes-CS#dis
 * section[TR-Disability-Section].text.status = #generated
 * section[TR-Disability-Section].text.div = "<div>Disability Section</div>"
-* section[TR-Disability-Section].entry = Reference(Observation/uc1-TR-D-Neuro-FAST-Observation)
+
+* section[TR-Disability-Section].entry[0] = Reference(Observation/uc1-TR-Disability-GCS-Observation)
+* section[TR-Disability-Section].entry[+] = Reference(Observation/uc1-TR-Disability-Neuro-FAST-Observations)
+
+
+* section[TR-Exposure-Section].title = "Exposure"
+* section[TR-Exposure-Section].code = $TR-General-Codes-CS#exp
+* section[TR-Exposure-Section].text.status = #generated
+* section[TR-Exposure-Section].text.div = "<div> Exposure Section</div>"
+* section[TR-Exposure-Section].entry = Reference(Procedure/uc1-TR-Exp-Examination-Procedure)
+
