@@ -24,3 +24,13 @@ Description: "A trauma patient based on the HL7 Austria Core Patient profile, wi
 * extension[PatientReligion] 0..1
 * extension[citizenship] 0..1
 * extension[birthPlace] 0..1
+
+
+/*
+Missing: 
+
+HL7ATCoreAddress 
+AdministrativeGenderAddition
+
+
+*/

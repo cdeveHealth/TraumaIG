@@ -147,7 +147,7 @@ Description: "Structured documentation of the primary clinical assessment includ
     TR-Airway-Opening-Manuvers-Section 0..* and
     TR-Airway-Clearance-Section 0..* and
     TR-Airway-Adjuncts-Section 0..*
-// ________> Add manual airway opening code!! 
+
 // Entry: Procedure for manual airway opening
 * section[TR-Airway-And-C-Spine-Management-Section].section[TR-Airway-Procedure-Section].section[TR-Airway-Opening-Manuvers-Section].entry only Reference(TR_AW_Opening_Manuver_Procedure)
 
@@ -310,22 +310,6 @@ Description: "Structured documentation of the primary clinical assessment includ
 * section[TR-Disability-Section].text ^short = "Human narrative"
 * section[TR-Disability-Section].entry 0..*
 * section[TR-Disability-Section].entry only Reference(TR_Disability_Neuro_Fast_Observation or TR_Disability_GCS_Observation)
-
-/*
-
-Slice entry. Das sollte eigentlich nicht notwendig sein. --> entry without extra slicing besser/simpler? 
-
-* section[TR-Disability-Section].entry ^slicing.discriminator.type = #type
-* section[TR-Disability-Section].entry ^slicing.discriminator.path = "resolve()"
-* section[TR-Disability-Section].entry ^slicing.rules = #open
-
-* section[TR-Disability-Section].entry contains
-    NeuroFastObservation 0..1 and
-    GCSObservation 0..1
-
-* section[TR-Disability-Section].entry[NeuroFastObservation] only Reference(TR_Disability_Neuro_Fast_Observation)
-* section[TR-Disability-Section].entry[GCSObservation] only Reference(TR_Disability_GCS_Observation)
-*/
 
 // Section: Exposure (Exposure - Trauma Check Section)
 * section[TR-Exposure-Section] ^short = "Exposure"
