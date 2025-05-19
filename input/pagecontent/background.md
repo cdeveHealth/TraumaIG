@@ -39,10 +39,10 @@ According to the Pre Hospital Trauma Life Support (PHTLS) an immediate transport
 and preparation of a trauma room are required.
 
 During the emergency response the paramedic uses smart glasses. Something similar to the 
-<a href="https://www.draeger.com/en_see/Applications/Smart-Glasses" target="_blank">Draeger HUD</a>[3] 
+<a href="https://www.draeger.com/en_seeur/Products/FPS-7000-Head-up-Display-HUD" target="_blank">Draeger HUD</a>[3] 
 with a voice and gesture controlled display. This is important because a hands-free documentation of the emergency response is essential for efficiency in the ambulance services.
 Trauma response is notoriously stressful. This leads to incomplete documentation.
-The possibility to document using speech-to-text[4] will have major impact on the completeness of documentation.
+The possibility to document using <a href="https://doi.org/10.1016/j.ijmedinf.2024.105662" target="_blank">speech-to-text</a> [4] will have major impact on the completeness of documentation.
 Clinical observations are documented using SNOMED CT terms as specified in the IG.
 Vital signs from patient-monitoring devices are transmitted using the IEEE 11073-SDC standard.
 

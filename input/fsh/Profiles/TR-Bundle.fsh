@@ -1,4 +1,4 @@
-Profile: TR_Bundle
+/*Profile: TR_Bundle
 Parent: Bundle
 Id: tr-bundle
 Title: "Document Bundle"
@@ -18,7 +18,7 @@ Description: "A document Bundle containing only tr-composition."
 * entry contains composition 1..1
 
 * entry[composition].resource only TR_Composition
-
+*/
 
 
 

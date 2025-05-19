@@ -25,12 +25,12 @@ This guide contains custom code systems, value sets and extensions. For further 
   <tbody>
     <tr>
       <td>1.</td>
-      <td><a href="https://cdevehealth.github.io/TraumaIG/index.html">IG Home Page</a></td>
+      <td><a href="index.html">IG Home Page</a></td>
       <td>This section contains general and technical information about the IG.</td>
     </tr>
     <tr>
       <td>2.</td>
-      <td><a href="https://cdevehealth.github.io/TraumaIG/background.html">Background</a></td>
+      <td><a href="background.html">Background</a></td>
       <td>This section outlines the broader context in which the Implementation Guide (IG) could be applied. (Big Picture)</td>
     </tr>
      <tr>
@@ -85,7 +85,7 @@ This IG has currently only implemented the [HL7® AT Core Patient Profile](https
   </tbody>
 </table>
 
-<p>This implementation guide defines additional constraints and usage expectations beyond what is covered in the base specifications.</p>
+This implementation guide defines additional constraints and usage expectations beyond what is covered in the base specifications.
 
 #### Copyright {#copyright}
 <div class="license-note" markdown="1">
