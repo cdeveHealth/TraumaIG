@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure</b></p><a name=\"uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure\"> </a><a name=\"hcuc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure\"> </a><a name=\"uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-br-breathing-medication-oxygen-procedure.html\">Administration of Oxygen</a></p></div><p><b>partOf</b>: <a href=\"MedicationAdministration-uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA.html\">MedicationAdministration: status = completed; category = outpatient; medication[x] = Oxygen (substance); effective[x] = 2025-01-01 12:55:00+0200</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 57485005}\">Oxygen therapy (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 371908008}\">Oxygen administration by mask</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>performed</b>: 2025-01-01 12:54:10+0200</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:partOf ( [
+     fhir:link <http://example.org/MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA> ;
+     fhir:reference [ fhir:v "MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:57485005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "57485005" ] ;
+       fhir:display [ fhir:v "Oxygen therapy (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:371908008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "371908008" ] ;
+       fhir:display [ fhir:v "Oxygen administration by mask (procedure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Oxygen administration by mask" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/uc1-Nomen-Nescio> ;
+     fhir:reference [ fhir:v "Patient/uc1-Nomen-Nescio" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/uc1-Motor-Vehicle-Collision> ;
+     fhir:reference [ fhir:v "Encounter/uc1-Motor-Vehicle-Collision" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:dateTime ;
+     fhir:v "2025-01-01T12:54:10+02:00"^^xsd:dateTime
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

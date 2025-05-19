@@ -16,7 +16,7 @@
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://github.com/cdeveHealth"
+      "value" : "https://github.com/medinterop-renner/TraumaIG"
     },
     {
       "system" : "email",

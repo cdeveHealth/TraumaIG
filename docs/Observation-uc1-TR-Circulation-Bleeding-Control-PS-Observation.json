@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "uc1-TR-Circulation-Bleeding-Control-PS-Observation",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation uc1-TR-Circulation-Bleeding-Control-PS-Observation</b></p><a name=\"uc1-TR-Circulation-Bleeding-Control-PS-Observation\"> </a><a name=\"hcuc1-TR-Circulation-Bleeding-Control-PS-Observation\"> </a><a name=\"uc1-TR-Circulation-Bleeding-Control-PS-Observation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-circulation-bleeding-control-ps-observation.html\">Observation of Pelvic Fracture</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77493009}\">Fracture of pelvis (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>effective</b>: 2025-01-01 12:37:00+0200</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77493009",
+      "display" : "Fracture of pelvis (disorder)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/uc1-Nomen-Nescio"
+  },
+  "encounter" : {
+    "reference" : "Encounter/uc1-Motor-Vehicle-Collision"
+  },
+  "effectiveDateTime" : "2025-01-01T12:37:00+02:00"
+}

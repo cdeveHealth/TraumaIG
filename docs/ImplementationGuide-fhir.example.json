@@ -9,13 +9,13 @@
   "version" : "0.1.0",
   "name" : "TraumaIG",
   "status" : "draft",
-  "date" : "2025-05-14T23:43:24+02:00",
+  "date" : "2025-05-19T18:20:06+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [{
     "name" : "Constantin Renner",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://github.com/cdeveHealth"
+      "value" : "https://github.com/medinterop-renner/TraumaIG"
     },
     {
       "system" : "email",
@@ -624,6 +624,18 @@
         "valueString" : "Procedure"
       }],
       "reference" : {
+        "reference" : "Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure"
+      },
+      "name" : "Administration of Oxygen",
+      "description" : "Procedure to describe the administration of Oxygen.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
         "reference" : "Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure"
       },
       "name" : "Airway Adjuncts Procedure",
@@ -729,6 +741,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure"
+      },
+      "name" : "Bag-Mask Ventilation",
+      "description" : "Manual respiratory assistance using bag and mask due to low respiratory rate.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-bag-mask-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -825,6 +849,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation"
+      },
+      "name" : "Cardiac Arrest Observation",
+      "description" : "Low blood pressure and absent carotid pulse observed, indicating cardiac arrest.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-cardiac-arrest-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -833,6 +869,18 @@
       "name" : "Cardiopulmonary resuscitation",
       "description" : "Doing Cardiopulmonary resuscitation due to cardiac arrest",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/uc1-TR-Circulation-CPR-Procedure"
+      },
+      "name" : "Cardiopulmonary resuscitation",
+      "description" : "Doing Cardiopulmonary resuscitation due to cardiac arrest",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-cpr-procedure"
     },
     {
       "extension" : [{
@@ -1029,26 +1077,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/tr-bundle"
+        "reference" : "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"
       },
-      "name" : "Document Bundle",
-      "description" : "A document Bundle containing only tr-composition.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/uc1-bundle"
-      },
-      "name" : "Document Bundle Instance",
-      "description" : "An instance of a document Bundle containing use case 1 composition.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/tr-bundle"
+      "name" : "Disorder of Thorax Observed",
+      "description" : "Chest wall movement noted to be asymmetric on the left. Haematothorax observed.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"
     },
     {
       "extension" : [{
@@ -1061,6 +1097,18 @@
       "name" : "Encounter corresponding to MVC",
       "description" : "Encounter made during the treatment of person in MVC",
       "exampleCanonical" : "http://example.org/StructureDefinition/trauma-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-TR-Disability-GCS-Observation-Example"
+      },
+      "name" : "Example Glasgow Coma Scale Observation with total score 7",
+      "description" : "Example instance with total GCS 7, components motor=3, verbal=2, eyeOpening=2.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-disability-gcs-observation"
     },
     {
       "extension" : [{
@@ -1269,6 +1317,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation"
+      },
+      "name" : "Increased Breathing Effort Observation",
+      "description" : "Signs of increased breathing effort with multiple components",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1277,6 +1337,18 @@
       "name" : "MedicationAdministration of Oxygen",
       "description" : "Procedure to describe the administration of Oxygen.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA"
+      },
+      "name" : "MedicationAdministration of Oxygen",
+      "description" : "Procedure to describe the administration of Oxygen.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma"
     },
     {
       "extension" : [{
@@ -1301,6 +1373,18 @@
       "name" : "Needle decomp because of tension pneumothorax",
       "description" : "Performing needle decompression because of tension pneumothorax",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure"
+      },
+      "name" : "Needle Decompression for Tension Pneumothorax",
+      "description" : "Performing needle decompression because of tension pneumothorax.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure"
     },
     {
       "extension" : [{
@@ -1337,6 +1421,18 @@
       "name" : "Observation of Pelvic Fracture",
       "description" : "Pelvic Fracture needs Pelvic Sling Procedure to stop critical bleeding.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation"
+      },
+      "name" : "Observation of Pelvic Fracture",
+      "description" : "Pelvic fracture observed with critical bleeding requiring pelvic sling procedure",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation"
     },
     {
       "extension" : [{
@@ -1401,6 +1497,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure"
+      },
+      "name" : "Pelvic Sling Procedure",
+      "description" : "Application of Pelvic Sling due to Pelvic Fracture",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1409,6 +1517,18 @@
       "name" : "Procedure for Bleeding Control",
       "description" : "Procedures to control bleeding of patient.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure"
+      },
+      "name" : "Procedure for Bleeding Control",
+      "description" : "Procedures to control bleeding of patient.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs"
     },
     {
       "extension" : [{
@@ -1425,6 +1545,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation"
+      },
+      "name" : "Respiration Rate Observation",
+      "description" : "Respiration rate observation with severity",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-finding-respiration-rate-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1437,18 +1569,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"
-      },
-      "name" : "Respiratory chest wall movement",
-      "description" : "Chest wall movement noted to be asymmetric on the left. Haematothorax observed.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1457,6 +1577,18 @@
       "name" : "Signs of Schock",
       "description" : "This Observation covers the indicators for schock.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation"
+      },
+      "name" : "Signs of Shock Observation",
+      "description" : "Observation indicating signs of shock: hypotension, tachycardia, and slow capillary refill.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation"
     },
     {
       "extension" : [{
@@ -1533,6 +1665,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation"
+      },
+      "name" : "SpO₂ Range Observation",
+      "description" : "Peripheral oxygen saturation (SpO₂) range observed in trauma patient",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1605,6 +1749,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/uc1-TR-Exp-Examination-Procedure"
+      },
+      "name" : "Trauma Check",
+      "description" : "Procedure of checking patient for signs of trauma.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-exp-examination-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tr-practitioner-role"
+      },
+      "name" : "TR_Practitioner_Role",
+      "description" : "Modification of AT Core Practitioner Role to fit TraumaIG Use Case",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Composition"
       }],
       "reference" : {
@@ -1624,6 +1792,30 @@
       },
       "name" : "uc1-Nomen-Nescio",
       "exampleCanonical" : "http://example.org/StructureDefinition/trauma-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/uc1-Practionter-Role"
+      },
+      "name" : "uc1-Practionter-Role",
+      "description" : "Example for the use of tr-practioner-role",
+      "exampleCanonical" : "http://example.org/StructureDefinition/tr-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/uc1-Practitioner"
+      },
+      "name" : "uc1-Practitioner",
+      "description" : "Example of HL7ATCorePractitioner for UC of Trauma IG.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

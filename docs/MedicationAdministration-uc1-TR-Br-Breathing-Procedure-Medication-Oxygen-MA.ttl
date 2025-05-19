@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA</b></p><a name=\"uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA\"> </a><a name=\"hcuc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA\"> </a><a name=\"uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-br-breathing-medication-oxygen-ma.html\">MedicationAdministration of Oxygen</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:\">outpatient</span></p><p><b>medication</b>: <span title=\"Codes:{http://snomed.info/sct 24099007}\">Oxygen (substance)</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</a></p><p><b>effective</b>: 2025-01-01 12:55:00+0200</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:code [ fhir:v "outpatient" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:24099007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "24099007" ] ;
+       fhir:display [ fhir:v "Oxygen (substance)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/uc1-Nomen-Nescio> ;
+     fhir:reference [ fhir:v "Patient/uc1-Nomen-Nescio" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-01-01T12:55:00+02:00"^^xsd:dateTime
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

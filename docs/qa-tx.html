@@ -10,20 +10,22 @@ Accept: application/fhir+json; fhirVersion=4.0
 User-Agent: fhir/publisher
 
 
-Response (00:00:00.704): 
+Response (00:00:00.385): 
 
 200
 access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
 access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
 connection:keep-alive
 content-length:2125
 content-type:application/fhir+json
-date:Wed, 14 May 2025 21:43:40 GMT
+date:Mon, 19 May 2025 16:20:19 GMT
+pragma:no-cache
 server:nginx
-x-request-id:224-1012866
+x-request-id:224-2648603
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/CapabilityStatement/tx","version" : "4.0.1-3.7.13","name" : "FHIRReferenceServer","title" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2025-05-14T03:01:20.601Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server","http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.7.13","releaseDate" : "2025-05-01T21:46:11.018Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"resource" : [{"type" : "CodeSystem","operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup"}]},{"type" : "ValueSet","operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code"},{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"}]}],"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/CapabilityStatement/tx","version" : "4.0.1-3.7.13","name" : "FHIRReferenceServer","title" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2025-05-19T16:20:19.710Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server","http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.7.13","releaseDate" : "2025-05-01T21:46:11.018Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"resource" : [{"type" : "CodeSystem","operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup"}]},{"type" : "ValueSet","operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code"},{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"}]}],"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 </pre><hr/>
 <a name="l2"> </a><h3>2</h3>
@@ -35,10 +37,10 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"ImplementationGuide"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"f5ea13c1-d2b4-4282-b1c6-9db24ba3c202"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"ImplementationGuide"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"f1ffac07-d940-44b5-8f93-4ed9a28fb038"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 
 
-Response (00:00:00.334): 
+Response (00:00:00.316): 
 
 200
 access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
@@ -46,15 +48,15 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:1584
+content-length:1577
 content-type:application/fhir+json
-date:Wed, 14 May 2025 21:43:48 GMT
-last-modified:Wed, 14 May 2025 21:43:48 GMT
+date:Mon, 19 May 2025 16:20:28 GMT
+last-modified:Mon, 19 May 2025 16:20:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:224-1012906
+x-request-id:224-2648660
 
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://hl7.org/fhir/fhir-types"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/fhir-types"},{"name" : "code","valueCode" : "ImplementationGuide"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/fhir-types' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://hl7.org/fhir/fhir-types' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n15 15: tx-op\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://hl7.org/fhir/fhir-types#ImplementationGuide (\"\")]\"\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://hl7.org/fhir/fhir-types#ImplementationGuide\"\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://hl7.org/fhir/fhir-types\"\r\n"}]}
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://hl7.org/fhir/fhir-types"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/fhir-types"},{"name" : "code","valueCode" : "ImplementationGuide"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/fhir-types' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://hl7.org/fhir/fhir-types' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://hl7.org/fhir/fhir-types#ImplementationGuide (\"\")]\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://hl7.org/fhir/fhir-types#ImplementationGuide\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://hl7.org/fhir/fhir-types\"\r\n"}]}
 
 </pre><hr/>
 <a name="l3"> </a><h3>3</h3>
@@ -66,10 +68,10 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://example.com/CodeSystem/TR-General-Codes-CS","code":"GI"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"f5ea13c1-d2b4-4282-b1c6-9db24ba3c202"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://example.com/CodeSystem/TR-General-Codes-CS","code":"GI"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"f1ffac07-d940-44b5-8f93-4ed9a28fb038"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 
 
-Response (00:00:01.876): 
+Response (00:00:00.251): 
 
 200
 access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
@@ -79,11 +81,73 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1662
 content-type:application/fhir+json
-date:Wed, 14 May 2025 21:43:52 GMT
-last-modified:Wed, 14 May 2025 21:43:52 GMT
+date:Mon, 19 May 2025 16:20:32 GMT
+last-modified:Mon, 19 May 2025 16:20:32 GMT
 pragma:no-cache
 server:nginx
-x-request-id:224-1012935
+x-request-id:224-2648668
 
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://example.com/CodeSystem/TR-General-Codes-CS"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://example.com/CodeSystem/TR-General-Codes-CS"},{"name" : "code","valueCode" : "GI"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n16 16: tx-op\r\n16 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n16 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en-US, default-to-latest\r\n16 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://example.com/CodeSystem/TR-General-Codes-CS#GI (\"\")]\"\r\n16 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://example.com/CodeSystem/TR-General-Codes-CS#GI\"\r\n16 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://example.com/CodeSystem/TR-General-Codes-CS\"\r\n"}]}
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://example.com/CodeSystem/TR-General-Codes-CS"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://example.com/CodeSystem/TR-General-Codes-CS"},{"name" : "code","valueCode" : "GI"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://example.com/CodeSystem/TR-General-Codes-CS' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n15 15: tx-op\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en-US, default-to-latest\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://example.com/CodeSystem/TR-General-Codes-CS#GI (\"\")]\"\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://example.com/CodeSystem/TR-General-Codes-CS#GI\"\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://example.com/CodeSystem/TR-General-Codes-CS\"\r\n"}]}
+
+</pre><hr/>
+<a name="l4"> </a><h3>4</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://example.com/ValueSet/Severity-VS","code":"fast","display":"Fast"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"f1ffac07-d940-44b5-8f93-4ed9a28fb038"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.475): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1595
+content-type:application/fhir+json
+date:Mon, 19 May 2025 16:20:35 GMT
+last-modified:Mon, 19 May 2025 16:20:35 GMT
+pragma:no-cache
+server:nginx
+x-request-id:224-2648676
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://example.com/ValueSet/Severity-VS"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://example.com/ValueSet/Severity-VS"},{"name" : "code","valueCode" : "fast"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://example.com/ValueSet/Severity-VS' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://example.com/ValueSet/Severity-VS' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://example.com/ValueSet/Severity-VS#fast (\"Fast\")]\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://example.com/ValueSet/Severity-VS#fast\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://example.com/ValueSet/Severity-VS\"\r\n"}]}
+
+</pre><hr/>
+<a name="l5"> </a><h3>5</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://example.com/ValueSet/Anatomical-Terminology","code":"119567009","display":"Structure of artery of head (body structure)"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"f1ffac07-d940-44b5-8f93-4ed9a28fb038"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.418): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1734
+content-type:application/fhir+json
+date:Mon, 19 May 2025 16:20:36 GMT
+last-modified:Mon, 19 May 2025 16:20:36 GMT
+pragma:no-cache
+server:nginx
+x-request-id:224-2648682
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://example.com/ValueSet/Anatomical-Terminology"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://example.com/ValueSet/Anatomical-Terminology"},{"name" : "code","valueCode" : "119567009"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://example.com/ValueSet/Anatomical-Terminology' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://example.com/ValueSet/Anatomical-Terminology' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n15 15: tx-op\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en-US, default-to-latest\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://example.com/ValueSet/Anatomical-Terminology#119567009 (\"Structure of artery of head (body structure)\")]\"\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://example.com/ValueSet/Anatomical-Terminology#119567009\"\r\n15 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://example.com/ValueSet/Anatomical-Terminology\"\r\n"}]}
 </pre></head></html>

@@ -69,7 +69,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
   <coding>
     <system value=""http://snomed.info/sct""/>
     <code value=""425696007""/>
-    <display value="" Manual respiratory assistance using bag and mask (procedure)""/>
+    <display value=""Manual respiratory assistance using bag and mask (procedure)""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","A code to identify a specific procedure .","http://hl7.org/fhir/ValueSet/procedure-code","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.what[x]","OBR-44/OBR-45"

@@ -9,13 +9,13 @@
   <version value="0.1.0"/>
   <name value="TraumaIG"/>
   <status value="draft"/>
-  <date value="2025-05-14T23:43:24+02:00"/>
+  <date value="2025-05-19T18:20:06+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/cdeveHealth"/>
+      <value value="https://github.com/medinterop-renner/TraumaIG"/>
     </telecom>
     <telecom>
       <system value="email"/>
@@ -466,6 +466,17 @@
         <valueString value="Procedure"/>
       </extension>
       <reference>
+        <reference value="Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure"/>
+      </reference>
+      <name value="Administration of Oxygen"/>
+      <description value="Procedure to describe the administration of Oxygen."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
         <reference value="Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure"/>
       </reference>
       <name value="Airway Adjuncts Procedure"/>
@@ -562,6 +573,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure"/>
+      </reference>
+      <name value="Bag-Mask Ventilation"/>
+      <description value="Manual respiratory assistance using bag and mask due to low respiratory rate."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-bag-mask-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -650,6 +672,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation"/>
+      </reference>
+      <name value="Cardiac Arrest Observation"/>
+      <description value="Low blood pressure and absent carotid pulse observed, indicating cardiac arrest."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-cardiac-arrest-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -658,6 +691,17 @@
       <name value="Cardiopulmonary resuscitation"/>
       <description value="Doing Cardiopulmonary resuscitation due to cardiac arrest"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/uc1-TR-Circulation-CPR-Procedure"/>
+      </reference>
+      <name value="Cardiopulmonary resuscitation"/>
+      <description value="Doing Cardiopulmonary resuscitation due to cardiac arrest"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-cpr-procedure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -837,25 +881,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/tr-bundle"/>
+        <reference value="Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"/>
       </reference>
-      <name value="Document Bundle"/>
-      <description value="A document Bundle containing only tr-composition."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/uc1-bundle"/>
-      </reference>
-      <name value="Document Bundle Instance"/>
-      <description value="An instance of a document Bundle containing use case 1 composition."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/tr-bundle"/>
+      <name value="Disorder of Thorax Observed"/>
+      <description value="Chest wall movement noted to be asymmetric on the left. Haematothorax observed."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -867,6 +900,17 @@
       <name value="Encounter corresponding to MVC"/>
       <description value="Encounter made during the treatment of person in MVC"/>
       <exampleCanonical value="http://example.org/StructureDefinition/trauma-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-TR-Disability-GCS-Observation-Example"/>
+      </reference>
+      <name value="Example Glasgow Coma Scale Observation with total score 7"/>
+      <description value="Example instance with total GCS 7, components motor=3, verbal=2, eyeOpening=2."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-disability-gcs-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1057,6 +1101,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation"/>
+      </reference>
+      <name value="Increased Breathing Effort Observation"/>
+      <description value="Signs of increased breathing effort with multiple components"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1065,6 +1120,17 @@
       <name value="MedicationAdministration of Oxygen"/>
       <description value="Procedure to describe the administration of Oxygen."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA"/>
+      </reference>
+      <name value="MedicationAdministration of Oxygen"/>
+      <description value="Procedure to describe the administration of Oxygen."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1087,6 +1153,17 @@
       <name value="Needle decomp because of tension pneumothorax"/>
       <description value="Performing needle decompression because of tension pneumothorax"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure"/>
+      </reference>
+      <name value="Needle Decompression for Tension Pneumothorax"/>
+      <description value="Performing needle decompression because of tension pneumothorax."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1120,6 +1197,17 @@
       <name value="Observation of Pelvic Fracture"/>
       <description value="Pelvic Fracture needs Pelvic Sling Procedure to stop critical bleeding."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation"/>
+      </reference>
+      <name value="Observation of Pelvic Fracture"/>
+      <description value="Pelvic fracture observed with critical bleeding requiring pelvic sling procedure"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1178,6 +1266,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure"/>
+      </reference>
+      <name value="Pelvic Sling Procedure"/>
+      <description value="Application of Pelvic Sling due to Pelvic Fracture"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1186,6 +1285,17 @@
       <name value="Procedure for Bleeding Control"/>
       <description value="Procedures to control bleeding of patient."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure"/>
+      </reference>
+      <name value="Procedure for Bleeding Control"/>
+      <description value="Procedures to control bleeding of patient."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1200,6 +1310,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation"/>
+      </reference>
+      <name value="Respiration Rate Observation"/>
+      <description value="Respiration rate observation with severity"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-finding-respiration-rate-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1211,17 +1332,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"/>
-      </reference>
-      <name value="Respiratory chest wall movement"/>
-      <description value="Chest wall movement noted to be asymmetric on the left. Haematothorax observed."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1230,6 +1340,17 @@
       <name value="Signs of Schock"/>
       <description value="This Observation covers the indicators for schock."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation"/>
+      </reference>
+      <name value="Signs of Shock Observation"/>
+      <description value="Observation indicating signs of shock: hypotension, tachycardia, and slow capillary refill."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1299,6 +1420,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation"/>
+      </reference>
+      <name value="SpO₂ Range Observation"/>
+      <description value="Peripheral oxygen saturation (SpO₂) range observed in trauma patient"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1365,6 +1497,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/uc1-TR-Exp-Examination-Procedure"/>
+      </reference>
+      <name value="Trauma Check"/>
+      <description value="Procedure of checking patient for signs of trauma."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-exp-examination-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tr-practitioner-role"/>
+      </reference>
+      <name value="TR_Practitioner_Role"/>
+      <description value="Modification of AT Core Practitioner Role to fit TraumaIG Use Case"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Composition"/>
       </extension>
       <reference>
@@ -1383,6 +1537,28 @@
       </reference>
       <name value="uc1-Nomen-Nescio"/>
       <exampleCanonical value="http://example.org/StructureDefinition/trauma-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/uc1-Practionter-Role"/>
+      </reference>
+      <name value="uc1-Practionter-Role"/>
+      <description value="Example for the use of tr-practioner-role"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/tr-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/uc1-Practitioner"/>
+      </reference>
+      <name value="uc1-Practitioner"/>
+      <description value="Example of HL7ATCorePractitioner for UC of Trauma IG."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

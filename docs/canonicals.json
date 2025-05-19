@@ -154,13 +154,6 @@
     "name" : "TR_Br_Breathing_Medication_Oxygen_Procedure"
   },
   {
-    "id" : "tr-bundle",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/tr-bundle",
-    "version" : "0.1.0",
-    "name" : "TR_Bundle"
-  },
-  {
     "id" : "tr-circulation-bleeding-control-ps-observation",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation",
@@ -278,6 +271,13 @@
     "url" : "http://example.org/StructureDefinition/tr-gi-mental-status-impression-observation",
     "version" : "0.1.0",
     "name" : "TR_GI_Mental_Status_Impression_Observation"
+  },
+  {
+    "id" : "tr-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/tr-practitioner-role",
+    "version" : "0.1.0",
+    "name" : "TR_Practitioner_Role"
   },
   {
     "id" : "trauma-encounter",

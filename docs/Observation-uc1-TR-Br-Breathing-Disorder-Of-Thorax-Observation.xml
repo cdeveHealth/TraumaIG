@@ -6,7 +6,7 @@
     <profile value="http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation</b></p><a name="uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"> </a><a name="hcuc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"> </a><a name="uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tr-br-breathing-disorder-of-thorax-observation.html">Disorder of thoracic cavity</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 64572001}">Symmetry of chest movement</span></p><p><b>subject</b>: <a href="Patient-uc1-Nomen-Nescio.html">Nescio Nomen  Male, DoB: 1990-01-01</a></p><p><b>encounter</b>: <a href="Encounter-uc1-Motor-Vehicle-Collision.html">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>effective</b>: 2025-01-01 12:29:00+0200</p><blockquote><p><b>component</b></p><p><b>com/PathologicSideExtension</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 12025005}">Paradoxical respiration</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>com/PathologicSideExtension</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 45508002}">Reduced chest expansion</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>com/PathologicSideExtension</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 66787007}">Intercostal recession</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation</b></p><a name="uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"> </a><a name="hcuc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"> </a><a name="uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tr-br-breathing-disorder-of-thorax-observation.html">Disorder of thoracic cavity</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 64572001}">Symmetry of chest movement</span></p><p><b>subject</b>: <a href="Patient-uc1-Nomen-Nescio.html">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</a></p><p><b>encounter</b>: <a href="Encounter-uc1-Motor-Vehicle-Collision.html">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>effective</b>: 2025-01-01 12:29:00+0200</p><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 12025005}">Paradoxical respiration</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 45508002}">Decreased chest expansion</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 6442005}">Intercostal recession</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 65503000}">Absent breath sounds</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 39180009}">Percussive dullness</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 271653008}">Jugular venous engorgement</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Pathologic Side</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 13206009}">Tracheal deviation</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 52101004}">Present</span></p></blockquote></div>
   </text>
   <status value="final"/>
   <code>
@@ -25,7 +25,7 @@
   </encounter>
   <effectiveDateTime value="2025-01-01T12:29:00+02:00"/>
   <component>
-    <extension url="http://example.com/PathologicSideExtension">
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
       <valueCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct"/>
@@ -38,7 +38,6 @@
       <coding>
         <system value="http://snomed.info/sct"/>
         <code value="12025005"/>
-        <display value="Paradoxical respiration"/>
       </coding>
     </code>
     <valueCodeableConcept>
@@ -50,7 +49,7 @@
     </valueCodeableConcept>
   </component>
   <component>
-    <extension url="http://example.com/PathologicSideExtension">
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
       <valueCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct"/>
@@ -63,7 +62,6 @@
       <coding>
         <system value="http://snomed.info/sct"/>
         <code value="45508002"/>
-        <display value="Reduced chest expansion"/>
       </coding>
     </code>
     <valueCodeableConcept>
@@ -75,7 +73,7 @@
     </valueCodeableConcept>
   </component>
   <component>
-    <extension url="http://example.com/PathologicSideExtension">
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
       <valueCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct"/>
@@ -87,8 +85,91 @@
     <code>
       <coding>
         <system value="http://snomed.info/sct"/>
-        <code value="66787007"/>
-        <display value="Intercostal recession"/>
+        <code value="6442005"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="52101004"/>
+        <display value="Present"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="7771000"/>
+          <display value="Left"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="65503000"/>
+      </coding>
+    </code>
+    <valueBoolean value="true"/>
+  </component>
+  <component>
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="7771000"/>
+          <display value="Left"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="39180009"/>
+      </coding>
+    </code>
+    <valueBoolean value="true"/>
+  </component>
+  <component>
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="7771000"/>
+          <display value="Left"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271653008"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="52101004"/>
+        <display value="Present"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <extension url="http://example.org/StructureDefinition/pathologic-side">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="7771000"/>
+          <display value="Left"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="13206009"/>
       </coding>
     </code>
     <valueCodeableConcept>

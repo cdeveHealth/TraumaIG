@@ -216,9 +216,62 @@
        fhir:status [ fhir:v "generated" ] ;
        fhir:div "<div>Breathing Section</div>"^^rdf:XMLLiteral
      ] ;
-     fhir:entry ( [
-       fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation> ;
-       fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation" ]
+     fhir:section ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "brf" ]
+         ] )
+       ] ;
+       fhir:section ( [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "brp" ]
+         ] )
+       ] ;
+       fhir:section ( [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA> ;
+           fhir:reference [ fhir:v "MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA" ]
+         ] )
+       ] )
      ] )
   ] [
      fhir:title [ fhir:v "Circulation" ] ;
@@ -235,6 +288,58 @@
      fhir:entry ( [
        fhir:link <http://example.org/Observation/uc1-TR-C-Skin-assessment-Observation> ;
        fhir:reference [ fhir:v "Observation/uc1-TR-C-Skin-assessment-Observation" ]
+     ] ) ;
+     fhir:section ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "cirob" ]
+         ] )
+       ] ;
+       fhir:section ( [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Observation/uc1-TR-Circulation-Skin-Assessment-Observation> ;
+           fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Skin-Assessment-Observation" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "cirpro" ]
+         ] )
+       ] ;
+       fhir:section ( [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure" ]
+         ] )
+       ] [
+         fhir:entry ( [
+           fhir:link <http://example.org/Procedure/uc1-TR-Circulation-CPR-Procedure> ;
+           fhir:reference [ fhir:v "Procedure/uc1-TR-Circulation-CPR-Procedure" ]
+         ] )
+       ] )
      ] )
   ] [
      fhir:title [ fhir:v "Disability" ] ;
@@ -249,8 +354,27 @@
        fhir:div "<div>Disability Section</div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
-       fhir:link <http://example.org/Observation/uc1-TR-D-Neuro-FAST-Observation> ;
-       fhir:reference [ fhir:v "Observation/uc1-TR-D-Neuro-FAST-Observation" ]
+       fhir:link <http://example.org/Observation/uc1-TR-Disability-GCS-Observation> ;
+       fhir:reference [ fhir:v "Observation/uc1-TR-Disability-GCS-Observation" ]
+     ] [
+       fhir:link <http://example.org/Observation/uc1-TR-Disability-Neuro-FAST-Observations> ;
+       fhir:reference [ fhir:v "Observation/uc1-TR-Disability-Neuro-FAST-Observations" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Exposure" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.com/CodeSystem/TR-General-Codes-CS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "exp" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Exposure Section</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Procedure/uc1-TR-Exp-Examination-Procedure> ;
+       fhir:reference [ fhir:v "Procedure/uc1-TR-Exp-Examination-Procedure" ]
      ] )
   ] ) . # 
 

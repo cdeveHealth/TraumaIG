@@ -10,13 +10,13 @@
   <title value="Foreign Body Obstruction of AW"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2025-05-14T23:43:24+02:00"/>
+  <date value="2025-05-19T18:20:06+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/cdeveHealth"/>
+      <value value="https://github.com/medinterop-renner/TraumaIG"/>
     </telecom>
     <telecom>
       <system value="email"/>

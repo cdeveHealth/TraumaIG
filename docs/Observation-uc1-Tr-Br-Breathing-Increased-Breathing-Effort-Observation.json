@@ -1,0 +1,124 @@
+{
+  "resourceType" : "Observation",
+  "id" : "uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation</b></p><a name=\"uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation\"> </a><a name=\"hcuc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation\"> </a><a name=\"uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-br-breathing-increased-breathing-effort-observation.html\">Increased Breathing Effort</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 301820005}\">Finding of respiratory effort (finding)</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>effective</b>: 2025-01-01 12:36:00+0200</p><blockquote><p><b>component</b></p><p><b>com/StructureDefinition/pathologic-side</b>: <span title=\"Codes:{http://example.com/ValueSet/Anatomical-Terminology left}\">Left</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 12025005}\">Paradoxical respiration</span></p><p><b>value</b>: <span title=\"Codes:{http://example.com/ValueSet/Severity-VS moderate}\">Moderate</span></p></blockquote><blockquote><p><b>component</b></p><p><b>com/StructureDefinition/pathologic-side</b>: <span title=\"Codes:{http://example.com/ValueSet/Anatomical-Terminology right}\">Right</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 45508002}\">Reduced or normal chest expansion</span></p><p><b>value</b>: <span title=\"Codes:{http://example.com/ValueSet/Severity-VS severe}\">Severe</span></p></blockquote><blockquote><p><b>component</b></p><p><b>com/StructureDefinition/pathologic-side</b>: <span title=\"Codes:{http://example.com/ValueSet/Anatomical-Terminology bilateral}\">Bilateral</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 6442005}\">Intercostal recession</span></p><p><b>value</b>: <span title=\"Codes:{http://example.com/ValueSet/Severity-VS mild}\">Mild</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 21558008}\">Nasal flaring</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271620003}\">Accessory respiratory muscles used (finding)</span></p><p><b>value</b>: true</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "301820005",
+      "display" : "Finding of respiratory effort (finding)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/uc1-Nomen-Nescio"
+  },
+  "encounter" : {
+    "reference" : "Encounter/uc1-Motor-Vehicle-Collision"
+  },
+  "effectiveDateTime" : "2025-01-01T12:36:00+02:00",
+  "component" : [{
+    "extension" : [{
+      "url" : "http://example.com/StructureDefinition/pathologic-side",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.com/ValueSet/Anatomical-Terminology",
+          "code" : "left",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "12025005",
+        "display" : "Paradoxical respiration"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.com/ValueSet/Severity-VS",
+        "code" : "moderate",
+        "display" : "Moderate"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.com/StructureDefinition/pathologic-side",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.com/ValueSet/Anatomical-Terminology",
+          "code" : "right",
+          "display" : "Right"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "45508002",
+        "display" : "Reduced or normal chest expansion"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.com/ValueSet/Severity-VS",
+        "code" : "severe",
+        "display" : "Severe"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.com/StructureDefinition/pathologic-side",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.com/ValueSet/Anatomical-Terminology",
+          "code" : "bilateral",
+          "display" : "Bilateral"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "6442005",
+        "display" : "Intercostal recession"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.com/ValueSet/Severity-VS",
+        "code" : "mild",
+        "display" : "Mild"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "21558008",
+        "display" : "Nasal flaring"
+      }]
+    },
+    "valueBoolean" : true
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271620003",
+        "display" : "Accessory respiratory muscles used (finding)"
+      }]
+    },
+    "valueBoolean" : true
+  }]
+}

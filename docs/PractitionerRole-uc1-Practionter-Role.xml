@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="uc1-Practionter-Role"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/tr-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole uc1-Practionter-Role</b></p><a name="uc1-Practionter-Role"> </a><a name="hcuc1-Practionter-Role"> </a><a name="uc1-Practionter-Role-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tr-practitioner-role.html">TR_Practitioner_Role</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-uc1-Practitioner.html">Practitioner Nora Notärztin </a></p></div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/uc1-Practitioner"/>
+  </practitioner>
+</PractitionerRole>

@@ -11,12 +11,20 @@
         <a href="StructureDefinition-tr-composition.html">
 <code>http://example.com/CodeSystem/TR-General-Codes-CS</code>        </a>
       </li>
+      <li>
+        <a href="Observation-uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation.html">
+<code>http://example.com/ValueSet/Anatomical-Terminology</code>        </a>
+      </li>
+      <li>
+        <a href="Observation-uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation.html">
+<code>http://example.com/ValueSet/Severity-VS</code>        </a>
+      </li>
     </ul>
     <h2>Copyright and Registered Trademark Uses</h2>
     <ul>
       <li>
 
-          IG &copy; 2025+ Constantin Renner.  Package fhir.example#0.1.0 based on FHIR 4.0.1. Generated 2025-05-14 
+          IG &copy; 2025+ Constantin Renner.  Package fhir.example#0.1.0 based on FHIR 4.0.1. Generated 2025-05-19 
           
           
                       Links: Table of Contents |
@@ -37,6 +45,49 @@
       </li>
       <li>
 
+&lt;Practitioner xmlns="http://hl7.org/fhir"&gt;
+  &lt;id value="uc1-Practitioner"/&gt;
+  &lt;meta&gt;
+    &lt;profile
+             value="http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-practitioner"/&gt;
+  &lt;/meta&gt;
+  &lt;text&gt;
+    &lt;status value="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Practitioner uc1-Practitioner&lt;/b&gt;&lt;/p&gt;&lt;a name="uc1-Practitioner"&gt; &lt;/a&gt;&lt;a name="hcuc1-Practitioner"&gt; &lt;/a&gt;&lt;a name="uc1-Practitioner-en-US"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"/&gt;&lt;p style="margin-bottom: 0px"&gt;Profile: &lt;a href="http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/2.0.0/StructureDefinition-at-core-practitioner.html"&gt;HL7&reg; AT Core Practitioner Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem."&gt;Uniform Resource Identifier (URI)&lt;/a&gt;/urn:oid:1.2.40.0.34.99.4613.4, &lt;code&gt;urn:oid:1.2.40.0.10.1.4.3.2&lt;/code&gt;/1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Nora Notärztin &lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Female&lt;/p&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;identifier&gt;
+    &lt;system value="urn:ietf:rfc:3986"/&gt;
+    &lt;value value="urn:oid:1.2.40.0.34.99.4613.4"/&gt;
+    &lt;assigner&gt;
+      &lt;display value="Bundesministerium für Gesundheit"/&gt;
+    &lt;/assigner&gt;
+  &lt;/identifier&gt;
+  &lt;identifier&gt;
+    &lt;system value="urn:oid:1.2.40.0.10.1.4.3.2"/&gt;
+    &lt;value value="1234"/&gt;
+    &lt;assigner&gt;
+      &lt;display
+               value="Dachverband der österreichischen Sozialversicherungsträger"/&gt;
+    &lt;/assigner&gt;
+  &lt;/identifier&gt;
+  &lt;active value="true"/&gt;
+  &lt;name&gt;
+    &lt;family value="Notärztin"/&gt;
+    &lt;given value="Nora"/&gt;
+    &lt;prefix value="Prof. Dr."/&gt;
+  &lt;/name&gt;
+  &lt;gender value="female"/&gt;
+&lt;/Practitioner&gt; (        <a href="Practitioner-uc1-Practitioner.xml.html">src</a>
+)
+      </li>
+      <li>
+
 &lt;StructureDefinition xmlns="http://hl7.org/fhir"&gt;
   &lt;id value="trauma-patient"/&gt;
   &lt;text&gt;
@@ -50,13 +101,13 @@
   &lt;name value="Trauma_Patient"/&gt;
   &lt;title value="Base Trauma Patient"/&gt;
   &lt;status value="draft"/&gt;
-  &lt;date value="2025-05-14T23:43:24+02:00"/&gt;
+  &lt;date value="2025-05-19T18:20:06+02:00"/&gt;
   &lt;publisher value="Constantin Renner"/&gt;
   &lt;contact&gt;
     &lt;name value="Constantin Renner"/&gt;
     &lt;telecom&gt;
       &lt;system value="url"/&gt;
-      &lt;value value="https://github.com/cdeveHealth"/&gt;
+      &lt;value value="https://github.com/medinterop-renner/TraumaIG"/&gt;
     &lt;/telecom&gt;
     &lt;telecom&gt;
       &lt;system value="email"/&gt;
@@ -11072,6 +11123,50 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 # - resource -------------------------------------------------------------------
 
+ a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uc1-Practitioner"] ; # 
+  fhir:meta [
+    ( fhir:profile [
+fhir:v "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-practitioner"^^xsd:anyURI ;
+fhir:link &lt;http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-practitioner&gt;     ] )
+  ] ; # 
+  fhir:text [
+fhir:status [ fhir:v "generated" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Practitioner uc1-Practitioner&lt;/b&gt;&lt;/p&gt;&lt;a name=\"uc1-Practitioner\"&gt; &lt;/a&gt;&lt;a name=\"hcuc1-Practitioner\"&gt; &lt;/a&gt;&lt;a name=\"uc1-Practitioner-en-US\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/2.0.0/StructureDefinition-at-core-practitioner.html\"&gt;HL7&reg; AT Core Practitioner Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=\"http://terminology.hl7.org/6.2.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\"&gt;Uniform Resource Identifier (URI)&lt;/a&gt;/urn:oid:1.2.40.0.34.99.4613.4, &lt;code&gt;urn:oid:1.2.40.0.10.1.4.3.2&lt;/code&gt;/1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Nora Notärztin &lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Female&lt;/p&gt;&lt;/div&gt;"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+fhir:value [ fhir:v "urn:oid:1.2.40.0.34.99.4613.4" ] ;
+fhir:assigner [
+fhir:display [ fhir:v "Bundesministerium für Gesundheit" ]     ]
+  ] [
+fhir:system [ fhir:v "urn:oid:1.2.40.0.10.1.4.3.2"^^xsd:anyURI ] ;
+fhir:value [ fhir:v "1234" ] ;
+fhir:assigner [
+fhir:display [ fhir:v "Dachverband der österreichischen Sozialversicherungsträger" ]     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+fhir:family [ fhir:v "Notärztin" ] ;
+    ( fhir:given [ fhir:v "Nora" ] ) ;
+    ( fhir:prefix [ fhir:v "Prof. Dr." ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] . # 
+
+ (        <a href="Practitioner-uc1-Practitioner.ttl.html">src</a>
+)
+      </li>
+      <li>
+
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
  a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "trauma-patient"] ; # 
@@ -11084,13 +11179,13 @@ fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-he
   fhir:name [ fhir:v "Trauma_Patient"] ; # 
   fhir:title [ fhir:v "Base Trauma Patient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-14T23:43:24+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-19T18:20:06+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
 fhir:name [ fhir:v "Constantin Renner" ] ;
     ( fhir:telecom [
 fhir:system [ fhir:v "url" ] ;
-fhir:value [ fhir:v "https://github.com/cdeveHealth" ]     ] [
+fhir:value [ fhir:v "https://github.com/medinterop-renner/TraumaIG" ]     ] [
 fhir:system [ fhir:v "email" ] ;
 fhir:value [ fhir:v "constantinrenner1@gmail.com" ]     ] )
   ] ) ; # 
@@ -19779,7 +19874,15 @@ HL7&reg; AT Core Address Profile (        <a href="StructureDefinition-trauma-pa
 )
       </li>
       <li>
+HL7&reg; AT Core Organization Profile (        <a href="StructureDefinition-tr-practitioner-role.html">src</a>
+)
+      </li>
+      <li>
 HL7&reg; AT Core Patient Profile (        <a href="index.html">src</a>
+)
+      </li>
+      <li>
+HL7&reg; AT Core Practitioner Profile (        <a href="StructureDefinition-tr-practitioner-role.html">src</a>
 )
       </li>
       <li>
@@ -19836,6 +19939,51 @@ TraumaIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg
       </li>
       <li>
 {
+  "resourceType" : "Practitioner",
+  "id" : "uc1-Practitioner",
+  "meta" : {
+    "profile" : [
+      &#x1F517; "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-practitioner"
+    ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Practitioner uc1-Practitioner&lt;/b&gt;&lt;/p&gt;&lt;a name=\"uc1-Practitioner\"&gt; &lt;/a&gt;&lt;a name=\"hcuc1-Practitioner\"&gt; &lt;/a&gt;&lt;a name=\"uc1-Practitioner-en-US\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/2.0.0/StructureDefinition-at-core-practitioner.html\"&gt;HL7&reg; AT Core Practitioner Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=\"http://terminology.hl7.org/6.2.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\"&gt;Uniform Resource Identifier (URI)&lt;/a&gt;/urn:oid:1.2.40.0.34.99.4613.4, &lt;code&gt;urn:oid:1.2.40.0.10.1.4.3.2&lt;/code&gt;/1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Nora Notärztin &lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Female&lt;/p&gt;&lt;/div&gt;"
+  },
+  "identifier" : [
+    {
+      "system" : "urn:ietf:rfc:3986",
+      "value" : "urn:oid:1.2.40.0.34.99.4613.4",
+      "assigner" : {
+        "display" : "Bundesministerium für Gesundheit"
+      }
+    },
+    {
+      "system" : "urn:oid:1.2.40.0.10.1.4.3.2",
+      "value" : "1234",
+      "assigner" : {
+        "display" : "Dachverband der österreichischen Sozialversicherungsträger"
+      }
+    }
+  ],
+  "active" : true,
+  "name" : [
+    {
+      "family" : "Notärztin",
+      "given" : [
+        "Nora"
+      ],
+      "prefix" : [
+        "Prof. Dr."
+      ]
+    }
+  ],
+  "gender" : "female"
+} (        <a href="Practitioner-uc1-Practitioner.json.html">src</a>
+)
+      </li>
+      <li>
+{
   "resourceType" : "StructureDefinition",
   "id" : "trauma-patient",
   "text" : {
@@ -19847,7 +19995,7 @@ TraumaIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg
   "name" : "Trauma_Patient",
   "title" : "Base Trauma Patient",
   "status" : "draft",
-  "date" : "2025-05-14T23:43:24+02:00",
+  "date" : "2025-05-19T18:20:06+02:00",
   "publisher" : "Constantin Renner",
   "contact" : [
     {
@@ -19855,7 +20003,7 @@ TraumaIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg
       "telecom" : [
         {
           "system" : "url",
-          "value" : "https://github.com/cdeveHealth"
+          "value" : "https://github.com/medinterop-renner/TraumaIG"
         },
         {
           "system" : "email",
@@ -33614,16 +33762,16 @@ Presence and severity of speech disturbance.          <br/>
       </tr>
       <tr>
         <td>
-          <a href="Bundle-uc1-bundle.change.history.html">web</a>
+          <a href="CodeSystem-tr-general-codes-cs-testing.html">web</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth">github.com</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG">github.com</a>
         </td>
         <td>
 
-          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/cdeveHealth">Constantin Renner</a>
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/medinterop-renner/TraumaIG">Constantin Renner</a>
 .  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Wed, May 14, 2025 23:43+0200">2025-05-14</span>
+. Generated           <span title="Mon, May 19, 2025 18:20+0200">2025-05-19</span>
 
                     <br/>
 
@@ -34774,18 +34922,6 @@ Actual result          <br/>
       </tr>
       <tr>
         <td>
-          <a href="StructureDefinition-tr-bundle-definitions.html">web</a>
-        </td>
-        <td>
-          <a href="http://en.wikipedia.org/wiki/HATEOAS">en.wikipedia.org</a>
-        </td>
-        <td>
-Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g.           <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>
-).
-        </td>
-      </tr>
-      <tr>
-        <td>
           <a href="StructureDefinition-tr-circulation-bleeding-control-vs-definitions.html">web</a>
         </td>
         <td>
@@ -35605,6 +35741,90 @@ Actual result          <br/>
       </tr>
       <tr>
         <td>
+          <a href="StructureDefinition-tr-practitioner-role-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">termgit.elga.gv.at</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from           <span style="color:DarkGray;text-decoration:line-through">For example codes, see </span>
+           <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/practitioner-role</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole</code><button data-clipboard-text="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tr-practitioner-role-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">termgit.elga.gv.at</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from            <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole</code><button data-clipboard-text="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tr-practitioner-role-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.omg.org/spec/ServD/1.0/">www.omg.org</a>
+        </td>
+        <td>
+Mappings for ServD (          <a href="http://www.omg.org/spec/ServD/1.0/">http://www.omg.org/spec/ServD/1.0/</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tr-practitioner-role.html">web</a>
+        </td>
+        <td>
+          <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">termgit.elga.gv.at</a>
+        </td>
+        <td>
+Roles which this practitioner may perform          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)          <br/>
+          <span style="font-weight:bold">ele-1: </span>
+All FHIR elements must have a @value or children          <br/>
+          <br/>
+          <span style="font-weight:bold">Required Pattern: </span>
+          <span style="color: darkgreen">At least the following</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-tr-practitioner-role.html">web</a>
+        </td>
+        <td>
+          <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">termgit.elga.gv.at</a>
+        </td>
+        <td>
+Roles which this practitioner may perform          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole">https://termgit.elga.gv.at/ValueSet/hl7-at-practitionerrole</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)          <br/>
+          <br/>
+          <span style="font-weight:bold">Required Pattern: </span>
+          <span style="color: darkgreen">At least the following</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="StructureDefinition-trauma-patient-definitions.html">web</a>
         </td>
         <td>
@@ -35889,15 +36109,35 @@ Here, IHE profiles such as the           <a href="https://wiki.ihe.net/index.php
           <a href="background.html">web</a>
         </td>
         <td>
-          <a href="https://www.draeger.com/en_see/Applications/Smart-Glasses">www.draeger.com</a>
+          <a href="https://www.draeger.com/en_seeur/Products/FPS-7000-Head-up-Display-HUD">www.draeger.com</a>
         </td>
         <td>
 During the emergency response the paramedic uses smart glasses. Something similar to the 
-          <a href="https://www.draeger.com/en_see/Applications/Smart-Glasses" target="_blank">Draeger HUD</a>
+          <a href="https://www.draeger.com/en_seeur/Products/FPS-7000-Head-up-Display-HUD" target="_blank">Draeger HUD</a>
 [3] 
 with a voice and gesture controlled display. This is important because a hands-free documentation of the emergency response is essential for efficiency in the ambulance services.
 Trauma response is notoriously stressful. This leads to incomplete documentation.
-The possibility to document using speech-to-text[4] will have major impact on the completeness of documentation.
+The possibility to document using           <a href="https://doi.org/10.1016/j.ijmedinf.2024.105662" target="_blank">speech-to-text</a>
+ [4] will have major impact on the completeness of documentation.
+Clinical observations are documented using SNOMED CT terms as specified in the IG.
+Vital signs from patient-monitoring devices are transmitted using the IEEE 11073-SDC standard.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="background.html">web</a>
+        </td>
+        <td>
+          <a href="https://doi.org/10.1016/j.ijmedinf.2024.105662">doi.org</a>
+        </td>
+        <td>
+During the emergency response the paramedic uses smart glasses. Something similar to the 
+          <a href="https://www.draeger.com/en_seeur/Products/FPS-7000-Head-up-Display-HUD" target="_blank">Draeger HUD</a>
+[3] 
+with a voice and gesture controlled display. This is important because a hands-free documentation of the emergency response is essential for efficiency in the ambulance services.
+Trauma response is notoriously stressful. This leads to incomplete documentation.
+The possibility to document using           <a href="https://doi.org/10.1016/j.ijmedinf.2024.105662" target="_blank">speech-to-text</a>
+ [4] will have major impact on the completeness of documentation.
 Clinical observations are documented using SNOMED CT terms as specified in the IG.
 Vital signs from patient-monitoring devices are transmitted using the IEEE 11073-SDC standard.
         </td>
@@ -35907,21 +36147,10 @@ Vital signs from patient-monitoring devices are transmitted using the IEEE 11073
           <a href="examples.html">web</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/Profiles/TR-Composition.fsh">github.com</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/Profiles/TR-Composition.fsh">github.com</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/Profiles/TR-Composition.fsh">Composition GitHub FSH</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="examples.html">web</a>
-        </td>
-        <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Br-Breathing-Disorder-Of-Thorax-Observation.fsh">github.com</a>
-        </td>
-        <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Br-Breathing-Disorder-Of-Thorax-Observation.fsh">Disorder of Thorax GitHub FSH</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/Profiles/TR-Composition.fsh">Composition GitHub FSH</a>
         </td>
       </tr>
       <tr>
@@ -35929,21 +36158,10 @@ Vital signs from patient-monitoring devices are transmitted using the IEEE 11073
           <a href="examples.html">web</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Circulation-Skin-Assessment-Observation.fsh">github.com</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Br-Breathing-Disorder-Of-Thorax-Observation.fsh">github.com</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Circulation-Skin-Assessment-Observation.fsh">Skin Assessment GitHub FSH</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="examples.html">web</a>
-        </td>
-        <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/valuesets/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.fsh">github.com</a>
-        </td>
-        <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG/blob/main/input/fsh/valuesets/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.fsh">Example ValueSet</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Br-Breathing-Disorder-Of-Thorax-Observation.fsh">Disorder of Thorax GitHub FSH</a>
         </td>
       </tr>
       <tr>
@@ -35951,32 +36169,32 @@ Vital signs from patient-monitoring devices are transmitted using the IEEE 11073
           <a href="examples.html">web</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG">github.com</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Circulation-Skin-Assessment-Observation.fsh">github.com</a>
         </td>
         <td>
-          <a href="https://github.com/cdeveHealth/TraumaIG">Profile: TR_AW_Breathing_Sound_Observation FSH Code</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="index.html">web</a>
-        </td>
-        <td>
-          <a href="https://cdevehealth.github.io/TraumaIG/index.html">cdevehealth.github.io</a>
-        </td>
-        <td>
-          <a href="https://cdevehealth.github.io/TraumaIG/index.html">IG Home Page</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/Profiles/Observations/TR-Circulation-Skin-Assessment-Observation.fsh">Skin Assessment GitHub FSH</a>
         </td>
       </tr>
       <tr>
         <td>
-          <a href="index.html">web</a>
+          <a href="examples.html">web</a>
         </td>
         <td>
-          <a href="https://cdevehealth.github.io/TraumaIG/background.html">cdevehealth.github.io</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/valuesets/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.fsh">github.com</a>
         </td>
         <td>
-          <a href="https://cdevehealth.github.io/TraumaIG/background.html">Background</a>
+          <a href="https://github.com/medinterop-renner/TraumaIG/blob/main/input/fsh/valuesets/TR-AW-Airway-Obstruction-Causes-Breathing-Sounds-VS.fsh">Example ValueSet</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="examples.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medinterop-renner/TraumaIG">github.com</a>
+        </td>
+        <td>
+          <a href="https://github.com/medinterop-renner/TraumaIG">Link to Repo</a>
         </td>
       </tr>
       <tr>

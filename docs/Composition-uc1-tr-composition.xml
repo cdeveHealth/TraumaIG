@@ -197,9 +197,62 @@
     <text>
       <status value="generated"/><div>Breathing Section</div>
     </text>
-    <entry>
-      <reference value="Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"/>
-    </entry>
+    <section>
+      <code>
+        <coding>
+          <system value="http://example.com/CodeSystem/TR-General-Codes-CS"/>
+          <code value="brf"/>
+        </coding>
+      </code>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation"/>
+        </entry>
+      </section>
+    </section>
+    <section>
+      <code>
+        <coding>
+          <system value="http://example.com/CodeSystem/TR-General-Codes-CS"/>
+          <code value="brp"/>
+        </coding>
+      </code>
+      <section>
+        <entry>
+          <reference value="Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Procedure/uc1-TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA"/>
+        </entry>
+      </section>
+    </section>
   </section>
   <section>
     <title value="Circulation"/>
@@ -215,6 +268,57 @@
     <entry>
       <reference value="Observation/uc1-TR-C-Skin-assessment-Observation"/>
     </entry>
+    <section>
+      <code>
+        <coding>
+          <system value="http://example.com/CodeSystem/TR-General-Codes-CS"/>
+          <code value="cirob"/>
+        </coding>
+      </code>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Observation/uc1-TR-Circulation-Skin-Assessment-Observation"/>
+        </entry>
+      </section>
+    </section>
+    <section>
+      <code>
+        <coding>
+          <system value="http://example.com/CodeSystem/TR-General-Codes-CS"/>
+          <code value="cirpro"/>
+        </coding>
+      </code>
+      <section>
+        <entry>
+          <reference value="Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure"/>
+        </entry>
+      </section>
+      <section>
+        <entry>
+          <reference value="Procedure/uc1-TR-Circulation-CPR-Procedure"/>
+        </entry>
+      </section>
+    </section>
   </section>
   <section>
     <title value="Disability"/>
@@ -228,7 +332,25 @@
       <status value="generated"/><div>Disability Section</div>
     </text>
     <entry>
-      <reference value="Observation/uc1-TR-D-Neuro-FAST-Observation"/>
+      <reference value="Observation/uc1-TR-Disability-GCS-Observation"/>
+    </entry>
+    <entry>
+      <reference value="Observation/uc1-TR-Disability-Neuro-FAST-Observations"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Exposure"/>
+    <code>
+      <coding>
+        <system value="http://example.com/CodeSystem/TR-General-Codes-CS"/>
+        <code value="exp"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div>Exposure Section</div>
+    </text>
+    <entry>
+      <reference value="Procedure/uc1-TR-Exp-Examination-Procedure"/>
     </entry>
   </section>
 </Composition>

@@ -6,12 +6,52 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient uc1-Nomen-Nescio</b></p><a name=\"uc1-Nomen-Nescio\"> </a><a name=\"hcuc1-Nomen-Nescio\"> </a><a name=\"uc1-Nomen-Nescio-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-trauma-patient.html\">Base Trauma Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Nescio Nomen  Male, DoB: 1990-01-01</p><hr/></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient uc1-Nomen-Nescio</b></p><a name=\"uc1-Nomen-Nescio\"> </a><a name=\"hcuc1-Nomen-Nescio\"> </a><a name=\"uc1-Nomen-Nescio-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-trauma-patient.html\">Base Trauma Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">null Graz Steiermark 8020 AUT (home)</td></tr></table></div>"
   },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "SS",
+        "display" : "Social Security number"
+      }]
+    },
+    "system" : "urn:oid:1.2.40.0.10.1.4.3.1",
+    "value" : "9999090909",
+    "assigner" : {
+      "display" : "Dachverband der österreichischen Sozialversicherungsträger"
+    }
+  }],
   "name" : [{
     "family" : "Nomen",
     "given" : ["Nescio"]
   }],
-  "gender" : "male",
-  "birthDate" : "1990-01-01"
+  "gender" : "female",
+  "birthDate" : "1990-01-01",
+  "address" : [{
+    "use" : "home",
+    "type" : "both",
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Keplerstrasse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "100"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+        "valueString" : "Stock 1 Tür 2"
+      },
+      {
+        "url" : "http://hl7.at/fhir/HL7ATCoreProfiles/4.0.1/StructureDefinition/at-core-ext-address-additionalInformation",
+        "valueString" : "Kebabshop"
+      }]
+    }],
+    "city" : "Graz",
+    "state" : "Steiermark",
+    "postalCode" : "8020",
+    "country" : "AUT"
+  }]
 }

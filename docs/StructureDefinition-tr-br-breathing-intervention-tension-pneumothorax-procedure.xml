@@ -23,13 +23,13 @@
   <name value="TR_Br_Breathing_Inervention_Tension_Pneumothorax_Procedure"/>
   <title value="Needle decomp because of tension pneumothorax"/>
   <status value="draft"/>
-  <date value="2025-05-14T23:43:24+02:00"/>
+  <date value="2025-05-19T18:20:06+02:00"/>
   <publisher value="Constantin Renner"/>
   <contact>
     <name value="Constantin Renner"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/cdeveHealth"/>
+      <value value="https://github.com/medinterop-renner/TraumaIG"/>
     </telecom>
     <telecom>
       <system value="email"/>

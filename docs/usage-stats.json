@@ -30,16 +30,16 @@
         "title": "MedicationAdministration of Oxygen"
       }
     ],
-    "Bundle": [
-      {
-        "url": "http://example.org/StructureDefinition/tr-bundle",
-        "title": "Document Bundle"
-      }
-    ],
     "Composition": [
       {
         "url": "http://example.org/StructureDefinition/tr-composition",
         "title": "TR Composition"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://example.org/StructureDefinition/tr-practitioner-role",
+        "title": "TR_Practitioner_Role"
       }
     ],
     "Encounter": [
@@ -56,7 +56,7 @@
     ]
   },
   "usage": {
-    "http://example.com/PathologicSideExtension": [
+    "http://example.com/StructureDefinition/pathologic-side": [
       "Observation.component"
     ],
     "http://example.org/StructureDefinition/pathologic-side": [

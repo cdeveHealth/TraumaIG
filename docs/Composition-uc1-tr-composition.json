@@ -200,8 +200,61 @@
       "status" : "generated",
       "div" : "<div>Breathing Section</div>"
     },
-    "entry" : [{
-      "reference" : "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"
+    "section" : [{
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.com/CodeSystem/TR-General-Codes-CS",
+          "code" : "brf"
+        }]
+      },
+      "section" : [{
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation"
+        }]
+      }]
+    },
+    {
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.com/CodeSystem/TR-General-Codes-CS",
+          "code" : "brp"
+        }]
+      },
+      "section" : [{
+        "entry" : [{
+          "reference" : "Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Procedure/uc1-TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA"
+        }]
+      }]
     }]
   },
   {
@@ -218,6 +271,57 @@
     },
     "entry" : [{
       "reference" : "Observation/uc1-TR-C-Skin-assessment-Observation"
+    }],
+    "section" : [{
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.com/CodeSystem/TR-General-Codes-CS",
+          "code" : "cirob"
+        }]
+      },
+      "section" : [{
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Observation/uc1-TR-Circulation-Skin-Assessment-Observation"
+        }]
+      }]
+    },
+    {
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.com/CodeSystem/TR-General-Codes-CS",
+          "code" : "cirpro"
+        }]
+      },
+      "section" : [{
+        "entry" : [{
+          "reference" : "Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure"
+        }]
+      },
+      {
+        "entry" : [{
+          "reference" : "Procedure/uc1-TR-Circulation-CPR-Procedure"
+        }]
+      }]
     }]
   },
   {
@@ -233,7 +337,26 @@
       "div" : "<div>Disability Section</div>"
     },
     "entry" : [{
-      "reference" : "Observation/uc1-TR-D-Neuro-FAST-Observation"
+      "reference" : "Observation/uc1-TR-Disability-GCS-Observation"
+    },
+    {
+      "reference" : "Observation/uc1-TR-Disability-Neuro-FAST-Observations"
+    }]
+  },
+  {
+    "title" : "Exposure",
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.com/CodeSystem/TR-General-Codes-CS",
+        "code" : "exp"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div>Exposure Section</div>"
+    },
+    "entry" : [{
+      "reference" : "Procedure/uc1-TR-Exp-Examination-Procedure"
     }]
   }]
 }

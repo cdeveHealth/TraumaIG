@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure</b></p><a name=\"uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure\"> </a><a name=\"hcuc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure\"> </a><a name=\"uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tr-br-breathing-intervention-tension-pneumothorax-procedure.html\">Needle decomp because of tension pneumothorax</a></p></div><p><b>partOf</b>: <a href=\"Observation/uc1-TR-Br-Finding-Thorax-Disorder-Observation\">Observation/uc1-TR-Br-Finding-Thorax-Disorder-Observation</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:\">outpatient</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1290622004}\">Needle chest decompression for tension pneumothorax</span></p><p><b>subject</b>: <a href=\"Patient-uc1-Nomen-Nescio.html\">Nescio Nomen  Female, DoB: 1990-01-01 ( Social Security number: 9999090909)</a></p><p><b>encounter</b>: <a href=\"Encounter-uc1-Motor-Vehicle-Collision.html\">Encounter: status = final; class = emergency (ActEncounterCode#EMER)</a></p><p><b>performed</b>: 2025-01-01 12:54:00+0200</p></div>"
+  },
+  "partOf" : [{
+    "reference" : "Observation/uc1-TR-Br-Finding-Thorax-Disorder-Observation"
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "code" : "outpatient"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1290622004",
+      "display" : "Needle chest decompression for tension pneumothorax (procedure)"
+    }],
+    "text" : "Needle chest decompression for tension pneumothorax"
+  },
+  "subject" : {
+    "reference" : "Patient/uc1-Nomen-Nescio"
+  },
+  "encounter" : {
+    "reference" : "Encounter/uc1-Motor-Vehicle-Collision"
+  },
+  "performedDateTime" : "2025-01-01T12:54:00+02:00"
+}

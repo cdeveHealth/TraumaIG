@@ -17,13 +17,13 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TraumaIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-14T23:43:24+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-19T18:20:06+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Constantin Renner"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Constantin Renner" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/cdeveHealth" ]
+       fhir:value [ fhir:v "https://github.com/medinterop-renner/TraumaIG" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "constantinrenner1@gmail.com" ]
@@ -856,6 +856,25 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Administration of Oxygen" ] ;
+       fhir:description [ fhir:v "Procedure to describe the administration of Oxygen." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://example.org/Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure> ;
          fhir:reference [ fhir:v "Procedure/uc1-TR-AW-Airway-Adjuncts-Procedure" ]
        ] ;
@@ -1018,6 +1037,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Bag-Mask Ventilation" ] ;
+       fhir:description [ fhir:v "Manual respiratory assistance using bag and mask due to low respiratory rate." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-bag-mask-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-bag-mask-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1163,6 +1201,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Cardiac Arrest Observation" ] ;
+       fhir:description [ fhir:v "Low blood pressure and absent carotid pulse observed, indicating cardiac arrest." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-circulation-cardiac-arrest-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-cardiac-arrest-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1175,6 +1232,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Circulation-CPR-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Circulation-CPR-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Cardiopulmonary resuscitation" ] ;
+       fhir:description [ fhir:v "Doing Cardiopulmonary resuscitation due to cardiac arrest" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-circulation-cpr-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-cpr-procedure>
        ]
      ] [
        fhir:extension ( [
@@ -1474,37 +1550,19 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
+           fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/tr-bundle> ;
-         fhir:reference [ fhir:v "StructureDefinition/tr-bundle" ]
+         fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation" ]
        ] ;
-       fhir:name [ fhir:v "Document Bundle" ] ;
-       fhir:description [ fhir:v "A document Bundle containing only tr-composition." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Bundle"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Bundle/uc1-bundle> ;
-         fhir:reference [ fhir:v "Bundle/uc1-bundle" ]
-       ] ;
-       fhir:name [ fhir:v "Document Bundle Instance" ] ;
-       fhir:description [ fhir:v "An instance of a document Bundle containing use case 1 composition." ] ;
+       fhir:name [ fhir:v "Disorder of Thorax Observed" ] ;
+       fhir:description [ fhir:v "Chest wall movement noted to be asymmetric on the left. Haematothorax observed." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://example.org/StructureDefinition/tr-bundle"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/tr-bundle>
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation>
        ]
      ] [
        fhir:extension ( [
@@ -1524,6 +1582,25 @@
          a fhir:canonical ;
          fhir:v "http://example.org/StructureDefinition/trauma-encounter"^^xsd:anyURI ;
          fhir:link <http://example.org/StructureDefinition/trauma-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Disability-GCS-Observation-Example> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Disability-GCS-Observation-Example" ]
+       ] ;
+       fhir:name [ fhir:v "Example Glasgow Coma Scale Observation with total score 7" ] ;
+       fhir:description [ fhir:v "Example instance with total GCS 7, components motor=3, verbal=2, eyeOpening=2." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-disability-gcs-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-disability-gcs-observation>
        ]
      ] [
        fhir:extension ( [
@@ -1840,6 +1917,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Increased Breathing Effort Observation" ] ;
+       fhir:description [ fhir:v "Signs of increased breathing effort with multiple components" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-increased-breathing-effort-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1852,6 +1948,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationAdministration"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA> ;
+         fhir:reference [ fhir:v "MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministration of Oxygen" ] ;
+       fhir:description [ fhir:v "Procedure to describe the administration of Oxygen." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-medication-oxygen-ma>
        ]
      ] [
        fhir:extension ( [
@@ -1889,6 +2004,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Br-Breathing-Intervention-Tension-Pneumothorax-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Needle Decompression for Tension Pneumothorax" ] ;
+       fhir:description [ fhir:v "Performing needle decompression because of tension pneumothorax." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-intervention-tension-pneumothorax-procedure>
        ]
      ] [
        fhir:extension ( [
@@ -1943,6 +2077,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Observation of Pelvic Fracture" ] ;
+       fhir:description [ fhir:v "Pelvic fracture observed with critical bleeding requiring pelvic sling procedure" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-observation>
        ]
      ] [
        fhir:extension ( [
@@ -2039,6 +2192,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Pelvic Sling Procedure" ] ;
+       fhir:description [ fhir:v "Application of Pelvic Sling due to Pelvic Fracture" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-bleeding-control-ps-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2051,6 +2223,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure for Bleeding Control" ] ;
+       fhir:description [ fhir:v "Procedures to control bleeding of patient." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-bleeding-control-vs>
        ]
      ] [
        fhir:extension ( [
@@ -2075,6 +2266,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Respiration Rate Observation" ] ;
+       fhir:description [ fhir:v "Respiration rate observation with severity" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-finding-respiration-rate-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-finding-respiration-rate-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2093,25 +2303,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation> ;
-         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation" ]
-       ] ;
-       fhir:name [ fhir:v "Respiratory chest wall movement" ] ;
-       fhir:description [ fhir:v "Chest wall movement noted to be asymmetric on the left. Haematothorax observed." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-disorder-of-thorax-observation>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2124,6 +2315,25 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Signs of Shock Observation" ] ;
+       fhir:description [ fhir:v "Observation indicating signs of shock: hypotension, tachycardia, and slow capillary refill." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-circulation-signs-of-schock-observation>
        ]
      ] [
        fhir:extension ( [
@@ -2240,6 +2450,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation> ;
+         fhir:reference [ fhir:v "Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation" ]
+       ] ;
+       fhir:name [ fhir:v "SpO₂ Range Observation" ] ;
+       fhir:description [ fhir:v "Peripheral oxygen saturation (SpO₂) range observed in trauma patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-br-breathing-finding-oxygen-saturation-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -2349,6 +2578,43 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/uc1-TR-Exp-Examination-Procedure> ;
+         fhir:reference [ fhir:v "Procedure/uc1-TR-Exp-Examination-Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Trauma Check" ] ;
+       fhir:description [ fhir:v "Procedure of checking patient for signs of trauma." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-exp-examination-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-exp-examination-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/tr-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/tr-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "TR_Practitioner_Role" ] ;
+       fhir:description [ fhir:v "Modification of AT Core Practitioner Role to fit TraumaIG Use Case" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Composition"
          ]
        ] ) ;
@@ -2380,6 +2646,43 @@
          a fhir:canonical ;
          fhir:v "http://example.org/StructureDefinition/trauma-patient"^^xsd:anyURI ;
          fhir:link <http://example.org/StructureDefinition/trauma-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/PractitionerRole/uc1-Practionter-Role> ;
+         fhir:reference [ fhir:v "PractitionerRole/uc1-Practionter-Role" ]
+       ] ;
+       fhir:name [ fhir:v "uc1-Practionter-Role" ] ;
+       fhir:description [ fhir:v "Example for the use of tr-practioner-role" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/tr-practitioner-role"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/tr-practitioner-role>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Practitioner/uc1-Practitioner> ;
+         fhir:reference [ fhir:v "Practitioner/uc1-Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "uc1-Practitioner" ] ;
+       fhir:description [ fhir:v "Example of HL7ATCorePractitioner for UC of Trauma IG." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "true"^^xsd:boolean
        ]
      ] [
        fhir:extension ( [

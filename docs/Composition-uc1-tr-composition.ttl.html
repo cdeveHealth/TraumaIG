@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.87"}
-    h3,h4,h5,h6{--heading-prefix:"5.87"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.101"}
+    h3,h4,h5,h6{--heading-prefix:"5.101"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -306,8 +306,33 @@ fhir:div &quot;&lt;div&gt;Airway and C-Spine Section&lt;/div&gt;&quot;^^rdf:XMLL
 <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
 fhir:div &quot;&lt;div&gt;Breathing Section&lt;/div&gt;&quot;^^rdf:XMLLiteral     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation&quot; ]     ] )
+    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.section">fhir:section</a> [
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://example.com/CodeSystem/TR-General-Codes-CS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;brf&quot; ]         ] )       ] ;
+      ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.section">fhir:section</a> [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Br-Breathing-Disorder-Of-Thorax-Observation&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Br-Breathing-Finding-Respiration-Rate-Observation&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Br-Breathing-Finding-Oxygen-Saturation-Observation&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-Tr-Br-Breathing-Increased-Breathing-Effort-Observation&quot; ]         ] )       ] )     ] [
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://example.com/CodeSystem/TR-General-Codes-CS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;brp&quot; ]         ] )       ] ;
+      ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.section">fhir:section</a> [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Br-Breathing-Bag-Mask-Procedure&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Br-Breathing-Inervention-Tension-Pneumothorax-Procedure&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-Procedure&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationAdministration/uc1-TR-Br-Breathing-Procedure-Medication-Oxygen-MA&quot; ]         ] )       ] )     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Circulation&quot; ] ;
 <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
@@ -318,7 +343,32 @@ fhir:div &quot;&lt;div&gt;Breathing Section&lt;/div&gt;&quot;^^rdf:XMLLiteral   
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
 fhir:div &quot;&lt;div&gt;Circulation Section&lt;/div&gt;&quot;^^rdf:XMLLiteral     ] ;
     ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-C-Skin-assessment-Observation&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-C-Skin-assessment-Observation&quot; ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.section">fhir:section</a> [
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://example.com/CodeSystem/TR-General-Codes-CS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;cirob&quot; ]         ] )       ] ;
+      ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.section">fhir:section</a> [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Circulation-Bleeding-Control-PS-Observation&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Circulation-Cardiac-Arrest-Observation&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Circulation-Signs-Of-Shock-Observation&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Circulation-Skin-Assessment-Observation&quot; ]         ] )       ] )     ] [
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://example.com/CodeSystem/TR-General-Codes-CS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;cirpro&quot; ]         ] )       ] ;
+      ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.section">fhir:section</a> [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Circulation-Bleeding-Control-Procedure&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Circulation-Bleeding-Control-PS-Procedure&quot; ]         ] )       ] [
+        ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Circulation-CPR-Procedure&quot; ]         ] )       ] )     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disability&quot; ] ;
 <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
@@ -329,7 +379,19 @@ fhir:div &quot;&lt;div&gt;Circulation Section&lt;/div&gt;&quot;^^rdf:XMLLiteral 
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
 fhir:div &quot;&lt;div&gt;Disability Section&lt;/div&gt;&quot;^^rdf:XMLLiteral     ] ;
     ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-D-Neuro-FAST-Observation&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Disability-GCS-Observation&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/uc1-TR-Disability-Neuro-FAST-Observations&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Exposure&quot; ] ;
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://example.com/CodeSystem/TR-General-Codes-CS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;exp&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div&gt;Exposure Section&lt;/div&gt;&quot;^^rdf:XMLLiteral     ] ;
+    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Procedure/uc1-TR-Exp-Examination-Procedure&quot; ]     ] )
   ] ) . # 
 
 </code></pre>
@@ -357,7 +419,7 @@ fhir:div &quot;&lt;div&gt;Disability Section&lt;/div&gt;&quot;^^rdf:XMLLiteral  
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/cdeveHealth">Constantin Renner</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 14, 2025 23:43+0200">2025-05-14</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/medinterop-renner/TraumaIG">Constantin Renner</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 19, 2025 18:20+0200">2025-05-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
